@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-06T23:31:08+00:00",
+  "updated_at": "2026-08-06T23:58:50+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -152,9 +152,11 @@
       "title": "We're either imprisoned by what we go through or we worship God despite it all."
     },
     "3BhJbF5G-uE": {
-      "attempts": 0,
+      "attempts": 1,
       "backfill_rank": 4,
       "first_seen": "2026-08-06T23:31:06+00:00",
+      "last_attempt": "2026-08-06T23:57:35+00:00",
+      "last_error": "Could not read metadata for 3BhJbF5G-uE after 4 attempts: ERROR: [youtube] 3BhJbF5G-uE: Sign in to confirm you\u2019re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
       "published": "",
       "status": "queued",
       "title": "ARE YOU HUNGRY? | MATTHEW 5:6 | STEVE ABRAHAM // FIRST THINGS FIRST 2026"
@@ -1188,9 +1190,11 @@
       "title": "First Wednesday Service"
     },
     "ZpilaauN0C0": {
-      "attempts": 0,
+      "attempts": 1,
       "backfill_rank": 5,
       "first_seen": "2026-08-06T23:31:06+00:00",
+      "last_attempt": "2026-08-06T23:58:00+00:00",
+      "last_error": "Could not read metadata for ZpilaauN0C0 after 4 attempts: ERROR: [youtube] ZpilaauN0C0: Sign in to confirm you\u2019re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
       "published": "",
       "status": "queued",
       "title": "I AM A CHILD OF GOD | ROMANS 8:14-17 | TIM ROSS // FIRST THINGS FIRST 2026"
@@ -1339,9 +1343,11 @@
       "title": "Everyone Serves | Series: Everyone \u2013 Steve Abraham"
     },
     "dGggBpJV_fs": {
-      "attempts": 0,
+      "attempts": 1,
       "backfill_rank": 7,
       "first_seen": "2026-08-06T23:31:06+00:00",
+      "last_attempt": "2026-08-06T23:58:50+00:00",
+      "last_error": "Could not read metadata for dGggBpJV_fs after 4 attempts: ERROR: [youtube] dGggBpJV_fs: Sign in to confirm you\u2019re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
       "published": "",
       "status": "queued",
       "title": "BOLD FAITH | Memorials | Joshua 4:1-7 | Steve Abraham"
@@ -1644,9 +1650,11 @@
       "title": "BOLD FAITH | Walls Still Fall | Joshua 6:1-20 | Steve Abraham"
     },
     "l2DRrg87-UA": {
-      "attempts": 0,
+      "attempts": 1,
       "backfill_rank": 6,
       "first_seen": "2026-08-06T23:31:06+00:00",
+      "last_attempt": "2026-08-06T23:58:25+00:00",
+      "last_error": "Could not read metadata for l2DRrg87-UA after 4 attempts: ERROR: [youtube] l2DRrg87-UA: Sign in to confirm you\u2019re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
       "published": "",
       "status": "queued",
       "title": "JOHN 8:31-32 | BEN PRESCOTT // FIRST THINGS FIRST 2026"

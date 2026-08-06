@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:podcast="https://podcastindex.org/namespace/1.0" version="2.0">
+  <channel>
+    <title>New Life Oxnard Sermons</title>
+    <link>https://www.newlifeoxnard.com</link>
+    <description>Weekly sermons from New Life Oxnard. Audio from our Sunday services, published automatically each week.</description>
+    <language>en-us</language>
+    <copyright>© New Life Oxnard</copyright>
+    <lastBuildDate>Thu, 06 Aug 2026 23:58:50 +0000</lastBuildDate>
+    <generator>sermon-podcast-pipeline</generator>
+    <docs>https://www.rssboard.org/rss-specification</docs>
+    <atom:link href="https://adrieljavier.github.io/Youtube-to-Spotify-Podcasts/feed.xml" rel="self" type="application/rss+xml" />
+    <itunes:author>New Life Oxnard</itunes:author>
+    <itunes:summary>Weekly sermons from New Life Oxnard. Audio from our Sunday services, published automatically each week.</itunes:summary>
+    <itunes:type>episodic</itunes:type>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:image href="https://adrieljavier.github.io/Youtube-to-Spotify-Podcasts/cover.jpg" />
+    <itunes:category text="Religion &amp; Spirituality">
+      <itunes:category text="Christianity" />
+    </itunes:category>
+    <itunes:owner>
+      <itunes:name>New Life Oxnard</itunes:name>
+      <itunes:email>adrieljavier@newlifeoxnard.com</itunes:email>
+    </itunes:owner>
+    <image>
+      <url>https://adrieljavier.github.io/Youtube-to-Spotify-Podcasts/cover.jpg</url>
+      <title>New Life Oxnard Sermons</title>
+      <link>https://www.newlifeoxnard.com</link>
+    </image>
+    <podcast:locked owner="adrieljavier@newlifeoxnard.com">yes</podcast:locked>
+    <podcast:guid>56747bda-78a7-5e32-9b43-00a51ddf865b</podcast:guid>
+  </channel>
+</rss>
