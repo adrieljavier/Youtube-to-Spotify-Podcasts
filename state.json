@@ -1,0 +1,2135 @@
+{
+  "updated_at": "2026-08-06T23:31:08+00:00",
+  "version": 1,
+  "videos": {
+    "-EVi9p4Dp10": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // WHEN YOU CAN'T TAKE IT ANYMORE"
+    },
+    "-QAUmOMiFw8": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR ANDREW PAZ // THE PLANS TO PROSPER"
+    },
+    "-Qs-Ut7MNbw": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "First Things First: Night 2"
+    },
+    "0FPrvKIa9_w": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR ANDREW PAZ // THE TWISTED TRUTH"
+    },
+    "0GswgB16CRI": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "There are no shortcuts when we follow Jesus.  #faith #love #hope #sermon #inspiration #motivation"
+    },
+    "0ZM-c51hR_o": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Everyone Filled | Series: Everyone \u2013 Steve Abraham"
+    },
+    "0ZmuZiGelSg": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Making Mondays Matter | Steve Abraham"
+    },
+    "0hdixgYFmZc": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "It Takes Two Pt. 2 // Pastor Steve Abraham"
+    },
+    "0ppoefL9amo": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "STEVE ABRAHAM // HOLD ON TO GOD'S WORD"
+    },
+    "0tU841nx7g4": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "NEW LIFE WORSHIP // WHO YOU SAY I AM"
+    },
+    "1CPXFny4K8Y": {
+      "attempts": 0,
+      "backfill_rank": 44,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "published": "",
+      "status": "queued",
+      "title": "Your Part in God's Plan | 1 Peter 1:1-25 | Phillip Trank"
+    },
+    "1EEEZr1DO5I": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // USE ME"
+    },
+    "1kJZZNqwlEA": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // IT'S A WIN-WIN. RETHINK, RESULTS. RESPOND"
+    },
+    "1lca6W4ldIQ": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // EXPANDING OUR COMFORT ZONE"
+    },
+    "2RJlyAKj4LM": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "NEW LIFE CONFERENCE 2019 // Q&A WITH BEN AND CARESSA PRESCOTT"
+    },
+    "2Xk8kxUgSJw": {
+      "attempts": 0,
+      "backfill_rank": 41,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "published": "",
+      "status": "queued",
+      "title": "No Other Name | Philippians 2:5-11 | Steve Abraham"
+    },
+    "2hpoG3KqUwM": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "JUST JESUS PT. 9"
+    },
+    "2mxGVl57uZY": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "The Direction of Distraction // Pastor Andrew Paz"
+    },
+    "2o3cRFo0bn0": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Start looking at your work as worship. In everything you do, do it for the glory and worship of God."
+    },
+    "3-Y19Y-hwmk": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "WELCOME HOME"
+    },
+    "33_08976aCQ": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "We're either imprisoned by what we go through or we worship God despite it all."
+    },
+    "3BhJbF5G-uE": {
+      "attempts": 0,
+      "backfill_rank": 4,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "published": "",
+      "status": "queued",
+      "title": "ARE YOU HUNGRY? | MATTHEW 5:6 | STEVE ABRAHAM // FIRST THINGS FIRST 2026"
+    },
+    "3JUw4x8ii9w": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // WHAT ON EARTH SHOULD WE DO NOW?"
+    },
+    "3R6d4jOV7Eg": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // ENOUGH IS ENOUGH"
+    },
+    "3SP_ZS-nyb0": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "Building our lives on Jesus is the most important thing we'll ever do! #motivation #inspiration"
+    },
+    "3T9BS10l4l4": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "THE PROMISE THROUGH THE PROBLEMS // PASTOR ANDREW PAZ"
+    },
+    "3es7iMP0Bgw": {
+      "attempts": 0,
+      "backfill_rank": 22,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "published": "",
+      "status": "queued",
+      "title": "A Resurrected Heart | Ephesians 4:27-30 | Bernie Federmann"
+    },
+    "3oMGprvhNxc": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "New Life Worship Experience"
+    },
+    "3tR-eGIgD0o": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Why did you stop trusting in God?  #faith #motivation #sermons #christianfaith #inspiration #jesus"
+    },
+    "4-_OoVc139c": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Easter At New Life // Pastor Steve Abraham"
+    },
+    "4AgakSbPoik": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Everyone Joyful | Series: Everyone \u2013 Steve Abraham"
+    },
+    "4IPyX_Q0hmY": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Declare this over your life today!  #faith #gospel #love #churchservice #sermon"
+    },
+    "4OpL4p9p5ro": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "We usually miss this part of the miracle... #sermon #faith #hope"
+    },
+    "4vbGwL8a1U0": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "God, through Christ Jesus, chose to reconcile with us and to give us a life accessible to Him \ud83e\udd32"
+    },
+    "5-PcJKc5v4k": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "The devil will always distract you with pleasure while hiding the true cost. #gospel"
+    },
+    "5COpU6cvd_w": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "JUST JESUS PT. 6"
+    },
+    "5FCnaXhQ_bs": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Act Now! Limited Time Offer! // Pastor Steve Abraham"
+    },
+    "5a9x2dTpO5o": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "A Life of Repentance | Bernie Federmann"
+    },
+    "5fFM3uPfsuM": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // MY BIG FAT MOUTH"
+    },
+    "5olJa8SkEa0": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "JUST JESUS PT. 11"
+    },
+    "62qsXvAO7MI": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "JUST JESUS PT. 10"
+    },
+    "637TpL7H5JM": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "A Nobody, Nobody Noticed"
+    },
+    "6SFfRLIGt6E": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // WHAT DOES GOD REQUIRE?"
+    },
+    "6VgzSvRzCWw": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Tomorrow Belongs to God | Steve Abraham"
+    },
+    "6X_36SKMZG0": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // WHAT ARE YOU WAITING FOR?"
+    },
+    "6siyAUlfKHg": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Good Advice // Pastor Steve & Tami Abraham"
+    },
+    "6zjni2nM3qk": {
+      "attempts": 0,
+      "backfill_rank": 23,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "published": "",
+      "status": "queued",
+      "title": "FAMILY MATTERS | Built to Last | Matthew 7:24-27 | Steve Abraham"
+    },
+    "7LJkQSZ0hg8": {
+      "attempts": 0,
+      "backfill_rank": 24,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "published": "",
+      "status": "queued",
+      "title": "FAMILY MATTERS | Please Stop the Bleeding | Genesis 29-32 | Steve Abraham"
+    },
+    "8WU5m7req04": {
+      "attempts": 0,
+      "backfill_rank": 47,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "published": "",
+      "status": "queued",
+      "title": "No Name | Mark 5:1-20 | Steve Abraham"
+    },
+    "8ihb6qD-Pro": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "A Midnight Miracle | Steve Abraham"
+    },
+    "8p0ecN3rRRY": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Only One Came Back | Steve Abraham"
+    },
+    "8wi677h9rC0": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "THE BLESSING // NEW LIFE WORSHIP"
+    },
+    "8wsIOCswpNI": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // WHAT LOVE LOOKS LIKE"
+    },
+    "9AqNkAYFkWw": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "First Things First: Night 1"
+    },
+    "9HkitWIj_-k": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Pastor Steve Abraham // Wrestling With God"
+    },
+    "9J9SFau_q2M": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // THE GIFTS WE GIVE"
+    },
+    "9N6QJRZPmVg": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "STAND: STAND UP"
+    },
+    "9ln9AjeOOss": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "JUST JESUS // Pastors Steve and Tami Abraham"
+    },
+    "9yPer9Oz6LQ": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "New Life Worship Experience"
+    },
+    "AHUYJOcuqfo": {
+      "attempts": 0,
+      "backfill_rank": 20,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "published": "",
+      "status": "queued",
+      "title": "BUT GOD | Acts 2:22-24 | Steve Abraham"
+    },
+    "Ag4lEPx8rJs": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "An Excellent Spirit \u2014 My Church \u2014 Steve Abraham"
+    },
+    "AnnMqN7PFf8": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "The Power of the Gospel | Steve Abraham"
+    },
+    "BGVsw2ym5tM": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "WHILE I\"M WAITING // NEW LIFE WORSHIP"
+    },
+    "BVjTtnmQuAY": {
+      "attempts": 0,
+      "backfill_rank": 9,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "published": "",
+      "status": "queued",
+      "title": "Who Is God & Who Am I? | Ryan Abraham"
+    },
+    "BgvSnrO6kn0": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "A Glimpse of Heaven // Pastor Steve Abraham"
+    },
+    "Br-xJMXwjYs": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Where you take your disappointments will define your future \ud83d\ude33  #faith #hope #encouragement #jesus"
+    },
+    "CQWR8y5pigU": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "JABIN CHAVEZ // EYES ON JESUS THIS STORM WILL PASS // CONF 2021"
+    },
+    "CdT3sR4mW3U": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // SHE'S NOT WHO SHE USED TO BE"
+    },
+    "CuTWxUCr94s": {
+      "attempts": 0,
+      "backfill_rank": 37,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "published": "",
+      "status": "queued",
+      "title": "Fight Back | 2 Samuel 23:11-12 | Steve Abraham"
+    },
+    "D1Ec3ZWtBwc": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Under Authority | Phillip Trank"
+    },
+    "DtNAY6AhcbQ": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Guest Speaker Pastor Tyran Meredith"
+    },
+    "E57xIVaNVCY": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // DANGEROUS PRAYERS"
+    },
+    "FK72YucdfTo": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "GET OFF THE ROOF!"
+    },
+    "FL4huUCcbg0": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "The Thirst Quencher | Phillip Trank"
+    },
+    "F_G-HCDWK6U": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // DONT FALL FOR IT"
+    },
+    "FyEJgD8kziY": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "First Things First: Night 3"
+    },
+    "Fyfd9Z0Wu6I": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Just Jesus: Part 5"
+    },
+    "GCoNR5RcBN4": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "In prayer, sometimes God wants to change your circumstances, in other times He wants to change you!"
+    },
+    "GE6evqlNNV4": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // MAKE ME BOLD"
+    },
+    "GQqScqv0xsU": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "FIRST WEDNESDAY"
+    },
+    "GVBMlbPRoKs": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Just Jesus: Part 3"
+    },
+    "GVeNRrXsijk": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Life Is Hard: Don't Quit | Bernie Federmann"
+    },
+    "GpOjT586nlc": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // GETTING PAST THE PAST"
+    },
+    "GvOQN2Xi3ws": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR TAMI ABRAHAM // HE IS ABLE"
+    },
+    "Gw14UyRHwqA": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Q&A WITH PASTOR TAMI ABRAHAM AND LISA BEVERE"
+    },
+    "GyfCKkKrFVA": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // REAL FANS"
+    },
+    "H0PLkE7ta6U": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Q&A with Pastor Steve and Tami Abraham"
+    },
+    "HGaCrmjcBuw": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "There is nothing too far that God cannot redeem.  #faith #motivation #jesus #christian #sermon"
+    },
+    "Hkqj1Ww3-OI": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "What Really Matters: Living Beyond Me"
+    },
+    "IO1vBBj57h4": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "A Room for God | Steve Abraham"
+    },
+    "IOs-OqMif7c": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "It's Not About Me \u2014 My Church \u2014 Steve Abraham"
+    },
+    "IU2MCCJHJ_c": {
+      "attempts": 0,
+      "backfill_rank": 39,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "published": "",
+      "status": "queued",
+      "title": "Man to Man | 1 Corinthians 16:13-14 | Steve Abraham"
+    },
+    "IbQ9mjI1hDY": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // WHATEVER IT TAKES"
+    },
+    "IjXWFclJLyQ": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Eternity On My Mind | Bernie Federmann"
+    },
+    "IpQKbHc-J_s": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // A RECORD CATCH!"
+    },
+    "J8EZzdo2rgI": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "TAYLOR MADU // TELL THE STORY"
+    },
+    "JB52qubU5jU": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "STAND: FIRM"
+    },
+    "JESgWy8XHn4": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Just Jesus: Part 4"
+    },
+    "JFpuIUNmp-0": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Trusting God In The Transitions"
+    },
+    "JRdUCcHSBFM": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "STAND"
+    },
+    "J_Y6rx8JK9I": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "The Gospel is meant to be shared, not meant to be kept our ourselves. It is the GREATEST news ever!"
+    },
+    "KAB8iQJ25NA": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "A Date with Deliverance | Steve Abraham"
+    },
+    "KO8Soo3HVGs": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "I Pledge Allegiance To... // Phil Allen"
+    },
+    "Kmq6aQshuhI": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "STAND: STRONG"
+    },
+    "L9CYCnnZplA": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "The true mark of a Christian is love."
+    },
+    "LEuSDf3UJdA": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Everyone Grows | Series: Everyone \u2013 Steve Abraham"
+    },
+    "LP0_3KtIcJM": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Jesus is King of all your life or none of it. That decision is up to you.  #faith #love #sermon"
+    },
+    "LP7jyJfJe04": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR ANDREW CARROLL // GOD'S GOT YOU"
+    },
+    "LvqfZr4BVvA": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "JUST JESUS // Pastor Steve Abraham"
+    },
+    "Lxz_93kHH7M": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR ANDREW CARROL // THIS WILL MAKE A DIFFERENCE"
+    },
+    "M4SF7xWIE54": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "GET YOUR FIGHT BACK!"
+    },
+    "MBXqK2rwtfQ": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR TYRAN MEREDITH // THE POWER OF PURITY"
+    },
+    "MFwj25HlUPw": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Stay Prayed Up \u2014 Andrew Carroll"
+    },
+    "MSjo9jRLBEE": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "God will never physically leave you nor emotionally abandon you.  #faith #hope #jesus #church"
+    },
+    "MlLU7Tmdmwk": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // Q&A WITH PASTOR ANDY AND JILL ORTEGA"
+    },
+    "Mo379DTT8Ps": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "NICK VUJICIC // BLESSED ARE THOSE WHO PERSEVERE"
+    },
+    "N9zxdwhh4fo": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // FIRE ME UP!"
+    },
+    "NEC7-iuunCA": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Battle Belongs + Heart of God | New Life Worship"
+    },
+    "NRBA8jaFiEY": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR TYRAN MERIDITH // EFFECTIVE IN PRAYER"
+    },
+    "NmqSPqIOjcY": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "Step into what God has for you & praise God even if you don't see the miracle yet!  #faith#sermon"
+    },
+    "NuFnhUavFQ4": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "When God Says No! | Steve Abraham"
+    },
+    "OAR-uRKw3ag": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "You have the choice to live your life on your own strength or by the power of the Holy Spirit."
+    },
+    "OGjD80ZB49c": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "DR. MICHAEL BROWN // JEZEBEL'S WAR WITH YOU PT.1"
+    },
+    "OLGWhc3VVDI": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "From Shepard To King"
+    },
+    "OUsIHGZMjas": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // THE SEARCH IS OVER"
+    },
+    "OqQzbnflVuA": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "TERRELL PENNY, PAULINE RIVERA, PHILIP TRANK, TAMI ABRAHAM // HEART, SOUL, MIND AND STRENGTH"
+    },
+    "PACxQL1Q1ps": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // LOVE WELL"
+    },
+    "PRGZhQidgmk": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // GET YOUR PASSION BACK"
+    },
+    "PVMzKYz_9xc": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Dad Jokes w/ Pastor Steve & Ryan"
+    },
+    "PbUh1Jx39ts": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // I FORGIVE THEM!"
+    },
+    "PiMwaFxp9c8": {
+      "attempts": 0,
+      "backfill_rank": 42,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "published": "",
+      "status": "queued",
+      "title": "Unfading Joy | Psalm 5:11 | Tony Lyons"
+    },
+    "Pnq2gHN3S4c": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Q&A with Pastor Steve and Tami Abraham PT.2"
+    },
+    "QP2kk5CxgEo": {
+      "attempts": 0,
+      "backfill_rank": 13,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "published": "",
+      "status": "queued",
+      "title": "When What You Saw Won't Sustain You | Exodus 24:1-18 | Phillip Trank"
+    },
+    "QfGNkxqJERs": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // HIGH ANXIETY"
+    },
+    "QnzWVhm7YTs": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "It Takes Two // Pastor Steve Abraham"
+    },
+    "QtoVlmk_qD0": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // HOW DID WE GET HERE"
+    },
+    "RudU6DwOqSI": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR PHILLIP TRANK // HOW TO CARRY THE WEIGHT"
+    },
+    "T01Zi43ldow": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // THE GOD WHO BUILDS"
+    },
+    "T9CwkiNUBoE": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // WAY MAKER"
+    },
+    "TGHgWXwlkcA": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // TAKE ME TO THE KING"
+    },
+    "TcAT1-FsIZE": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // WORSHIP RIGHT"
+    },
+    "TcuhYqbN58U": {
+      "attempts": 0,
+      "backfill_rank": 11,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "published": "",
+      "status": "queued",
+      "title": "BOLD FAITH | Get It Out | Joshua 7:1-26 | Steve Abraham"
+    },
+    "ThZsreOIkB4": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "STAND: TALL"
+    },
+    "UUIKwm6nu2I": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // THIS IS YOUR DAY"
+    },
+    "UZuWW0QePu4": {
+      "attempts": 0,
+      "backfill_rank": 38,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "published": "",
+      "status": "queued",
+      "title": "The Power of Praise | Psalm 147:1-14 | Steve Abraham"
+    },
+    "U_YiR4QEjzU": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // BUILDING ON GOD'S WORD"
+    },
+    "Up9r5HEcs3w": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "HELP IN TIMES OF TROUBLE // PASTOR ANDREW CARROLL"
+    },
+    "V3US_4clzME": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // STANDING AGAINST OPPOSITION"
+    },
+    "VPuaIEYBcf4": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // ARE YOU COVERED?"
+    },
+    "VPzXa1lSfL8": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Guest Speaker // Pastor Wayne Cordeiro"
+    },
+    "VYOebyLZY5M": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "RAISE A HALLELUJAH // NEW LIFE WORSHIP"
+    },
+    "W4sipTVj5_0": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // REBUILDERS FINISH STRONG"
+    },
+    "W869EIMhnBk": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM// WHAT I WANT FOR OUR CHURCH"
+    },
+    "WJ9JGxTVOys": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "The One About God's House"
+    },
+    "X0QyHuv6iXI": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Religion vs Relationship | Phillip Trank"
+    },
+    "X3ajrt5womU": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "The God of 2nd Chances | Steve Abraham"
+    },
+    "XUTNzlCtA9c": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Under Pressure | Steve Abraham"
+    },
+    "XZvFUmVknx4": {
+      "attempts": 0,
+      "backfill_rank": 34,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "published": "",
+      "status": "queued",
+      "title": "Cancel Comfort | Matthew 14:15-21 | Steve Abraham"
+    },
+    "XhV90E53yoA": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // A PIECE OF PEACE"
+    },
+    "XuQPaB9Ow34": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "God uses the storms and trials to refine you! Not for your harm but for your spiritual gain!  #faith"
+    },
+    "YFhncEGlvYM": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // THERE'S A HOLE IN OUR HOLINESS"
+    },
+    "YLcCAT62H28": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "FREEDOM FROM // LANDON+JOSH+KENYN+RYAN"
+    },
+    "YPXp8z-UTrg": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Why Everything Fell Apart // Pastor Andrew Carroll"
+    },
+    "Yv2szFmXmMo": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR  STEVE ABRAHAM // PT1: WHEN ALL YOU HAVE IS A MAYBE"
+    },
+    "ZG7pv3GfdW4": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "What's love got to do with it? // Pastor Steve Abraham"
+    },
+    "ZSZ7EY2pdgA": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "GRACE: It Really Is Amazing"
+    },
+    "Zl8n74giTmw": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "First Wednesday Service"
+    },
+    "ZpilaauN0C0": {
+      "attempts": 0,
+      "backfill_rank": 5,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "published": "",
+      "status": "queued",
+      "title": "I AM A CHILD OF GOD | ROMANS 8:14-17 | TIM ROSS // FIRST THINGS FIRST 2026"
+    },
+    "_H-lqxIPr5w": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // THE HOLY SPIRIT: THE EMPOWERMENT TO SPIRITUAL GROWTH"
+    },
+    "_NZZZm2bA3c": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // I'M DONE WITH FAKE"
+    },
+    "_nVgyypEyHs": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Like A Good Neighbor \u2014 My Church \u2014 Steve Abraham"
+    },
+    "a1E7WQgb1P0": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // THE PRESENCE OF GOD"
+    },
+    "aJHfDIEJqnk": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Just Jesus: Part 2"
+    },
+    "aK6R29PZku4": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // A DIFFERENT KIND OF REST"
+    },
+    "aLylr7NJAOs": {
+      "attempts": 0,
+      "backfill_rank": 29,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "published": "",
+      "status": "queued",
+      "title": "FAMILY MATTERS | Healthy Things Healthy Families Do | Genesis 25-26 | Steve Abraham"
+    },
+    "aZ1XfoJmDgs": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR ANDREW CARROLL // SURPRISED BY HOPE"
+    },
+    "adpTIWLTxzY": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR GABE ZAMORA // THE POWER OF THE SEED"
+    },
+    "bVK8GbBzXr0": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR ANDREW CARROLL // WALKING IN THE DARK"
+    },
+    "bZPtMNKsxHQ": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "BOLD FAITH | No Turning Back | Joshua 1:1-11 | Steve Abraham"
+    },
+    "bdhvD3sl6R0": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // I'M IN TRANSITION"
+    },
+    "buCt0OTxnQg": {
+      "attempts": 0,
+      "backfill_rank": 48,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "published": "",
+      "status": "queued",
+      "title": "Refresh | Steve Abraham"
+    },
+    "c3Bp7mx_684": {
+      "attempts": 0,
+      "backfill_rank": 27,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "published": "",
+      "status": "queued",
+      "title": "FAMILY MATTERS | House Rules | Genesis 25-26 | Steve Abraham"
+    },
+    "cNdhjcQRN8w": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Everyone Loves | Series: Everyone \u2013 Steve Abraham"
+    },
+    "cjq_LiwbOIM": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "New Life Community Church"
+    },
+    "cqbEISR4i4E": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "BOLD FAITH | Rahab's Rehab | Joshua 2:1-24 | Steve Abraham"
+    },
+    "d-aCSmbJo_A": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // PROMISES"
+    },
+    "d80IZFIiuOs": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "JUST JESUS // Pastor Steve Abraham"
+    },
+    "dDhMD2qdR8U": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Everyone Serves | Series: Everyone \u2013 Steve Abraham"
+    },
+    "dGggBpJV_fs": {
+      "attempts": 0,
+      "backfill_rank": 7,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "published": "",
+      "status": "queued",
+      "title": "BOLD FAITH | Memorials | Joshua 4:1-7 | Steve Abraham"
+    },
+    "deDJ9EpuL7g": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "The perfect example of perfect, consistent, faithful character is God's character.  #faith #sermon"
+    },
+    "dkIWPGPg12o": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // SEARCH AND RESCUE"
+    },
+    "dp0K6WexBkY": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // GOD IS STILL GOOD"
+    },
+    "eeqfa1dFC7Q": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "A Wedding to Remember | Steve Abraham"
+    },
+    "f4hhSLEl2EE": {
+      "attempts": 0,
+      "backfill_rank": 12,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "published": "",
+      "status": "queued",
+      "title": "BOLD FAITH | Give Me This Mountain | Joshua 14:6-13 | Steve Abraham"
+    },
+    "fDOFSIjZszU": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // WAITING ON GOD"
+    },
+    "fDlbIZAULdA": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "HERE AGAIN / AGNUS DEI"
+    },
+    "fZ5e3IW7W2Q": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Giant Killer"
+    },
+    "fkIJS2UeRWI": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // DEFEATING MY INSECURITIES"
+    },
+    "fwNzSz9ubSA": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Ready Or Not // Pastor Steve Abraham"
+    },
+    "g5Rui53o7y0": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "DR. MICHAEL BROWN // OVERCOMING THE SPIRIT OF FEAR PT.2"
+    },
+    "g5_fqBKR5bc": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "I Choose God's Ways | Series: Choices - Steve Abraham"
+    },
+    "g6yOym70L6s": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "NOT ON OUR WATCH"
+    },
+    "gGxKFzc7XCk": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // I'M RIGHT WHERE I'M SUPPOSE TO BE"
+    },
+    "gMmN_IUofSo": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "3 Lessons People Learn Too Late // Pastor Andrew Carrol"
+    },
+    "gSIy1G6NQD4": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR SAMUEL RODRIGUEZ // FIRST THINGS FIRST"
+    },
+    "gWxwfRFOS8M": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // WORSHIPING GOD"
+    },
+    "glt2RKlBcqU": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // EVERYDAY THANKS"
+    },
+    "gmU9nDGEVcA": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // CHASE THE LION"
+    },
+    "gqgEClI_F_Y": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "NICK VUJICIC // ARMED WARRIORS REDEEMED - FAITHFUL AND ARMED"
+    },
+    "h1VRa93G_BY": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "ALL I NEED IS A CRUMB // PASTOR STEVE ABRAHAM"
+    },
+    "hAD7_bahXYk": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM/ JESUS IS ENOUGH"
+    },
+    "hFDwTadLs-4": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "The Good News | Steve Abraham"
+    },
+    "hY5rA8JauBA": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Doors to Destiny | Steve Abraham"
+    },
+    "hcg-v7rUnw0": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "NEW LIFE CONFERENCE 2019 // BEN PRESCOTT"
+    },
+    "hmAHN6R6zg4": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "You can still have joy despite your situation. #faith #motivation #jesus #sermon #joy"
+    },
+    "hwJwMM63ENo": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "All you need to be what God's called you to be is found in the Bible.  #faith #christianfaith #jesus"
+    },
+    "iILyac-P5Po": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "The One About Seasons"
+    },
+    "iP-mAAtoas8": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "SHAME OFF YOU"
+    },
+    "iQpVYpXvaws": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "It's Time - 21st Birthday"
+    },
+    "iShmQogg0Ds": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // SATAN: THE ENEMY OF SPIRITUAL GROWTH"
+    },
+    "iw60nm5TSEM": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // YOU ARE NOT ALONE"
+    },
+    "jHZWUehT2II": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // KEYS TO SPIRITUAL GROWTH"
+    },
+    "jXBwJeLKvaM": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "If you're still waiting on God, listen to this... #faith #motivation #jesus #sermon #truth"
+    },
+    "juH0V-DK4fM": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Everyone Shares | Series: Everyone \u2013 Bernie Federmann"
+    },
+    "kMBPXCS3qjc": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // SMASHING IDOLS"
+    },
+    "kOxi7HmYSM4": {
+      "attempts": 0,
+      "backfill_rank": 19,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "published": "",
+      "status": "queued",
+      "title": "What Chair Are You In? | John 3:16-18 | Steve Abraham"
+    },
+    "kjxwwE67Qyw": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "Forgiveness is the cure, modeled by Jesus, for internal healing in our broken families. #motivation"
+    },
+    "kmCrBKJnp-0": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR GREGG JOHNSON // SAYINGS, WAYS, & SAY-SO'S"
+    },
+    "ks4dbyo58hs": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "You can say you're a Christian but your lifestyle should reflect your profession of faith.  #faith"
+    },
+    "kuDUwdwTVDg": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // I'M OVER IT"
+    },
+    "l-iXrdcp7MM": {
+      "attempts": 0,
+      "backfill_rank": 10,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "published": "",
+      "status": "queued",
+      "title": "BOLD FAITH | Walls Still Fall | Joshua 6:1-20 | Steve Abraham"
+    },
+    "l2DRrg87-UA": {
+      "attempts": 0,
+      "backfill_rank": 6,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "published": "",
+      "status": "queued",
+      "title": "JOHN 8:31-32 | BEN PRESCOTT // FIRST THINGS FIRST 2026"
+    },
+    "lAUAXxepnVE": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "Our lives were destined for hell and destruction, BUT GOD made a way and saved us. #hope #jesus"
+    },
+    "lLZA3GE5tMA": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "QUIET // ELEVATION RHYTHM // COVER"
+    },
+    "m8scKvuCrSc": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "NEW LIFE CONFERENCE 2019 // SAMUEL RODRIGUEZ"
+    },
+    "mFY5rMVy-NI": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Keep Believing | Landon McGarry"
+    },
+    "mP4eNlAkfKc": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "New Life Conference"
+    },
+    "mitMa2Pc45g": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // GRACE: THE CLIMATE FOR SPIRITUAL GROWTH"
+    },
+    "mj2nFwQlIlI": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "God is using your situation, not just for your own good, but for the good of others and His Kingdom."
+    },
+    "mjptiL9Ku2M": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // DON'T DO IT ALONE"
+    },
+    "n2D6a5WNy84": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "BOLD FAITH | Three Keys to Victory | Joshua 3:1-17 | Steve Abraham"
+    },
+    "nmwXgWs-m7U": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "A Church God Loves | Steve Abraham"
+    },
+    "o4mXCNI1igo": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "HIGHS AND LOWS // RICH WILKERSON JR // CONF 2021"
+    },
+    "o6jv0A6siZw": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Keep digging!  #faith #sermons #gospel"
+    },
+    "oF8gXpL0Ysw": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "GUEST PASTOR KEVIN LEWIS // THE BATTLE FOR THE WATER RIGHTS"
+    },
+    "oLRMPaEr7iE": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Christmas Miracles | Steve Abraham"
+    },
+    "oRm2DTG46UE": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Your responsibility is to declare the Gospel. You're not responsible for their response.  #faith"
+    },
+    "oao3jyxOI34": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Jesus the One & Only \u2014 My Church \u2014 Steve Abraham"
+    },
+    "onJr7cdNK18": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "New Life Sunday Experience"
+    },
+    "pD4CJuERgCs": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "AVAILABLE // NEW LIFE WORSHIP"
+    },
+    "paD-hGHrQO4": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // I NEED AN UPGRADE"
+    },
+    "plX0kiY4FUQ": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "JUST JESUS PT. 8"
+    },
+    "pnXugq3NPPQ": {
+      "attempts": 0,
+      "backfill_rank": 45,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "published": "",
+      "status": "queued",
+      "title": "Holding On To Hope | Lamentations 3:19-26 | Steve Abraham"
+    },
+    "q8kaYWgvF74": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "You have the power of God in you to resist evil temptations and follow His will!  #faith #sermon"
+    },
+    "rR18Wmeu6G0": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // CHRIST IN THE CRISIS"
+    },
+    "rSTucciHd-I": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "NEW LIFE CONFERENCE 2019 // ROBERT MADU"
+    },
+    "rfbFTXLqUa4": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // OVERWHELMED BUT NOT OVERCOME"
+    },
+    "s9uupKpqDKY": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // RUN LIKE A CHAMPION"
+    },
+    "sFLK8rm3HBw": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // STOP SPINNING"
+    },
+    "sWY_dUXL-Qg": {
+      "attempts": 0,
+      "backfill_rank": 15,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "published": "",
+      "status": "queued",
+      "title": "Move Forward | 1 Peter 2:9-10 | Ryan Abraham"
+    },
+    "scQQMAAV3E0": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "DR. MICHAEL BROWN // THE VISION WILL BE TESTED PT.3"
+    },
+    "scWbJWMs_7M": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "The High Cost Of Low Living"
+    },
+    "skjMqfRE7HU": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // YOU'RE GOING TO GET THROUGH THIS"
+    },
+    "snKFwMC-_iQ": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "GETTING RIGHT WHEN YOU'\u0080\u0099VE DONE WRONG"
+    },
+    "snYB6O_d2gE": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // LOVE LIKE JESUS"
+    },
+    "sxrOt1HnJE8": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // LET IT GO"
+    },
+    "tFv3d74J0ws": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "You're Worth It // Pastor Steve Abraham"
+    },
+    "tHaSKMxmeSg": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // KEEP ON KEEPING ON"
+    },
+    "tT-qXAq1Z1U": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // ENCOURAGE ME JESUS!"
+    },
+    "tT2RhdPoarw": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // HOW TO FACE UNCERTAINTY"
+    },
+    "tTMb5O49Hkk": {
+      "attempts": 0,
+      "backfill_rank": 36,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "published": "",
+      "status": "queued",
+      "title": "What Do You Really Want? | John 5:2-14 | Ryan Abraham"
+    },
+    "ty9Js7UT54w": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "WHEN GRACE SHOWED UP // STEVE ABRAHAM // CONF 2021"
+    },
+    "tzM6gUVEPKg": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Special Guest //Gene McGuire"
+    },
+    "u2ehDQKKdwE": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "NEW LIFE CONFERENCE 2019 // ISRAEL HOUGHTON // IN THE NAME OF JESUS"
+    },
+    "u37Rs9D3Loc": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "NEW LIFE CONFERENCE // 2020 NOW I SEE"
+    },
+    "uc0Kywt9dpA": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "End Times // Pastor Steve Abraham"
+    },
+    "ucfy-ib8ONM": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "Live a life where we can bring people to Jesus, not hinder them from Jesus! #faith #gospel #sermon"
+    },
+    "visnbd9hDl0": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Carpool Karaoke with Pastor Steve!"
+    },
+    "vxq1YsfhTic": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Just Jesus: Part 1"
+    },
+    "w1LUmqO3CEU": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "JUST JESUS PT. 12"
+    },
+    "wDItBRpLRrA": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "Joy is dependent on the character and promises of God, not on our trials and circumstances."
+    },
+    "witS04rXgpQ": {
+      "attempts": 0,
+      "backfill_rank": 17,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "published": "",
+      "status": "queued",
+      "title": "No Plan B | Mark 1:16-20; John 1:40-42 | Steve Abraham"
+    },
+    "wuphWvKDZ2Q": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // BREAK THE JAR"
+    },
+    "wuyyAYz9l4k": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:06+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "New Life Worship Experience"
+    },
+    "xJ9vNM0dUg0": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "SAY SO // FIRST THINGS FIRST // TERRELL PENNY, PAULINE RIVERA, PHILLIP TRANK, PASTOR TAMI ABRAHAM"
+    },
+    "xNibgjN526Q": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "In your weakness, God's love, grace, and mercy is evident.  #faith #gospel #sermon #love"
+    },
+    "xURLaY4zUww": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR TYRAN MEREDITH // THE CHANGE UP"
+    },
+    "xkyikaC3WO0": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "JUST JESUS PT. 7"
+    },
+    "xpZ1uWWTx_M": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "What Really Matters: Tomorrow Matters"
+    },
+    "y9YpIuawntM": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "In God We Trust | Steve Abraham"
+    },
+    "yDreqZ1Arx4": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "First Wednesday Service"
+    },
+    "yRmq8T7Uyug": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Ask - Gregg Johnson"
+    },
+    "yTyxlAefVrA": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // HOW TO SHELTER IN PLACE"
+    },
+    "yxVxFfodCmw": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "Extravagant Generosity \u2014 My Church \u2014 Steve Abraham"
+    },
+    "z1UqtxCWzuU": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // IT'S NOT OVER"
+    },
+    "z7lMmIjcK-U": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR KEVIN LEWIS // DON'T MAKE IT DIFFICULT"
+    },
+    "zJqLonzeLXc": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // HOW TO HANDLE MY FEAR"
+    },
+    "zVDxaW6reB4": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "PASTOR STEVE ABRAHAM // WAKE UP!"
+    },
+    "zY3DuHlBFco": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "God With Us | Steve Abraham"
+    },
+    "zhE04IZBLdQ": {
+      "attempts": 0,
+      "first_seen": "2026-08-06T23:31:08+00:00",
+      "skip_reason": "before backfill cutoff",
+      "status": "skipped",
+      "title": "A Generous Heart | Steve Abraham"
+    }
+  }
+}

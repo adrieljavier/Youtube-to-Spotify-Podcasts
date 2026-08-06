@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sermon Podcast Feed</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      max-width: 42rem; margin: 0 auto; padding: 3rem 1.25rem;
+    }
+    h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+    p.sub { opacity: .7; margin-top: 0; }
+    code, .feed {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: .9rem; word-break: break-all;
+    }
+    .feed {
+      display: block; padding: .9rem 1rem; margin: 1.5rem 0;
+      border: 1px solid color-mix(in srgb, currentColor 25%, transparent);
+      border-radius: .5rem; text-decoration: none;
+    }
+    ul { padding-left: 1.2rem; }
+    footer { margin-top: 3rem; font-size: .85rem; opacity: .6; }
+  </style>
+</head>
+<body>
+  <h1>Sermon Podcast</h1>
+  <p class="sub">Audio from our Sunday services, published automatically.</p>
+
+  <p>Podcast RSS feed:</p>
+  <a class="feed" href="./feed.xml">./feed.xml</a>
+
+  <p>To subscribe, paste that feed's full URL into your podcast app, or find
+     the show on Spotify.</p>
+
+  <h2>How this works</h2>
+  <ul>
+    <li>A scheduled job checks the YouTube channel every hour.</li>
+    <li>New sermons have their audio extracted and archived permanently at
+        <a href="https://archive.org">archive.org</a>.</li>
+    <li>This feed is updated and Spotify picks up the new episode on its next
+        crawl.</li>
+  </ul>
+
+  <footer>Served by GitHub Pages.</footer>
+</body>
+</html>

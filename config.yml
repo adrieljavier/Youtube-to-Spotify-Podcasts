@@ -1,0 +1,120 @@
+# ---------------------------------------------------------------------------
+# Sermon podcast pipeline configuration
+#
+# NOTHING SECRET GOES IN THIS FILE. Credentials live in GitHub Actions secrets
+# and are read from environment variables only. See README.md.
+#
+# Everything here is already filled in for New Life Oxnard — review before the
+# first run. See README.md step 5.
+# ---------------------------------------------------------------------------
+
+youtube:
+  # New Life Oxnard — youtube.com/@newlifeoxnard
+  # Can also be supplied via the YOUTUBE_CHANNEL_ID environment variable /
+  # GitHub Actions secret, which takes priority over this value.
+  channel_id: "UCJd0tF3I0zKrN73_YNNIHqg"
+
+  # Only titles matching this are considered sermons. Your sermon titles always
+  # contain a pipe — "Refresh | Steve Abraham", "No Name | Mark 5:1-20 | Steve
+  # Abraham" — while Shorts, "New Life Worship Experience" and "FIRST WEDNESDAY"
+  # never do. An allow-list is far more reliable here than blacklisting every
+  # kind of non-sermon upload. Set to "" to disable.
+  require_title_pattern: "\\|"
+
+  # Belt and braces on top of the pattern above: anything matching these is
+  # skipped permanently. Case-insensitive regular expressions.
+  skip_title_patterns:
+    - "^shorts?\\b"
+    - "\\bannouncement"
+    - "\\blivestream test\\b"
+    - "New Life Worship"        # worship sets, not sermons
+    - "Carpool Karaoke"
+    - "Dad Jokes"
+
+  # Videos shorter than this are skipped. Your Shorts run 1-3 minutes and your
+  # sermons 35-50, so 600s (10 min) sits comfortably between the two.
+  min_duration_seconds: 600
+
+  # Videos longer than this are skipped, to protect against an accidentally
+  # published 8-hour livestream placeholder. Set to 0 to disable.
+  max_duration_seconds: 21600   # 6 hours
+
+site:
+  # Public base URL of your GitHub Pages site, no trailing slash.
+  # In GitHub Actions this is derived automatically from $GITHUB_REPOSITORY;
+  # it is set explicitly here so local runs produce the same URLs.
+  base_url: "https://adrieljavier.github.io/Youtube-to-Spotify-Podcasts"
+
+podcast:
+  title: "New Life Oxnard Sermons"
+  # Shown in Spotify's episode list header and in Apple Podcasts.
+  description: >-
+    Weekly sermons from New Life Oxnard. Audio from our Sunday services,
+    published automatically each week.
+  # Public-facing website for the show.
+  link: "https://www.newlifeoxnard.com"
+  language: "en-us"
+
+  # Show-level author. This is the podcast's byline in Spotify and Apple, so it
+  # is the church, not any one speaker.
+  author: "New Life Oxnard"
+
+  # Per-episode author is the preacher, read off the end of the video title:
+  #   "Refresh | Steve Abraham"                  -> Steve Abraham
+  #   "No Name | Mark 5:1-20 | Steve Abraham"    -> Steve Abraham
+  #   "JOHN 8:31-32 | BEN PRESCOTT // FTF 2026"  -> Ben Prescott
+  # If the last segment does not look like a name, `author` above is used.
+  speaker_from_title: true
+  speaker_separator: "|"
+
+  # itunes:owner — used by directories to verify feed ownership, and the
+  # address Spotify sends its verification code to.
+  owner_name: "New Life Oxnard"
+  owner_email: "adrieljavier@newlifeoxnard.com"
+  # Apple/Spotify category. Must be an exact match from Apple's list.
+  # For sermons: "Religion & Spirituality" / "Christianity".
+  category: "Religion & Spirituality"
+  subcategory: "Christianity"
+  explicit: false
+  # "episodic" (newest first, standalone) or "serial" (ordered course).
+  itunes_type: "episodic"
+  copyright: "© New Life Oxnard"
+  # Cover art filename inside docs/. Must be square JPEG or PNG,
+  # 1400x1400 minimum, 3000x3000 recommended. Generate it from your channel
+  # artwork with:  python -m scripts.fetch_cover
+  cover_image: "cover.jpg"
+  # Prevents other podcast hosts from importing this feed without permission.
+  locked: true
+
+audio:
+  # Bitrate in kbps. 64k mono is spoken-word optimised: a 45-minute sermon
+  # lands around 20 MB.
+  bitrate_kbps: 64
+  channels: 1              # 1 = mono, 2 = stereo
+  sample_rate: 44100
+  # Embed the video thumbnail into the mp3 as episode artwork.
+  embed_thumbnail: true
+
+archive:
+  # archive.org item identifiers are globally unique across all of
+  # archive.org, so the prefix needs to be distinctive to you.
+  # Final identifier is: <prefix>-<youtube_video_id>
+  identifier_prefix: "nlo-sermon"
+  # Community collection for freely-licensed audio. Leave as-is unless you
+  # have been granted your own collection.
+  collection: "opensource_audio"
+  # Applied as the item's license metadata.
+  license_url: "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+  # Seconds to wait for archive.org to make a freshly uploaded file
+  # downloadable before giving up on this episode (it will be retried on the
+  # next run — nothing is lost).
+  availability_timeout_seconds: 600
+
+run:
+  # Maximum episodes to publish per pipeline run. Keeps any single GitHub
+  # Actions run well inside its time budget while a backfill drains.
+  # At hourly runs, 4 per run clears your 29-episode backlog in ~8 hours.
+  max_episodes_per_run: 4
+  # A video that fails this many times in a row is parked and no longer
+  # retried automatically. Reset it with: python -m scripts.run --retry <id>
+  max_attempts: 5

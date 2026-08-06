@@ -1,0 +1,10 @@
+# yt-dlp changes fast and YouTube breaks old versions — float the version so
+# every Actions run installs the current release.
+yt-dlp>=2025.1.1
+internetarchive>=4.1.0
+PyYAML>=6.0
+requests>=2.32.0
+# Used by yt-dlp to write ID3 tags and embed episode artwork into the mp3.
+mutagen>=1.47.0
+# Used only by scripts.fetch_cover to build compliant podcast artwork.
+Pillow>=10.0.0

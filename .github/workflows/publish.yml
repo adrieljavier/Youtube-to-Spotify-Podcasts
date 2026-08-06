@@ -1,0 +1,142 @@
+name: Publish sermon episodes
+
+on:
+  schedule:
+    # Hourly, at :23 past. Off-the-hour times are less contended on the shared
+    # GitHub Actions scheduler, so runs start closer to on time.
+    - cron: "23 * * * *"
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Max episodes to publish this run (blank = config default)"
+        required: false
+        default: ""
+      dry_run:
+        description: "Discover and queue only — publish nothing"
+        type: boolean
+        required: false
+        default: false
+
+# Required so the run can commit state.json and docs/feed.xml back to the repo.
+permissions:
+  contents: write
+
+# Never let two runs process the same queue at once.
+concurrency:
+  group: publish-sermon-podcast
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          # Full history so the commit step can rebase cleanly if needed.
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Ensure ffmpeg is available
+        run: |
+          if ! command -v ffmpeg >/dev/null 2>&1; then
+            sudo apt-get update -qq
+            sudo apt-get install -y -qq ffmpeg
+          fi
+          ffmpeg -version | head -n 1
+
+      - name: Install dependencies
+        run: pip install --disable-pip-version-check -r requirements.txt
+
+      - name: Run pipeline
+        id: pipeline
+        # A failed episode must not stop the run from committing everything
+        # that did succeed. The job is failed explicitly at the end instead.
+        continue-on-error: true
+        env:
+          IA_ACCESS_KEY: ${{ secrets.IA_ACCESS_KEY }}
+          IA_SECRET_KEY: ${{ secrets.IA_SECRET_KEY }}
+          YOUTUBE_CHANNEL_ID: ${{ secrets.YOUTUBE_CHANNEL_ID }}
+          # Passed through the environment rather than interpolated into the
+          # shell, so workflow inputs can never be executed as script.
+          INPUT_LIMIT: ${{ inputs.limit }}
+          INPUT_DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          set -o pipefail
+          ARGS=""
+          if [ -n "$INPUT_LIMIT" ]; then ARGS="$ARGS --limit $INPUT_LIMIT"; fi
+          if [ "$INPUT_DRY_RUN" = "true" ]; then ARGS="$ARGS --dry-run"; fi
+          python -m scripts.run $ARGS
+
+      - name: Validate the feed before committing
+        id: validate
+        if: ${{ !cancelled() }}
+        run: |
+          if [ ! -f docs/feed.xml ]; then
+            echo "docs/feed.xml was not produced — nothing to validate."
+            exit 0
+          fi
+          python - <<'PY'
+          import sys, xml.etree.ElementTree as ET
+          try:
+              tree = ET.parse("docs/feed.xml")
+          except ET.ParseError as exc:
+              sys.exit("docs/feed.xml is not well-formed XML: %s" % exc)
+          channel = tree.getroot().find("channel")
+          if channel is None:
+              sys.exit("docs/feed.xml has no <channel> element")
+          print("Feed is well-formed: %d episode(s)." % len(channel.findall("item")))
+          PY
+
+      - name: Commit state and feed
+        # Runs even when an episode failed — partial progress is still progress.
+        # Skipped if validation failed, so a malformed feed is never published;
+        # archive.org uploads are idempotent, so the next run resumes safely.
+        if: ${{ !cancelled() && steps.validate.outcome == 'success' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state.json docs/feed.xml
+
+          # GitHub disables scheduled workflows after 60 days with no repository
+          # activity. A quiet stretch — a summer break, a pause in services —
+          # would otherwise silently switch the automation off. Touch a
+          # heartbeat file if the last commit is getting old. Costs about eight
+          # commits a year and only ever fires during a genuine lull.
+          LAST_COMMIT=$(git log -1 --format=%ct)
+          if [ $(( $(date +%s) - LAST_COMMIT )) -gt 3888000 ]; then
+            date -u +"%Y-%m-%dT%H:%M:%SZ" > .github/last-heartbeat
+            git add .github/last-heartbeat
+            echo "Heartbeat written — keeping the schedule alive."
+          fi
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "chore(podcast): publish new sermon episodes [skip ci]"
+          for attempt in 1 2 3; do
+            if git push; then
+              echo "Pushed on attempt $attempt."
+              exit 0
+            fi
+            echo "Push failed, rebasing and retrying..."
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" || true
+            sleep 5
+          done
+          echo "::error::Could not push the updated state after 3 attempts."
+          exit 1
+
+      - name: Fail the job if any episode failed
+        if: steps.pipeline.outcome == 'failure'
+        run: |
+          echo "::error::One or more episodes failed. They stay queued and will"
+          echo "::error::be retried on the next run. See the pipeline step log."
+          exit 1

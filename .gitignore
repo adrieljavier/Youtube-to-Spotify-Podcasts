@@ -1,0 +1,27 @@
+# Downloaded audio — always transient, never committed.
+work/
+*.mp3
+*.m4a
+*.webp
+*.part
+
+# Local Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Never commit archive.org credentials. They belong in GitHub Actions secrets
+# and, for local runs, in your shell environment only.
+.env
+.ia
+ia.ini
+internetarchive.ini
+
+.DS_Store
+state.json.tmp
+
+# Local editor/tooling settings — not wanted in a public repo.
+.claude/
+.vscode/
+.idea/
