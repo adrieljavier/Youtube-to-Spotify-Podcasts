@@ -39,6 +39,22 @@ youtube:
   # published 8-hour livestream placeholder. Set to 0 to disable.
   max_duration_seconds: 21600   # 6 hours
 
+  # YouTube blocks most datacenter IP addresses — including every GitHub
+  # Actions runner — with "Sign in to confirm you're not a bot" when asked as
+  # the normal web browser. The same video requested as a different player
+  # client (the TV app, the embedded player, the mobile site) is gated
+  # differently and usually still served.
+  #
+  # These are tried in order until one works, per video. If runs start failing
+  # with bot-check errors, reordering this list or adding a client is the first
+  # thing to try — YouTube changes which ones work fairly often.
+  player_clients:
+    - "tv_embedded"
+    - "android_vr"
+    - "web_embedded"
+    - "mweb"
+    - "default"
+
 site:
   # Public base URL of your GitHub Pages site, no trailing slash.
   # In GitHub Actions this is derived automatically from $GITHUB_REPOSITORY;

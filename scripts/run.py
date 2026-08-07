@@ -77,7 +77,7 @@ def process_one(cfg, state: State, entry: dict, tree) -> str:
         state.mark_published(video_id)
         return "published"
 
-    info = youtube.fetch_video_info(video_id)
+    info = youtube.fetch_video_info(video_id, youtube.player_clients(cfg))
     title = info.get("title") or entry.get("title") or video_id
     description = info.get("description") or ""
     published = youtube.published_iso(info) or entry.get("published")

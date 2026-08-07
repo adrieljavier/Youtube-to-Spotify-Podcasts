@@ -160,33 +160,71 @@ def list_all_videos_unordered(channel_id: str) -> List[dict]:
     ]
 
 
-def fetch_video_info(video_id: str, attempts: int = 4) -> dict:
+BOT_BLOCK_MARKERS = (
+    "confirm you're not a bot",
+    "confirm you are not a bot",
+    "sign in to confirm",
+)
+
+
+def is_bot_block(message: str) -> bool:
+    lowered = (message or "").lower()
+    return any(marker in lowered for marker in BOT_BLOCK_MARKERS)
+
+
+def player_clients(cfg) -> List[str]:
+    configured = cfg.get("youtube.player_clients") if cfg else None
+    return [str(c) for c in (configured or ["default"])]
+
+
+def client_options(client: str) -> dict:
+    """yt-dlp options selecting a specific YouTube player client.
+
+    YouTube serves the same video to several client apps — the TV interface,
+    the embedded player, the mobile web page. They are gated differently, and
+    when the default web client demands a sign-in from a datacenter address
+    another client will often still answer.
+    """
+    if not client or client == "default":
+        return {}
+    return {"extractor_args": {"youtube": {"player_client": [client]}}}
+
+
+def fetch_video_info(
+    video_id: str, clients: Optional[List[str]] = None, attempts: int = 2
+) -> dict:
     """Full metadata for one video, without downloading it.
 
-    YouTube intermittently answers with "The page needs to be reloaded" when it
-    sees a burst of requests from one address. It is transient, so back off and
-    try again rather than failing the episode.
+    Two distinct failures are handled here. "The page needs to be reloaded" is
+    transient, so it is retried with a backoff. "Sign in to confirm you're not
+    a bot" is not transient — it means this IP is blocked for that client — so
+    it moves straight on to the next player client instead of waiting.
     """
-    options = {"quiet": True, "no_warnings": True, "skip_download": True}
-    delay = 3
     last_error = None
 
-    for attempt in range(1, attempts + 1):
-        try:
-            with yt_dlp.YoutubeDL(options) as ydl:
-                info = ydl.extract_info(WATCH_URL % video_id, download=False)
-            if info:
-                return info
-            last_error = "yt-dlp returned no metadata"
-        except Exception as exc:
-            last_error = str(exc).strip()
-        if attempt < attempts:
-            time.sleep(delay)
-            delay = min(delay * 2, 30)
+    for client in clients or ["default"]:
+        options = {"quiet": True, "no_warnings": True, "skip_download": True}
+        options.update(client_options(client))
+        delay = 3
+
+        for attempt in range(1, attempts + 1):
+            try:
+                with yt_dlp.YoutubeDL(options) as ydl:
+                    info = ydl.extract_info(WATCH_URL % video_id, download=False)
+                if info:
+                    return info
+                last_error = "yt-dlp returned no metadata"
+            except Exception as exc:
+                last_error = str(exc).strip()
+                if is_bot_block(last_error):
+                    break  # this client is blocked here; try the next one
+            if attempt < attempts:
+                time.sleep(delay)
+                delay = min(delay * 2, 20)
 
     raise YouTubeError(
-        "Could not read metadata for %s after %d attempts: %s"
-        % (video_id, attempts, last_error)
+        "Could not read metadata for %s (tried player clients: %s). Last error: %s"
+        % (video_id, ", ".join(clients or ["default"]), last_error)
     )
 
 

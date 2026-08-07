@@ -7,6 +7,7 @@ from typing import Optional
 
 import yt_dlp
 
+from . import youtube
 from .config import log, warn
 from .youtube import WATCH_URL
 
@@ -99,12 +100,35 @@ def download_audio(cfg, video_id: str, work_dir: pathlib.Path) -> dict:
 
 
 def _run_download(cfg, video_id: str, work_dir: pathlib.Path, embed_thumbnail: bool):
-    options = _options(cfg, work_dir, video_id, embed_thumbnail)
-    try:
-        with yt_dlp.YoutubeDL(options) as ydl:
-            return ydl.extract_info(WATCH_URL % video_id, download=True) or {}
-    except yt_dlp.utils.DownloadError as exc:
-        raise AudioError("yt-dlp failed for %s: %s" % (video_id, exc))
+    """Download, trying each configured player client until one is allowed.
+
+    On a datacenter address — which is what a GitHub Actions runner is —
+    YouTube refuses the default web client with "Sign in to confirm you're not
+    a bot". Other player clients are gated differently and usually still serve.
+    """
+    clients = youtube.player_clients(cfg)
+    last_error = None
+
+    for client in clients:
+        options = _options(cfg, work_dir, video_id, embed_thumbnail)
+        options.update(youtube.client_options(client))
+        try:
+            with yt_dlp.YoutubeDL(options) as ydl:
+                result = ydl.extract_info(WATCH_URL % video_id, download=True) or {}
+            if client != clients[0]:
+                log("    (downloaded via the %s player client)" % client)
+            return result
+        except yt_dlp.utils.DownloadError as exc:
+            last_error = str(exc).strip()
+            if not youtube.is_bot_block(last_error):
+                raise AudioError("yt-dlp failed for %s: %s" % (video_id, last_error))
+            # Blocked for this client — clear any partial files and try the next.
+            cleanup(work_dir, video_id)
+
+    raise AudioError(
+        "YouTube refused every player client (%s) for %s. Last error: %s"
+        % (", ".join(clients), video_id, last_error)
+    )
 
 
 def cleanup(work_dir: pathlib.Path, video_id: str) -> None:

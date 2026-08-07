@@ -66,7 +66,7 @@ def _find_cutoff_by_title(videos, needle: str) -> int:
     return min(matches)
 
 
-def _find_cutoff_by_date(videos, cutoff_date: str) -> int:
+def _find_cutoff_by_date(cfg, videos, cutoff_date: str) -> int:
     """Index of the newest video uploaded on or before cutoff_date.
 
     Walks newest to oldest fetching real upload dates, and stops as soon as it
@@ -75,7 +75,9 @@ def _find_cutoff_by_date(videos, cutoff_date: str) -> int:
     """
     for index, video in enumerate(videos):
         try:
-            info = youtube.fetch_video_info(video["video_id"])
+            info = youtube.fetch_video_info(
+                video["video_id"], youtube.player_clients(cfg)
+            )
         except Exception as exc:
             warn("Could not date %s (%s); treating as newer than the cutoff"
                  % (video["video_id"], exc))
@@ -142,7 +144,7 @@ def main(argv=None) -> int:
         log("Dating videos newest-first until %s is crossed:" % args.after_date)
         # The returned index is the first video at or before the cutoff date,
         # and the cutoff itself is exclusive, so this index is the boundary.
-        cutoff = _find_cutoff_by_date(videos, args.after_date)
+        cutoff = _find_cutoff_by_date(cfg, videos, args.after_date)
         log("")
     else:
         parser.error(
@@ -173,7 +175,7 @@ def main(argv=None) -> int:
 
         if args.fetch_metadata:
             try:
-                info = youtube.fetch_video_info(video_id)
+                info = youtube.fetch_video_info(video_id, youtube.player_clients(cfg))
                 title = info.get("title") or title
                 published = youtube.published_iso(info)
                 duration = info.get("duration")
