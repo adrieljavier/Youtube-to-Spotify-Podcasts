@@ -45,14 +45,20 @@ youtube:
   # client (the TV app, the embedded player, the mobile site) is gated
   # differently and usually still served.
   #
-  # These are tried in order until one works, per video. If runs start failing
-  # with bot-check errors, reordering this list or adding a client is the first
-  # thing to try — YouTube changes which ones work fairly often.
+  # These are tried in order until one works, per video. Measured against this
+  # channel on 2026-08-07: android_vr was the only client that served audio.
+  # tv_embedded is retired ("no longer supported in this application"),
+  # web_embedded returns error 152, and mweb/default/tv/web_safari all hit
+  # "The page needs to be reloaded". The rest are kept as fallbacks because
+  # which clients work changes every few months.
+  #
+  # If runs start failing with bot-check errors, reordering this list is the
+  # first thing to try.
   player_clients:
-    - "tv_embedded"
     - "android_vr"
-    - "web_embedded"
     - "mweb"
+    - "web_safari"
+    - "tv"
     - "default"
 
 site:

@@ -160,16 +160,29 @@ def list_all_videos_unordered(channel_id: str) -> List[dict]:
     ]
 
 
-BOT_BLOCK_MARKERS = (
-    "confirm you're not a bot",
+# Errors that mean "this player client will not serve this video" — as opposed
+# to a transient hiccup. There is no point retrying the same client on these;
+# move straight to the next one.
+CLIENT_REJECTION_MARKERS = (
+    "confirm you're not a bot",       # IP blocked for this client
     "confirm you are not a bot",
     "sign in to confirm",
+    "no longer supported in this application",   # client retired by YouTube
+    "error code: 152",                           # embedding disallowed
+    "requested format is not available",         # client exposes no audio
+    "video is unavailable",
 )
 
 
+def client_rejected(message: str) -> bool:
+    lowered = (message or "").lower()
+    return any(marker in lowered for marker in CLIENT_REJECTION_MARKERS)
+
+
+# Kept for readability at call sites that specifically report bot-blocking.
 def is_bot_block(message: str) -> bool:
     lowered = (message or "").lower()
-    return any(marker in lowered for marker in BOT_BLOCK_MARKERS)
+    return "not a bot" in lowered or "sign in to confirm" in lowered
 
 
 def player_clients(cfg) -> List[str]:
@@ -216,8 +229,8 @@ def fetch_video_info(
                 last_error = "yt-dlp returned no metadata"
             except Exception as exc:
                 last_error = str(exc).strip()
-                if is_bot_block(last_error):
-                    break  # this client is blocked here; try the next one
+                if client_rejected(last_error):
+                    break  # this client will never serve it; try the next one
             if attempt < attempts:
                 time.sleep(delay)
                 delay = min(delay * 2, 20)

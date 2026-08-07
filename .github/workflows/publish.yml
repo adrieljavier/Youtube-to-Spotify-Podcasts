@@ -28,7 +28,16 @@ concurrency:
 
 jobs:
   publish:
-    runs-on: ubuntu-latest
+    # Runs on a machine you own, NOT GitHub's servers.
+    #
+    # YouTube blocks GitHub-hosted runners outright — every player client is
+    # answered with "Sign in to confirm you're not a bot", because the whole
+    # datacenter IP range is blocked. A self-hosted runner on an ordinary
+    # internet connection is not. Everything else about this workflow is
+    # unchanged: same schedule, same secrets, same manual trigger.
+    #
+    # See SETUP-RUNNER.md for how to register the machine.
+    runs-on: self-hosted
     timeout-minutes: 55
 
     steps:
@@ -38,22 +47,30 @@ jobs:
           # Full history so the commit step can rebase cleanly if needed.
           fetch-depth: 0
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-          cache: pip
-
-      - name: Ensure ffmpeg is available
+      - name: Check prerequisites
         run: |
+          if ! command -v python3 >/dev/null 2>&1; then
+            echo "::error::python3 not found on this runner. Install it, or run: xcode-select --install"
+            exit 1
+          fi
+          python3 --version
+
           if ! command -v ffmpeg >/dev/null 2>&1; then
-            sudo apt-get update -qq
-            sudo apt-get install -y -qq ffmpeg
+            echo "::error::ffmpeg not found on this runner. It converts the"
+            echo "::error::downloaded audio to mp3 and the pipeline cannot work"
+            echo "::error::without it. Install it once with: brew install ffmpeg"
+            echo "::error::(and Homebrew itself from https://brew.sh if needed)."
+            exit 1
           fi
           ffmpeg -version | head -n 1
 
       - name: Install dependencies
-        run: pip install --disable-pip-version-check -r requirements.txt
+        run: |
+          # The self-hosted runner keeps its working directory between runs, so
+          # this virtualenv is created once and reused — later runs are quick.
+          python3 -m venv .venv-runner
+          .venv-runner/bin/pip install --quiet --disable-pip-version-check \
+            --upgrade -r requirements.txt
 
       - name: Run pipeline
         id: pipeline
@@ -73,7 +90,7 @@ jobs:
           ARGS=""
           if [ -n "$INPUT_LIMIT" ]; then ARGS="$ARGS --limit $INPUT_LIMIT"; fi
           if [ "$INPUT_DRY_RUN" = "true" ]; then ARGS="$ARGS --dry-run"; fi
-          python -m scripts.run $ARGS
+          .venv-runner/bin/python -m scripts.run $ARGS
 
       - name: Validate the feed before committing
         id: validate
@@ -83,7 +100,7 @@ jobs:
             echo "docs/feed.xml was not produced — nothing to validate."
             exit 0
           fi
-          python - <<'PY'
+          python3 - <<'PY'
           import sys, xml.etree.ElementTree as ET
           try:
               tree = ET.parse("docs/feed.xml")

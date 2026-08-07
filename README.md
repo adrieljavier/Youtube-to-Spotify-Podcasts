@@ -24,6 +24,13 @@ media. There is no podcast host and no paid tier anywhere in the chain.
 
 ---
 
+> **The download step runs on your own Mac, not GitHub's servers.**
+> YouTube blocks GitHub Actions runners outright — every player client is
+> answered with "Sign in to confirm you're not a bot", because the whole
+> datacenter IP range is blocked. Verified, not assumed: from a normal
+> connection the same request succeeds. Everything else still lives on GitHub.
+> Setup is in **[SETUP-RUNNER.md](SETUP-RUNNER.md)** and takes about 15 minutes.
+
 ## Before you start: two things worth knowing
 
 **The repo must be public.** GitHub Pages on private repos requires a paid
@@ -344,7 +351,8 @@ uploads are idempotent, keyed on the video ID).
 
 | Piece | Cost | Limit that matters |
 | --- | --- | --- |
-| GitHub Actions | free | unlimited minutes on public repos |
+| GitHub Actions | free | self-hosted runners consume **no** minutes at all |
+| Self-hosted runner | free | needs a Mac that stays awake and logged in |
 | GitHub Pages | free | 100 GB/month bandwidth — the feed is a few KB |
 | archive.org | free | no practical storage cap; audio is served from there |
 | yt-dlp / ffmpeg | free | — |

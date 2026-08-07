@@ -25,3 +25,7 @@ state.json.tmp
 .claude/
 .vscode/
 .idea/
+
+# Self-hosted runner virtualenv (created on the runner, never committed).
+.venv-runner/
+actions-runner/

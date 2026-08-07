@@ -120,14 +120,17 @@ def _run_download(cfg, video_id: str, work_dir: pathlib.Path, embed_thumbnail: b
             return result
         except yt_dlp.utils.DownloadError as exc:
             last_error = str(exc).strip()
-            if not youtube.is_bot_block(last_error):
-                raise AudioError("yt-dlp failed for %s: %s" % (video_id, last_error))
-            # Blocked for this client — clear any partial files and try the next.
+            # Clear partial files before the next client tries.
             cleanup(work_dir, video_id)
+            if not youtube.client_rejected(last_error):
+                # Not a client problem — a genuinely broken video, a network
+                # failure, a full disk. Trying four more clients would only
+                # obscure it.
+                raise AudioError("yt-dlp failed for %s: %s" % (video_id, last_error))
 
     raise AudioError(
-        "YouTube refused every player client (%s) for %s. Last error: %s"
-        % (", ".join(clients), video_id, last_error)
+        "No player client could download %s (tried: %s). Last error: %s"
+        % (video_id, ", ".join(clients), last_error)
     )
 
 
