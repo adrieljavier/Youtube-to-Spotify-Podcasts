@@ -81,17 +81,36 @@ a green **Idle** — connected and waiting for work.
 
 ---
 
-## One thing the script can't do: stop the Mac sleeping
+## Keeping the Mac awake
 
 A sleeping Mac cannot run the job. Missed hours are not fatal — the queue simply
-waits — but a Mac that always sleeps will never publish anything.
+waits and catches up — but a Mac that always sleeps never publishes anything.
 
-**System Settings → Battery → Options** (or **Displays → Advanced**):
+This Mac was set to `sleep 1`: one minute of idle and it sleeps, on wall power
+as well as battery. That would have limited publishing to moments when someone
+was actively using it.
 
-- Turn **on** "Prevent automatic sleeping when the display is off"
-- On a laptop, keep it plugged in — these settings usually only apply on power
+**This is already installed** —
+[mac/com.newlifeoxnard.podcast-caffeinate.plist](mac/com.newlifeoxnard.podcast-caffeinate.plist),
+a login item running `caffeinate -s`. It holds the machine awake **only while on
+wall power**, so it can never flatten the battery, and the display is still free
+to sleep. Changing `pmset` directly would have needed an admin password;
+`caffeinate` does the same job from user space.
 
-The screen going dark is fine. The machine going to sleep is not.
+```bash
+pmset -g assertions | grep caffeinate     # confirm it is holding
+```
+
+To remove it:
+
+```bash
+launchctl bootout gui/$(id -u)/com.newlifeoxnard.podcast-caffeinate
+rm ~/Library/LaunchAgents/com.newlifeoxnard.podcast-caffeinate.plist
+```
+
+**Keep the Mac plugged in.** That is the one part no software can arrange: on
+battery the agent deliberately does nothing, so an unplugged laptop still
+sleeps and publishing pauses until it is powered again.
 
 ---
 

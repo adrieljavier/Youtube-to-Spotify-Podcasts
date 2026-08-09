@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Keeps this Mac from idle-sleeping so the GitHub Actions runner can pick up
+  scheduled jobs.
+
+  `caffeinate -s` holds a PreventSystemSleep assertion ONLY while the machine
+  is on wall power, so it can never flatten the battery. The display is still
+  free to sleep; only the machine is held awake.
+
+  Install:    launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.newlifeoxnard.podcast-caffeinate.plist
+  Remove:     launchctl bootout gui/$(id -u)/com.newlifeoxnard.podcast-caffeinate
+              rm ~/Library/LaunchAgents/com.newlifeoxnard.podcast-caffeinate.plist
+  Check:      pmset -g assertions | grep caffeinate
+-->
+<plist version="1.0">
+  <dict>
+    <key>Label</key>
+    <string>com.newlifeoxnard.podcast-caffeinate</string>
+    <key>ProgramArguments</key>
+    <array>
+      <string>/usr/bin/caffeinate</string>
+      <string>-s</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>ProcessType</key>
+    <string>Background</string>
+  </dict>
+</plist>
