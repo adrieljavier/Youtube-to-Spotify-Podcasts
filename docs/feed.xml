@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:podcast="https://podcastindex.org/namespace/1.0" version="2.0">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:podcast="https://podcastindex.org/namespace/1.0" version="2.0">
   <channel>
     <title>New Life Oxnard Sermons</title>
     <link>https://www.newlifeoxnard.com</link>
     <description>Weekly sermons from New Life Oxnard. Audio from our Sunday services, published automatically each week.</description>
     <language>en-us</language>
     <copyright>© New Life Oxnard</copyright>
-    <lastBuildDate>Thu, 06 Aug 2026 23:58:50 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Aug 2026 20:00:10 +0000</lastBuildDate>
     <generator>sermon-podcast-pipeline</generator>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <atom:link href="https://adrieljavier.github.io/Youtube-to-Spotify-Podcasts/feed.xml" rel="self" type="application/rss+xml" />
@@ -29,5 +29,165 @@
     </image>
     <podcast:locked owner="adrieljavier@newlifeoxnard.com">yes</podcast:locked>
     <podcast:guid>56747bda-78a7-5e32-9b43-00a51ddf865b</podcast:guid>
+    <item>
+      <title>BOLD FAITH | Give Me This Mountain | Joshua 14:6-13 | Steve Abraham</title>
+      <link>https://www.youtube.com/watch?v=f4hhSLEl2EE</link>
+      <description>In this powerful message, Pastor Steve Abraham continues our BOLD FAITH series with a deep dive into Joshua 14:6-13. Caleb’s request to "Give Me This Mountain" wasn't just about land; it was a testament to 45 years of unwavering trust in God’s promises.  If you are facing "giants" or waiting for your own promised land, this message provides three practical pillars to help you move forward in faith:  WATCH YOUR WORDS – Caleb didn't speak from fear; he spoke from conviction. Learn how to align your speech with God’s truth over your life and family.  STAND ON THE PROMISES – Character is built on our relationship with the Word. Discover how to navigate the "wait" with the right attitude.  CONFRONT YOUR GIANTS – Stop tolerating generational cycles. It’s time to drive out the giants that stand between you and your spiritual inheritance.  God isn't done with your story yet. We hope this message encourages you to step into everything He has for you.  Stay Connected: 🌐 Website: https://www.newlifeoxnard.com 📱 Instagram: https://www.instagram.com/newlifeoxnard/?hl=en 👥 Facebook: https://www.facebook.com/newlifeoxnard/  If you’d like to support this ministry and help us continue spreading the gospel, you can give here: 👉 https://www.newlifeoxnard.com/give
+
+Watch this message on YouTube: https://www.youtube.com/watch?v=f4hhSLEl2EE</description>
+      <content:encoded>&lt;p&gt;In this powerful message, Pastor Steve Abraham continues our BOLD FAITH series with a deep dive into Joshua 14:6-13. Caleb’s request to "Give Me This Mountain" wasn't just about land; it was a testament to 45 years of unwavering trust in God’s promises.  If you are facing "giants" or waiting for your own promised land, this message provides three practical pillars to help you move forward in faith:  WATCH YOUR WORDS – Caleb didn't speak from fear; he spoke from conviction. Learn how to align your speech with God’s truth over your life and family.  STAND ON THE PROMISES – Character is built on our relationship with the Word. Discover how to navigate the "wait" with the right attitude.  CONFRONT YOUR GIANTS – Stop tolerating generational cycles. It’s time to drive out the giants that stand between you and your spiritual inheritance.  God isn't done with your story yet. We hope this message encourages you to step into everything He has for you.  Stay Connected: 🌐 Website: https://www.newlifeoxnard.com 📱 Instagram: https://www.instagram.com/newlifeoxnard/?hl=en 👥 Facebook: https://www.facebook.com/newlifeoxnard/  If you’d like to support this ministry and help us continue spreading the gospel, you can give here: 👉 https://www.newlifeoxnard.com/give&lt;/p&gt;&lt;p&gt;Watch this message on YouTube: &lt;a href="https://www.youtube.com/watch?v=f4hhSLEl2EE"&gt;https://www.youtube.com/watch?v=f4hhSLEl2EE&lt;/a&gt;&lt;/p&gt;</content:encoded>
+      <pubDate>Sun, 01 Mar 2026 18:16:34 +0000</pubDate>
+      <guid isPermaLink="false">yt:video:f4hhSLEl2EE</guid>
+      <enclosure url="https://archive.org/download/nlo-sermon-f4hhSLEl2EE/f4hhSLEl2EE.mp3" length="21541061" type="audio/mpeg" />
+      <itunes:title>BOLD FAITH | Give Me This Mountain | Joshua 14:6-13 | Steve Abraham</itunes:title>
+      <itunes:author>Steve Abraham</itunes:author>
+      <itunes:summary>In this powerful message, Pastor Steve Abraham continues our BOLD FAITH series with a deep dive into Joshua 14:6-13. Caleb’s request to "Give Me This Mountain" wasn't just about land; it was a testament to 45 years of unwavering trust in God’s promises.  If you are facing "giants" or waiting for your own promised land, this message provides three practical pillars to help you move forward in faith:  WATCH YOUR WORDS – Caleb didn't speak from fear; he spoke from conviction. Learn how to align your speech with God’s truth over your life and family.  STAND ON THE PROMISES – Character is built on our relationship with the Word. Discover how to navigate the "wait" with the right attitude.  CONFRONT YOUR GIANTS – Stop tolerating generational cycles. It’s time to drive out the giants that stand between you and your spiritual inheritance.  God isn't done with your story yet. We hope this message encourages you to step into everything He has for you.  Stay Connected: 🌐 Website: https://www.newlifeoxnard.com 📱 Instagram: https://www.instagram.com/newlifeoxnard/?hl=en 👥 Facebook: https://www.facebook.com/newlifeoxnard/  If you’d like to support this ministry and help us continue spreading the gospel, you can give here: 👉 https://www.newlifeoxnard.com/give
+
+Watch this message on YouTube: https://www.youtube.com/watch?v=f4hhSLEl2EE</itunes:summary>
+      <itunes:duration>0:43:39</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:image href="https://adrieljavier.github.io/Youtube-to-Spotify-Podcasts/cover.jpg" />
+    </item>
+    <item>
+      <title>BOLD FAITH | Get It Out | Joshua 7:1-26 | Steve Abraham</title>
+      <link>https://www.youtube.com/watch?v=TcuhYqbN58U</link>
+      <description>The message, titled "Get It Out," focuses on the biblical account of Achan in Joshua 7. After the victory at Jericho, Israel suffered a surprising defeat at the small city of Ai. This defeat was rooted in Achan’s secret sin—taking "devoted things" that belonged to God and hiding them in his tent. The sermon explores three critical truths about sin and its impact on our lives.
+
+Watch this message on YouTube: https://www.youtube.com/watch?v=TcuhYqbN58U</description>
+      <content:encoded>&lt;p&gt;The message, titled "Get It Out," focuses on the biblical account of Achan in Joshua 7. After the victory at Jericho, Israel suffered a surprising defeat at the small city of Ai. This defeat was rooted in Achan’s secret sin—taking "devoted things" that belonged to God and hiding them in his tent. The sermon explores three critical truths about sin and its impact on our lives.&lt;/p&gt;&lt;p&gt;Watch this message on YouTube: &lt;a href="https://www.youtube.com/watch?v=TcuhYqbN58U"&gt;https://www.youtube.com/watch?v=TcuhYqbN58U&lt;/a&gt;&lt;/p&gt;</content:encoded>
+      <pubDate>Sun, 22 Feb 2026 18:16:34 +0000</pubDate>
+      <guid isPermaLink="false">yt:video:TcuhYqbN58U</guid>
+      <enclosure url="https://archive.org/download/nlo-sermon-TcuhYqbN58U/TcuhYqbN58U.mp3" length="21125478" type="audio/mpeg" />
+      <itunes:title>BOLD FAITH | Get It Out | Joshua 7:1-26 | Steve Abraham</itunes:title>
+      <itunes:author>Steve Abraham</itunes:author>
+      <itunes:summary>The message, titled "Get It Out," focuses on the biblical account of Achan in Joshua 7. After the victory at Jericho, Israel suffered a surprising defeat at the small city of Ai. This defeat was rooted in Achan’s secret sin—taking "devoted things" that belonged to God and hiding them in his tent. The sermon explores three critical truths about sin and its impact on our lives.
+
+Watch this message on YouTube: https://www.youtube.com/watch?v=TcuhYqbN58U</itunes:summary>
+      <itunes:duration>0:41:58</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:image href="https://adrieljavier.github.io/Youtube-to-Spotify-Podcasts/cover.jpg" />
+    </item>
+    <item>
+      <title>BOLD FAITH | Walls Still Fall | Joshua 6:1-20 | Steve Abraham</title>
+      <link>https://www.youtube.com/watch?v=l-iXrdcp7MM</link>
+      <description>Thanks for joining us for church online today! 🙌 We’re so glad you’re here. If this ministry has been a blessing to you, we’d love for you to stay connected and see all that God is doing through our church.  Stay Connected: 🌐 Website: https://www.newlifeoxnard.com 📱 Instagram: https://www.instagram.com/newlifeoxnard/?hl=en 👥 Facebook: https://www.facebook.com/newlifeoxnard/  If you’d like to support this ministry and help us continue spreading the gospel, you can give here: 👉 https://www.newlifeoxnard.com/give
+
+Watch this message on YouTube: https://www.youtube.com/watch?v=l-iXrdcp7MM</description>
+      <content:encoded>&lt;p&gt;Thanks for joining us for church online today! 🙌 We’re so glad you’re here. If this ministry has been a blessing to you, we’d love for you to stay connected and see all that God is doing through our church.  Stay Connected: 🌐 Website: https://www.newlifeoxnard.com 📱 Instagram: https://www.instagram.com/newlifeoxnard/?hl=en 👥 Facebook: https://www.facebook.com/newlifeoxnard/  If you’d like to support this ministry and help us continue spreading the gospel, you can give here: 👉 https://www.newlifeoxnard.com/give&lt;/p&gt;&lt;p&gt;Watch this message on YouTube: &lt;a href="https://www.youtube.com/watch?v=l-iXrdcp7MM"&gt;https://www.youtube.com/watch?v=l-iXrdcp7MM&lt;/a&gt;&lt;/p&gt;</content:encoded>
+      <pubDate>Sun, 15 Feb 2026 18:16:36 +0000</pubDate>
+      <guid isPermaLink="false">yt:video:l-iXrdcp7MM</guid>
+      <enclosure url="https://archive.org/download/nlo-sermon-l-iXrdcp7MM/l-iXrdcp7MM.mp3" length="25131478" type="audio/mpeg" />
+      <itunes:title>BOLD FAITH | Walls Still Fall | Joshua 6:1-20 | Steve Abraham</itunes:title>
+      <itunes:author>Steve Abraham</itunes:author>
+      <itunes:summary>Thanks for joining us for church online today! 🙌 We’re so glad you’re here. If this ministry has been a blessing to you, we’d love for you to stay connected and see all that God is doing through our church.  Stay Connected: 🌐 Website: https://www.newlifeoxnard.com 📱 Instagram: https://www.instagram.com/newlifeoxnard/?hl=en 👥 Facebook: https://www.facebook.com/newlifeoxnard/  If you’d like to support this ministry and help us continue spreading the gospel, you can give here: 👉 https://www.newlifeoxnard.com/give
+
+Watch this message on YouTube: https://www.youtube.com/watch?v=l-iXrdcp7MM</itunes:summary>
+      <itunes:duration>0:50:30</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:image href="https://adrieljavier.github.io/Youtube-to-Spotify-Podcasts/cover.jpg" />
+    </item>
+    <item>
+      <title>Who Is God &amp; Who Am I? | Ryan Abraham</title>
+      <link>https://www.youtube.com/watch?v=BVjTtnmQuAY</link>
+      <description>Thanks for joining us for church online today! 🙌 We’re so glad you’re here. If this ministry has been a blessing to you, we’d love for you to stay connected and see all that God is doing through our church.  Stay Connected: 🌐 Website: https://www.newlifeoxnard.com 📱 Instagram: https://www.instagram.com/newlifeoxnard/?hl=en 👥 Facebook: https://www.facebook.com/newlifeoxnard/  If you’d like to support this ministry and help us continue spreading the gospel, you can give here: 👉 https://www.newlifeoxnard.com/give
+
+Watch this message on YouTube: https://www.youtube.com/watch?v=BVjTtnmQuAY</description>
+      <content:encoded>&lt;p&gt;Thanks for joining us for church online today! 🙌 We’re so glad you’re here. If this ministry has been a blessing to you, we’d love for you to stay connected and see all that God is doing through our church.  Stay Connected: 🌐 Website: https://www.newlifeoxnard.com 📱 Instagram: https://www.instagram.com/newlifeoxnard/?hl=en 👥 Facebook: https://www.facebook.com/newlifeoxnard/  If you’d like to support this ministry and help us continue spreading the gospel, you can give here: 👉 https://www.newlifeoxnard.com/give&lt;/p&gt;&lt;p&gt;Watch this message on YouTube: &lt;a href="https://www.youtube.com/watch?v=BVjTtnmQuAY"&gt;https://www.youtube.com/watch?v=BVjTtnmQuAY&lt;/a&gt;&lt;/p&gt;</content:encoded>
+      <pubDate>Sun, 08 Feb 2026 16:31:35 +0000</pubDate>
+      <guid isPermaLink="false">yt:video:BVjTtnmQuAY</guid>
+      <enclosure url="https://archive.org/download/nlo-sermon-BVjTtnmQuAY/BVjTtnmQuAY.mp3" length="20180367" type="audio/mpeg" />
+      <itunes:title>Who Is God &amp; Who Am I? | Ryan Abraham</itunes:title>
+      <itunes:author>Ryan Abraham</itunes:author>
+      <itunes:summary>Thanks for joining us for church online today! 🙌 We’re so glad you’re here. If this ministry has been a blessing to you, we’d love for you to stay connected and see all that God is doing through our church.  Stay Connected: 🌐 Website: https://www.newlifeoxnard.com 📱 Instagram: https://www.instagram.com/newlifeoxnard/?hl=en 👥 Facebook: https://www.facebook.com/newlifeoxnard/  If you’d like to support this ministry and help us continue spreading the gospel, you can give here: 👉 https://www.newlifeoxnard.com/give
+
+Watch this message on YouTube: https://www.youtube.com/watch?v=BVjTtnmQuAY</itunes:summary>
+      <itunes:duration>0:39:24</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:image href="https://adrieljavier.github.io/Youtube-to-Spotify-Podcasts/cover.jpg" />
+    </item>
+    <item>
+      <title>BOLD FAITH | Memorials | Joshua 4:1-7 | Steve Abraham</title>
+      <link>https://www.youtube.com/watch?v=dGggBpJV_fs</link>
+      <description>Thanks for joining us for church online today! 🙌 We’re so glad you’re here. If this ministry has been a blessing to you, we’d love for you to stay connected and see all that God is doing through our church.  Stay Connected: 🌐 Website: https://www.newlifeoxnard.com 📱 Instagram: https://www.instagram.com/newlifeoxnard/?hl=en 👥 Facebook: https://www.facebook.com/newlifeoxnard/  If you’d like to support this ministry and help us continue spreading the gospel, you can give here: 👉 https://www.newlifeoxnard.com/give
+
+Watch this message on YouTube: https://www.youtube.com/watch?v=dGggBpJV_fs</description>
+      <content:encoded>&lt;p&gt;Thanks for joining us for church online today! 🙌 We’re so glad you’re here. If this ministry has been a blessing to you, we’d love for you to stay connected and see all that God is doing through our church.  Stay Connected: 🌐 Website: https://www.newlifeoxnard.com 📱 Instagram: https://www.instagram.com/newlifeoxnard/?hl=en 👥 Facebook: https://www.facebook.com/newlifeoxnard/  If you’d like to support this ministry and help us continue spreading the gospel, you can give here: 👉 https://www.newlifeoxnard.com/give&lt;/p&gt;&lt;p&gt;Watch this message on YouTube: &lt;a href="https://www.youtube.com/watch?v=dGggBpJV_fs"&gt;https://www.youtube.com/watch?v=dGggBpJV_fs&lt;/a&gt;&lt;/p&gt;</content:encoded>
+      <pubDate>Sun, 01 Feb 2026 18:16:35 +0000</pubDate>
+      <guid isPermaLink="false">yt:video:dGggBpJV_fs</guid>
+      <enclosure url="https://archive.org/download/nlo-sermon-dGggBpJV_fs/dGggBpJV_fs.mp3" length="21391882" type="audio/mpeg" />
+      <itunes:title>BOLD FAITH | Memorials | Joshua 4:1-7 | Steve Abraham</itunes:title>
+      <itunes:author>Steve Abraham</itunes:author>
+      <itunes:summary>Thanks for joining us for church online today! 🙌 We’re so glad you’re here. If this ministry has been a blessing to you, we’d love for you to stay connected and see all that God is doing through our church.  Stay Connected: 🌐 Website: https://www.newlifeoxnard.com 📱 Instagram: https://www.instagram.com/newlifeoxnard/?hl=en 👥 Facebook: https://www.facebook.com/newlifeoxnard/  If you’d like to support this ministry and help us continue spreading the gospel, you can give here: 👉 https://www.newlifeoxnard.com/give
+
+Watch this message on YouTube: https://www.youtube.com/watch?v=dGggBpJV_fs</itunes:summary>
+      <itunes:duration>0:41:53</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:image href="https://adrieljavier.github.io/Youtube-to-Spotify-Podcasts/cover.jpg" />
+    </item>
+    <item>
+      <title>JOHN 8:31-32 | BEN PRESCOTT // FIRST THINGS FIRST 2026</title>
+      <link>https://www.youtube.com/watch?v=l2DRrg87-UA</link>
+      <description>Stay connected  Website: https://www.newlifeoxnard.com Instagram: https://www.instagram.com/newlifeoxnard/?hl=en Facebook: https://www.facebook.com/newlifeoxnard/  To support this ministry and help us to spread the gospel please click here: https://www.newlifeoxnard.com/give
+
+Watch this message on YouTube: https://www.youtube.com/watch?v=l2DRrg87-UA</description>
+      <content:encoded>&lt;p&gt;Stay connected  Website: https://www.newlifeoxnard.com Instagram: https://www.instagram.com/newlifeoxnard/?hl=en Facebook: https://www.facebook.com/newlifeoxnard/  To support this ministry and help us to spread the gospel please click here: https://www.newlifeoxnard.com/give&lt;/p&gt;&lt;p&gt;Watch this message on YouTube: &lt;a href="https://www.youtube.com/watch?v=l2DRrg87-UA"&gt;https://www.youtube.com/watch?v=l2DRrg87-UA&lt;/a&gt;&lt;/p&gt;</content:encoded>
+      <pubDate>Sat, 31 Jan 2026 03:01:35 +0000</pubDate>
+      <guid isPermaLink="false">yt:video:l2DRrg87-UA</guid>
+      <enclosure url="https://archive.org/download/nlo-sermon-l2DRrg87-UA/l2DRrg87-UA.mp3" length="34589682" type="audio/mpeg" />
+      <itunes:title>JOHN 8:31-32 | BEN PRESCOTT // FIRST THINGS FIRST 2026</itunes:title>
+      <itunes:author>Ben Prescott</itunes:author>
+      <itunes:summary>Stay connected  Website: https://www.newlifeoxnard.com Instagram: https://www.instagram.com/newlifeoxnard/?hl=en Facebook: https://www.facebook.com/newlifeoxnard/  To support this ministry and help us to spread the gospel please click here: https://www.newlifeoxnard.com/give
+
+Watch this message on YouTube: https://www.youtube.com/watch?v=l2DRrg87-UA</itunes:summary>
+      <itunes:duration>1:10:56</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:image href="https://adrieljavier.github.io/Youtube-to-Spotify-Podcasts/cover.jpg" />
+    </item>
+    <item>
+      <title>I AM A CHILD OF GOD | ROMANS 8:14-17 | TIM ROSS // FIRST THINGS FIRST 2026</title>
+      <link>https://www.youtube.com/watch?v=ZpilaauN0C0</link>
+      <description>Stay connected  Website: https://www.newlifeoxnard.com Instagram: https://www.instagram.com/newlifeoxnard/?hl=en Facebook: https://www.facebook.com/newlifeoxnard/  To support this ministry and help us to spread the gospel please click here: https://www.newlifeoxnard.com/give
+
+Watch this message on YouTube: https://www.youtube.com/watch?v=ZpilaauN0C0</description>
+      <content:encoded>&lt;p&gt;Stay connected  Website: https://www.newlifeoxnard.com Instagram: https://www.instagram.com/newlifeoxnard/?hl=en Facebook: https://www.facebook.com/newlifeoxnard/  To support this ministry and help us to spread the gospel please click here: https://www.newlifeoxnard.com/give&lt;/p&gt;&lt;p&gt;Watch this message on YouTube: &lt;a href="https://www.youtube.com/watch?v=ZpilaauN0C0"&gt;https://www.youtube.com/watch?v=ZpilaauN0C0&lt;/a&gt;&lt;/p&gt;</content:encoded>
+      <pubDate>Fri, 30 Jan 2026 03:01:34 +0000</pubDate>
+      <guid isPermaLink="false">yt:video:ZpilaauN0C0</guid>
+      <enclosure url="https://archive.org/download/nlo-sermon-ZpilaauN0C0/ZpilaauN0C0.mp3" length="32435464" type="audio/mpeg" />
+      <itunes:title>I AM A CHILD OF GOD | ROMANS 8:14-17 | TIM ROSS // FIRST THINGS FIRST 2026</itunes:title>
+      <itunes:author>Tim Ross</itunes:author>
+      <itunes:summary>Stay connected  Website: https://www.newlifeoxnard.com Instagram: https://www.instagram.com/newlifeoxnard/?hl=en Facebook: https://www.facebook.com/newlifeoxnard/  To support this ministry and help us to spread the gospel please click here: https://www.newlifeoxnard.com/give
+
+Watch this message on YouTube: https://www.youtube.com/watch?v=ZpilaauN0C0</itunes:summary>
+      <itunes:duration>1:06:17</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:image href="https://adrieljavier.github.io/Youtube-to-Spotify-Podcasts/cover.jpg" />
+    </item>
+    <item>
+      <title>ARE YOU HUNGRY? | MATTHEW 5:6 | STEVE ABRAHAM // FIRST THINGS FIRST 2026</title>
+      <link>https://www.youtube.com/watch?v=3BhJbF5G-uE</link>
+      <description>Stay connected  Website: https://www.newlifeoxnard.com Instagram: https://www.instagram.com/newlifeoxnard/?hl=en Facebook: https://www.facebook.com/newlifeoxnard/  To support this ministry and help us to spread the gospel please click here: https://www.newlifeoxnard.com/give
+
+Watch this message on YouTube: https://www.youtube.com/watch?v=3BhJbF5G-uE</description>
+      <content:encoded>&lt;p&gt;Stay connected  Website: https://www.newlifeoxnard.com Instagram: https://www.instagram.com/newlifeoxnard/?hl=en Facebook: https://www.facebook.com/newlifeoxnard/  To support this ministry and help us to spread the gospel please click here: https://www.newlifeoxnard.com/give&lt;/p&gt;&lt;p&gt;Watch this message on YouTube: &lt;a href="https://www.youtube.com/watch?v=3BhJbF5G-uE"&gt;https://www.youtube.com/watch?v=3BhJbF5G-uE&lt;/a&gt;&lt;/p&gt;</content:encoded>
+      <pubDate>Thu, 29 Jan 2026 03:01:35 +0000</pubDate>
+      <guid isPermaLink="false">yt:video:3BhJbF5G-uE</guid>
+      <enclosure url="https://archive.org/download/nlo-sermon-3BhJbF5G-uE/3BhJbF5G-uE.mp3" length="33935177" type="audio/mpeg" />
+      <itunes:title>ARE YOU HUNGRY? | MATTHEW 5:6 | STEVE ABRAHAM // FIRST THINGS FIRST 2026</itunes:title>
+      <itunes:author>Steve Abraham</itunes:author>
+      <itunes:summary>Stay connected  Website: https://www.newlifeoxnard.com Instagram: https://www.instagram.com/newlifeoxnard/?hl=en Facebook: https://www.facebook.com/newlifeoxnard/  To support this ministry and help us to spread the gospel please click here: https://www.newlifeoxnard.com/give
+
+Watch this message on YouTube: https://www.youtube.com/watch?v=3BhJbF5G-uE</itunes:summary>
+      <itunes:duration>1:09:27</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:image href="https://adrieljavier.github.io/Youtube-to-Spotify-Podcasts/cover.jpg" />
+    </item>
   </channel>
 </rss>

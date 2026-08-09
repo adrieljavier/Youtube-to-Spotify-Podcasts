@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-09T19:19:54+00:00",
+  "updated_at": "2026-08-09T20:00:10+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -162,7 +162,8 @@
       "first_seen": "2026-08-06T23:31:06+00:00",
       "last_attempt": "2026-08-09T18:17:50+00:00",
       "published": "2026-01-29T03:01:35+00:00",
-      "status": "uploaded",
+      "published_at": "2026-08-09T19:52:12+00:00",
+      "status": "published",
       "title": "ARE YOU HUNGRY? | MATTHEW 5:6 | STEVE ABRAHAM // FIRST THINGS FIRST 2026",
       "uploaded_at": "2026-08-09T19:18:38+00:00"
     },
@@ -468,7 +469,8 @@
       "duration_seconds": 2364,
       "first_seen": "2026-08-06T23:31:06+00:00",
       "published": "2026-02-08T16:31:35+00:00",
-      "status": "uploaded",
+      "published_at": "2026-08-09T19:52:16+00:00",
+      "status": "published",
       "title": "Who Is God & Who Am I? | Ryan Abraham",
       "uploaded_at": "2026-08-09T19:08:01+00:00"
     },
@@ -968,12 +970,18 @@
       "title": "Q&A with Pastor Steve and Tami Abraham PT.2"
     },
     "QP2kk5CxgEo": {
+      "archive_identifier": "nlo-sermon-QP2kk5CxgEo",
       "attempts": 0,
+      "audio_bytes": 21807586,
+      "audio_url": "https://archive.org/download/nlo-sermon-QP2kk5CxgEo/QP2kk5CxgEo.mp3",
       "backfill_rank": 13,
+      "description": "A vision of God (miracle, manifestation, or experience) will only last until your next trial; we need a faith that sustains us no matter what.\n\nStay Connected:\n\ud83c\udf10 Website: https://www.newlifeoxnard.com\n\ud83d\udcf1 Instagram: https://www.instagram.com/newlifeoxnard/?hl=en\n\ud83d\udc65 Facebook: https://www.facebook.com/newlifeoxnard/\n\nIf you\u2019d like to support this ministry and help us continue spreading the gospel, you can give here:\n\ud83d\udc49 https://www.newlifeoxnard.com/give",
+      "duration_seconds": 2590,
       "first_seen": "2026-08-06T23:31:06+00:00",
-      "published": "",
-      "status": "queued",
-      "title": "When What You Saw Won't Sustain You | Exodus 24:1-18 | Phillip Trank"
+      "published": "2026-03-08T17:16:36+00:00",
+      "status": "uploaded",
+      "title": "When What You Saw Won't Sustain You | Exodus 24:1-18 | Phillip Trank",
+      "uploaded_at": "2026-08-09T19:53:08+00:00"
     },
     "QfGNkxqJERs": {
       "attempts": 0,
@@ -1041,7 +1049,8 @@
       "duration_seconds": 2518,
       "first_seen": "2026-08-06T23:31:06+00:00",
       "published": "2026-02-22T18:16:34+00:00",
-      "status": "uploaded",
+      "published_at": "2026-08-09T19:52:18+00:00",
+      "status": "published",
       "title": "BOLD FAITH | Get It Out | Joshua 7:1-26 | Steve Abraham",
       "uploaded_at": "2026-08-09T19:13:28+00:00"
     },
@@ -1241,7 +1250,8 @@
       "first_seen": "2026-08-06T23:31:06+00:00",
       "last_attempt": "2026-08-09T18:29:14+00:00",
       "published": "2026-01-30T03:01:34+00:00",
-      "status": "uploaded",
+      "published_at": "2026-08-09T19:52:13+00:00",
+      "status": "published",
       "title": "I AM A CHILD OF GOD | ROMANS 8:14-17 | TIM ROSS // FIRST THINGS FIRST 2026",
       "uploaded_at": "2026-08-09T19:18:40+00:00"
     },
@@ -1399,7 +1409,8 @@
       "first_seen": "2026-08-06T23:31:06+00:00",
       "last_attempt": "2026-08-09T18:51:40+00:00",
       "published": "2026-02-01T18:16:35+00:00",
-      "status": "uploaded",
+      "published_at": "2026-08-09T19:52:15+00:00",
+      "status": "published",
       "title": "BOLD FAITH | Memorials | Joshua 4:1-7 | Steve Abraham",
       "uploaded_at": "2026-08-09T19:18:41+00:00"
     },
@@ -1441,7 +1452,8 @@
       "duration_seconds": 2619,
       "first_seen": "2026-08-06T23:31:06+00:00",
       "published": "2026-03-01T18:16:34+00:00",
-      "status": "uploaded",
+      "published_at": "2026-08-09T19:52:19+00:00",
+      "status": "published",
       "title": "BOLD FAITH | Give Me This Mountain | Joshua 14:6-13 | Steve Abraham",
       "uploaded_at": "2026-08-09T19:15:32+00:00"
     },
@@ -1663,12 +1675,18 @@
       "title": "PASTOR STEVE ABRAHAM // SMASHING IDOLS"
     },
     "kOxi7HmYSM4": {
+      "archive_identifier": "nlo-sermon-kOxi7HmYSM4",
       "attempts": 0,
+      "audio_bytes": 22597623,
+      "audio_url": "https://archive.org/download/nlo-sermon-kOxi7HmYSM4/kOxi7HmYSM4.mp3",
       "backfill_rank": 19,
+      "description": "In this powerful message, Pastor Steve Abraham challenges us to reflect on our commitment to God through the \"Three Chairs\" of faith. You'll be encouraged to move beyond comfort and shame into a life of bold, wholehearted devotion that finds its firm foundation in Jesus Christ.\n\nStay Connected:\n\ud83c\udf10 Website: https://www.newlifeoxnard.com\n\ud83d\udcf1 Instagram: https://www.instagram.com/newlifeoxnard/?hl=en\n\ud83d\udc65 Facebook: https://www.facebook.com/newlifeoxnard/\n\nIf you\u2019d like to support this ministry and help us continue spreading the gospel, you can give here:\n\ud83d\udc49 https://www.newlifeoxnard.com/give",
+      "duration_seconds": 2775,
       "first_seen": "2026-08-06T23:31:06+00:00",
-      "published": "",
-      "status": "queued",
-      "title": "What Chair Are You In? | John 3:16-18 | Steve Abraham"
+      "published": "2026-03-29T17:16:35+00:00",
+      "status": "uploaded",
+      "title": "What Chair Are You In? | John 3:16-18 | Steve Abraham",
+      "uploaded_at": "2026-08-09T19:59:02+00:00"
     },
     "kjxwwE67Qyw": {
       "attempts": 0,
@@ -1708,7 +1726,8 @@
       "duration_seconds": 3030,
       "first_seen": "2026-08-06T23:31:06+00:00",
       "published": "2026-02-15T18:16:36+00:00",
-      "status": "uploaded",
+      "published_at": "2026-08-09T19:52:17+00:00",
+      "status": "published",
       "title": "BOLD FAITH | Walls Still Fall | Joshua 6:1-20 | Steve Abraham",
       "uploaded_at": "2026-08-09T19:10:15+00:00"
     },
@@ -1723,7 +1742,8 @@
       "first_seen": "2026-08-06T23:31:06+00:00",
       "last_attempt": "2026-08-09T18:40:39+00:00",
       "published": "2026-01-31T03:01:35+00:00",
-      "status": "uploaded",
+      "published_at": "2026-08-09T19:52:14+00:00",
+      "status": "published",
       "title": "JOHN 8:31-32 | BEN PRESCOTT // FIRST THINGS FIRST 2026",
       "uploaded_at": "2026-08-09T19:18:42+00:00"
     },
@@ -1918,12 +1938,18 @@
       "title": "PASTOR STEVE ABRAHAM // STOP SPINNING"
     },
     "sWY_dUXL-Qg": {
+      "archive_identifier": "nlo-sermon-sWY_dUXL-Qg",
       "attempts": 0,
+      "audio_bytes": 20846526,
+      "audio_url": "https://archive.org/download/nlo-sermon-sWY_dUXL-Qg/sWY_dUXL-Qg.mp3",
       "backfill_rank": 15,
+      "description": "Embrace the divine call to \"Move Forward\" as we explore the spiritual keys to stepping into the new season God has prepared for your soul. Pastor Ryan Abraham invites you to shed the weight of the past, reclaim your identity in Christ, and walk boldly into the fullness of His purpose for your life.\n\nStay Connected:\n\ud83c\udf10 Website: https://www.newlifeoxnard.com\n\ud83d\udcf1 Instagram: https://www.instagram.com/newlifeoxnard/?hl=en\n\ud83d\udc65 Facebook: https://www.facebook.com/newlifeoxnard/\n\nIf you\u2019d like to support this ministry and help us continue spreading the gospel, you can give here:\n\ud83d\udc49 https://www.newlifeoxnard.com/give",
+      "duration_seconds": 2448,
       "first_seen": "2026-08-06T23:31:06+00:00",
-      "published": "",
-      "status": "queued",
-      "title": "Move Forward | 1 Peter 2:9-10 | Ryan Abraham"
+      "published": "2026-03-15T15:31:35+00:00",
+      "status": "uploaded",
+      "title": "Move Forward | 1 Peter 2:9-10 | Ryan Abraham",
+      "uploaded_at": "2026-08-09T19:55:14+00:00"
     },
     "scQQMAAV3E0": {
       "attempts": 0,
@@ -2074,12 +2100,18 @@
       "title": "Joy is dependent on the character and promises of God, not on our trials and circumstances."
     },
     "witS04rXgpQ": {
+      "archive_identifier": "nlo-sermon-witS04rXgpQ",
       "attempts": 0,
+      "audio_bytes": 21601304,
+      "audio_url": "https://archive.org/download/nlo-sermon-witS04rXgpQ/witS04rXgpQ.mp3",
       "backfill_rank": 17,
+      "description": "In this stirring message, \"No Plan B,\" Pastor Steve Abraham reminds us that we are God's chosen instruments to reach a hurting world. Drawing from the calling of the first disciples, we are challenged to move beyond the \"huddle\" of our church walls and embrace our divine mission to be fishers of people, sharing the hope and light of Jesus with everyone we encounter.",
+      "duration_seconds": 2581,
       "first_seen": "2026-08-06T23:31:06+00:00",
-      "published": "",
-      "status": "queued",
-      "title": "No Plan B | Mark 1:16-20; John 1:40-42 | Steve Abraham"
+      "published": "2026-03-22T17:16:35+00:00",
+      "status": "uploaded",
+      "title": "No Plan B | Mark 1:16-20; John 1:40-42 | Steve Abraham",
+      "uploaded_at": "2026-08-09T19:57:08+00:00"
     },
     "wuphWvKDZ2Q": {
       "attempts": 0,
