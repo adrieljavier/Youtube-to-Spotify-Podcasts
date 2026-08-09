@@ -129,7 +129,7 @@ class State:
         audio_bytes: int,
         duration_seconds: int,
     ) -> dict:
-        return self.upsert(
+        entry = self.upsert(
             video_id,
             status="uploaded",
             archive_identifier=identifier,
@@ -138,6 +138,11 @@ class State:
             duration_seconds=duration_seconds,
             uploaded_at=_now(),
         )
+        # The upload succeeded, so any error from a previous attempt is history
+        # and would otherwise sit in state.json looking like a live problem.
+        entry.pop("last_error", None)
+        entry["attempts"] = 0
+        return entry
 
     def mark_published(self, video_id: str) -> dict:
         entry = self.upsert(video_id, status="published", published_at=_now())
