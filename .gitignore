@@ -29,3 +29,6 @@ state.json.tmp
 # Self-hosted runner virtualenv (created on the runner, never committed).
 .venv-runner/
 actions-runner/
+
+# ffmpeg symlink dir, generated at runtime from the imageio-ffmpeg wheel.
+.ffmpeg-bin/

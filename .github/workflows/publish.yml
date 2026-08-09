@@ -55,14 +55,15 @@ jobs:
           fi
           python3 --version
 
-          if ! command -v ffmpeg >/dev/null 2>&1; then
-            echo "::error::ffmpeg not found on this runner. It converts the"
-            echo "::error::downloaded audio to mp3 and the pipeline cannot work"
-            echo "::error::without it. Install it once with: brew install ffmpeg"
-            echo "::error::(and Homebrew itself from https://brew.sh if needed)."
-            exit 1
+          # ffmpeg is NOT a prerequisite: requirements.txt includes
+          # imageio-ffmpeg, which ships its own build with libmp3lame, and
+          # scripts/audio.py falls back to it automatically. A system ffmpeg is
+          # used in preference when one happens to be installed.
+          if command -v ffmpeg >/dev/null 2>&1; then
+            ffmpeg -version | head -n 1
+          else
+            echo "No system ffmpeg — using the one bundled with imageio-ffmpeg."
           fi
-          ffmpeg -version | head -n 1
 
       - name: Install dependencies
         run: |

@@ -8,3 +8,7 @@ requests>=2.32.0
 mutagen>=1.47.0
 # Used only by scripts.fetch_cover to build compliant podcast artwork.
 Pillow>=10.0.0
+# Ships a self-contained ffmpeg (with libmp3lame), so no Homebrew or admin
+# password is needed on the machine that runs this. A system ffmpeg on PATH
+# is preferred when present; this is the fallback.
+imageio-ffmpeg>=0.5.1

@@ -3,13 +3,52 @@
 from __future__ import annotations
 
 import pathlib
+import shutil
 from typing import Optional
 
 import yt_dlp
 
 from . import youtube
-from .config import log, warn
+from .config import REPO_ROOT, log, warn
 from .youtube import WATCH_URL
+
+
+def ffmpeg_location() -> Optional[str]:
+    """A directory containing an ffmpeg binary yt-dlp will accept.
+
+    Prefers a system ffmpeg on PATH. Otherwise falls back to the one bundled
+    inside the imageio-ffmpeg wheel, so `pip install -r requirements.txt` is
+    genuinely all that is needed — no Homebrew, no admin password, nothing to
+    install by hand on the machine that runs this.
+
+    The binary ships under a versioned name (ffmpeg-macos-aarch64-v7.1) and
+    yt-dlp identifies programs by filename, so it is exposed through a symlink
+    plainly named "ffmpeg".
+    """
+    if shutil.which("ffmpeg"):
+        return None  # system ffmpeg is on PATH; let yt-dlp find it itself
+
+    try:
+        import imageio_ffmpeg
+    except ImportError:
+        return None
+
+    try:
+        binary = pathlib.Path(imageio_ffmpeg.get_ffmpeg_exe())
+    except Exception:
+        return None
+
+    bin_dir = REPO_ROOT / ".ffmpeg-bin"
+    bin_dir.mkdir(parents=True, exist_ok=True)
+    link = bin_dir / "ffmpeg"
+
+    # Re-point the symlink if the virtualenv was rebuilt underneath it.
+    if link.is_symlink() and link.resolve() != binary.resolve():
+        link.unlink()
+    if not link.exists():
+        link.symlink_to(binary)
+
+    return str(bin_dir)
 
 
 class AudioError(RuntimeError):
@@ -35,7 +74,7 @@ def _options(cfg, work_dir: pathlib.Path, video_id: str, embed_thumbnail: bool) 
     if embed_thumbnail:
         postprocessors.append({"key": "EmbedThumbnail", "already_have_thumbnail": False})
 
-    return {
+    options = {
         "format": "bestaudio/best",
         "outtmpl": str(work_dir / ("%s.%%(ext)s" % video_id)),
         "postprocessors": postprocessors,
@@ -54,6 +93,10 @@ def _options(cfg, work_dir: pathlib.Path, video_id: str, embed_thumbnail: bool) 
         "socket_timeout": 60,
         "overwrites": True,
     }
+    location = ffmpeg_location()
+    if location:
+        options["ffmpeg_location"] = location
+    return options
 
 
 def _find_mp3(work_dir: pathlib.Path, video_id: str) -> Optional[pathlib.Path]:

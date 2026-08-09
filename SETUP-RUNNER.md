@@ -1,25 +1,27 @@
 # Running the pipeline on your own Mac
 
 YouTube blocks GitHub's servers. Every request from a GitHub-hosted runner comes
-back as *"Sign in to confirm you're not a bot"*, for every player client, because
-YouTube blocks datacenter IP ranges wholesale. That is not something the code can
-work around.
+back as *"Sign in to confirm you're not a bot"* — for every player client —
+because YouTube blocks datacenter IP ranges wholesale. No amount of code can
+work around it. From an ordinary internet connection the same request succeeds,
+verified on this Mac.
 
-The fix is to run the job on a machine with an ordinary internet connection. A
-**self-hosted runner** is a small background program from GitHub that sits on
-your Mac, waits for jobs, and runs them locally. Everything else stays exactly
-as it is — same repo, same hourly schedule, same **Run workflow** button, same
-secrets stored in GitHub, same commits pushed back. The only difference is
-which machine does the downloading.
+So the download step runs on a machine you own. A **self-hosted runner** is a
+small background program from GitHub that sits on your Mac, waits for jobs and
+runs them locally. Everything else is unchanged: same repo, same hourly
+schedule, same **Run workflow** button, same secrets stored in GitHub, same
+commits pushed back. Only the machine doing the work is different.
+
+**There is nothing to install by hand.** ffmpeg now comes from pip as part of
+`requirements.txt`, so there is no Homebrew step and no admin password.
 
 ---
 
-## Read this first: why a public repo + your Mac needs one precaution
+## Read this first: the one safety rule
 
-A self-hosted runner executes whatever the workflow says on **your machine**. On
-a public repo that would be dangerous if strangers could trigger it — someone
-could open a pull request that changes the workflow and have it run code on your
-Mac.
+A self-hosted runner executes workflow code **on your Mac**. On a public repo
+that would be dangerous if strangers could trigger it — someone could open a
+pull request that rewrites the workflow and have it run on your machine.
 
 **This workflow cannot be triggered that way.** Look at the top of
 [.github/workflows/publish.yml](.github/workflows/publish.yml):
@@ -30,126 +32,73 @@ on:
   workflow_dispatch:
 ```
 
-`schedule` and `workflow_dispatch` only. There is no `pull_request` or `push`
-trigger, so nothing an outsider submits can start a run — only the clock, or you
-clicking the button.
+`schedule` and `workflow_dispatch` only. No `pull_request`, no `push`. Nothing
+an outsider submits can start a run — only the clock, or you clicking the button.
 
-**The one rule: never add a `pull_request` trigger to this workflow.** If you
-ever want that, move the job back to `runs-on: ubuntu-latest` first.
+**Never add a `pull_request` trigger to this workflow.** If you ever want one,
+move the job back to `runs-on: ubuntu-latest` first.
 
-As extra insurance, go to **Settings → Actions → General** and under *Fork pull
-request workflows from outside collaborators* leave it on the default,
+As extra insurance, under **Settings → Actions → General**, leave *Fork pull
+request workflows from outside collaborators* on its default,
 **"Require approval for all outside collaborators."**
 
 ---
 
-## Step 1 — Install ffmpeg
+## Setup — two steps
 
-ffmpeg does the audio conversion. Your Mac doesn't have it yet.
+### 1. Get a registration token
 
-Open Terminal and install Homebrew (a package installer for macOS):
+Open:
+
+<https://github.com/adrieljavier/Youtube-to-Spotify-Podcasts/settings/actions/runners/new>
+
+Choose **macOS** and **arm64**. The page shows a block of commands; you only
+need one value from it. Find the line starting `./config.sh --url ...` and copy
+the long string after `--token`.
+
+That token expires in about an hour, so use it right away.
+
+### 2. Run the setup script
+
+In Terminal:
 
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+cd "/Users/adrieljavier/Desktop/Youtube to Spotify Podcast" && ./setup-runner.sh PASTE_TOKEN_HERE
 ```
 
-It will ask for your Mac password and take a few minutes. Then:
+That downloads GitHub's official runner, registers it against this repo,
+installs it as a background service and starts it. Takes about a minute.
 
-```bash
-brew install ffmpeg
-```
-
-Check it worked:
-
-```bash
-ffmpeg -version
-```
-
-You want a version line, not "command not found."
+When it finishes, check **Settings → Actions → Runners**. Your Mac should show
+a green **Idle** — connected and waiting for work.
 
 ---
 
-## Step 2 — Register the runner
+## One thing the script can't do: stop the Mac sleeping
 
-1. In your repo, go to **Settings → Actions → Runners**
-2. Click **New self-hosted runner**
-3. Choose **macOS**, and the architecture matching your Mac — **arm64** for
-   Apple Silicon (M1/M2/M3/M4), **x64** for older Intel Macs. If unsure:
-   Apple menu → About This Mac. "Apple M-something" means arm64.
+A sleeping Mac cannot run the job. Missed hours are not fatal — the queue simply
+waits — but a Mac that always sleeps will never publish anything.
 
-GitHub then shows a block of commands **containing a registration token unique
-to you**. Copy them from that page — don't use any you find elsewhere, the token
-is what proves it's your repo.
+**System Settings → Battery → Options** (or **Displays → Advanced**):
 
-They look roughly like this:
+- Turn **on** "Prevent automatic sleeping when the display is off"
+- On a laptop, keep it plugged in — these settings usually only apply on power
 
-```
-mkdir actions-runner && cd actions-runner
-curl -o actions-runner-osx-arm64-X.XXX.X.tar.gz -L https://github.com/actions/runner/releases/download/...
-tar xzf ./actions-runner-osx-arm64-X.XXX.X.tar.gz
-./config.sh --url https://github.com/adrieljavier/Youtube-to-Spotify-Podcasts --token XXXXXXXX
-```
-
-Run them in Terminal in order. `config.sh` asks three questions — **press Enter
-for all three** to accept the defaults:
-
-- runner group → Enter
-- name of runner → Enter
-- work folder → Enter
-
-When it finishes you'll see "Connected to GitHub".
+The screen going dark is fine. The machine going to sleep is not.
 
 ---
 
-## Step 3 — Make it run in the background, permanently
-
-Still in the `actions-runner` folder:
-
-```bash
-./svc.sh install
-./svc.sh start
-```
-
-That registers it as a macOS background service, so it starts on its own when
-you log in and keeps running after you close Terminal.
-
-Check it:
-
-```bash
-./svc.sh status
-```
-
-Back in **Settings → Actions → Runners**, your runner should now show a green
-**Idle**. Idle means connected and waiting for work — that's what you want.
-
----
-
-## Step 4 — Stop the Mac from sleeping
-
-A sleeping Mac can't run the job. Missed hours aren't fatal — the queue just
-waits — but a Mac that's always asleep will never publish anything.
-
-**System Settings → Displays → Advanced**, or **Battery → Options** on a laptop:
-
-- Turn **off** "Put hard disks to sleep when possible"
-- Set **"Prevent automatic sleeping when the display is off"** to on (this is
-  the important one — the screen can sleep, the Mac must not)
-- On a laptop, keep it plugged in; these settings usually only apply on power
-
-The display going dark is fine. The machine going to sleep is not.
-
----
-
-## Step 5 — Run it
+## Then run it
 
 **Actions → Publish sermon episodes → Run workflow.**
 
-The first run installs Python packages into the runner's folder and takes a
-couple of extra minutes. After that they're reused.
+The first run creates a virtualenv and installs packages, so it takes a couple
+of extra minutes. After that they are reused.
 
-Expect roughly 3–6 minutes per sermon — download, convert, upload to
-archive.org. Four episodes per run, so 15–25 minutes, and your 29-episode
-backlog clears over about 8 hourly runs.
+Measured on this Mac: a 34-minute sermon downloads and converts in about 20
+seconds, producing a 16 MB mono mp3. Most of each run is the archive.org
+upload. Four episodes per run, and your 29-episode backlog clears over roughly
+8 hourly runs.
 
 ---
 
@@ -157,7 +106,7 @@ backlog clears over about 8 hourly runs.
 
 Nothing. The runner sits idle, wakes each hour, publishes anything new.
 
-Useful commands, all from inside the `actions-runner` folder:
+From inside the `actions-runner` folder:
 
 ```bash
 ./svc.sh status     # is it running?
@@ -167,15 +116,20 @@ Useful commands, all from inside the `actions-runner` folder:
 
 ### If runs stop happening
 
+Symptoms first, since they look alike from the Actions tab: jobs that sit
+**queued** and then get **cancelled** an hour later mean no runner is available.
+That is not an error in the pipeline — it is the job waiting for a machine.
+
 - **Runner shows "Offline"** in Settings → Actions → Runners — the Mac is
-  asleep, off, or logged out. Wake it and check `./svc.sh status`.
-- **The Mac was restarted and nobody logged in** — the service starts at login,
-  not at boot. Log in and it comes back on its own.
-- **You moved or renamed the `actions-runner` folder** — the service points at
-  the old path. Easiest fix is `./svc.sh uninstall` and redo steps 2–3.
+  asleep, off, or logged out. Wake it, then check `./svc.sh status`.
+- **The Mac restarted and nobody logged in** — the service starts at login, not
+  at boot. Log in and it resumes by itself.
+- **You moved or renamed the project folder** — the service points at the old
+  path. Run `./svc.sh uninstall`, delete the `actions-runner` folder, and redo
+  the two setup steps.
 
 ### Moving it to a different Mac
 
-Run `./svc.sh uninstall` on the old machine, remove the runner in Settings →
-Actions → Runners, then repeat steps 1–3 on the new one. Nothing in the repo
-needs to change.
+On the old machine: `cd actions-runner && ./svc.sh uninstall`, then remove the
+runner under Settings → Actions → Runners. On the new one, clone the repo and
+repeat the two setup steps. Nothing in the repo needs to change.
