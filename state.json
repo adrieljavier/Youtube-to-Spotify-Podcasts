@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-09T21:04:41+00:00",
+  "updated_at": "2026-08-09T21:59:56+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -205,7 +205,8 @@
       "duration_seconds": 2692,
       "first_seen": "2026-08-06T23:31:06+00:00",
       "published": "2026-04-12T17:16:35+00:00",
-      "status": "uploaded",
+      "published_at": "2026-08-09T21:53:44+00:00",
+      "status": "published",
       "title": "A Resurrected Heart | Ephesians 4:27-30 | Bernie Federmann",
       "uploaded_at": "2026-08-09T20:59:43+00:00"
     },
@@ -352,7 +353,8 @@
       "duration_seconds": 2422,
       "first_seen": "2026-08-06T23:31:06+00:00",
       "published": "2026-04-19T17:16:35+00:00",
-      "status": "uploaded",
+      "published_at": "2026-08-09T21:53:46+00:00",
+      "status": "published",
       "title": "FAMILY MATTERS | Built to Last | Matthew 7:24-27 | Steve Abraham",
       "uploaded_at": "2026-08-09T21:01:33+00:00"
     },
@@ -366,7 +368,8 @@
       "duration_seconds": 2801,
       "first_seen": "2026-08-06T23:31:06+00:00",
       "published": "2026-04-26T17:16:34+00:00",
-      "status": "uploaded",
+      "published_at": "2026-08-09T21:53:48+00:00",
+      "status": "published",
       "title": "FAMILY MATTERS | Please Stop the Bleeding | Genesis 29-32 | Steve Abraham",
       "uploaded_at": "2026-08-09T21:03:32+00:00"
     },
@@ -458,7 +461,8 @@
       "duration_seconds": 2600,
       "first_seen": "2026-08-06T23:31:06+00:00",
       "published": "2026-04-05T15:31:35+00:00",
-      "status": "uploaded",
+      "published_at": "2026-08-09T21:53:43+00:00",
+      "status": "published",
       "title": "BUT GOD | Acts 2:22-24 | Steve Abraham",
       "uploaded_at": "2026-08-09T20:57:54+00:00"
     },
@@ -1194,10 +1198,12 @@
       "title": "Under Pressure | Steve Abraham"
     },
     "XZvFUmVknx4": {
-      "attempts": 0,
+      "attempts": 1,
       "backfill_rank": 34,
       "first_seen": "2026-08-06T23:31:06+00:00",
-      "published": "",
+      "last_attempt": "2026-08-09T21:58:02+00:00",
+      "last_error": "yt-dlp failed for XZvFUmVknx4: ERROR: unable to download video data: HTTP Error 403: Forbidden",
+      "published": "2026-05-24T17:16:34+00:00",
       "status": "queued",
       "title": "Cancel Comfort | Matthew 14:15-21 | Steve Abraham"
     },
@@ -1323,12 +1329,18 @@
       "title": "PASTOR STEVE ABRAHAM // A DIFFERENT KIND OF REST"
     },
     "aLylr7NJAOs": {
+      "archive_identifier": "nlo-sermon-aLylr7NJAOs",
       "attempts": 0,
+      "audio_bytes": 19679764,
+      "audio_url": "https://archive.org/download/nlo-sermon-aLylr7NJAOs/aLylr7NJAOs.mp3",
       "backfill_rank": 29,
+      "description": "Stay Connected:\n\ud83c\udf10 Website: https://www.newlifeoxnard.com\n\ud83d\udcf1 Instagram: https://www.instagram.com/newlifeoxnard\n\ud83d\udc65 Facebook: https://www.facebook.com/newlifeoxnard\n\nIf you\u2019d like to support this ministry and help us continue spreading the gospel, you can give here:\n\ud83d\udc49 https://www.newlifeoxnard.com/give",
+      "duration_seconds": 2370,
       "first_seen": "2026-08-06T23:31:06+00:00",
-      "published": "",
-      "status": "queued",
-      "title": "FAMILY MATTERS | Healthy Things Healthy Families Do | Genesis 25-26 | Steve Abraham"
+      "published": "2026-05-10T17:16:34+00:00",
+      "status": "uploaded",
+      "title": "FAMILY MATTERS | Healthy Things Healthy Families Do | Genesis 25-26 | Steve Abraham",
+      "uploaded_at": "2026-08-09T21:56:41+00:00"
     },
     "aZ1XfoJmDgs": {
       "attempts": 0,
@@ -1374,12 +1386,18 @@
       "title": "Refresh | Steve Abraham"
     },
     "c3Bp7mx_684": {
+      "archive_identifier": "nlo-sermon-c3Bp7mx_684",
       "attempts": 0,
+      "audio_bytes": 20134113,
+      "audio_url": "https://archive.org/download/nlo-sermon-c3Bp7mx_684/c3Bp7mx_684.mp3",
       "backfill_rank": 27,
+      "description": "Stay Connected:\n\ud83c\udf10 Website: https://www.newlifeoxnard.com\n\ud83d\udcf1 Instagram: https://www.instagram.com/newlifeoxnard\n\ud83d\udc65 Facebook: https://www.facebook.com/newlifeoxnard\n\nIf you\u2019d like to support this ministry and help us continue spreading the gospel, you can give here:\n\ud83d\udc49 https://www.newlifeoxnard.com/give",
+      "duration_seconds": 2439,
       "first_seen": "2026-08-06T23:31:06+00:00",
-      "published": "",
-      "status": "queued",
-      "title": "FAMILY MATTERS | House Rules | Genesis 25-26 | Steve Abraham"
+      "published": "2026-05-03T17:16:34+00:00",
+      "status": "uploaded",
+      "title": "FAMILY MATTERS | House Rules | Genesis 25-26 | Steve Abraham",
+      "uploaded_at": "2026-08-09T21:54:34+00:00"
     },
     "cNdhjcQRN8w": {
       "attempts": 0,
@@ -2049,12 +2067,18 @@
       "title": "PASTOR STEVE ABRAHAM // HOW TO FACE UNCERTAINTY"
     },
     "tTMb5O49Hkk": {
+      "archive_identifier": "nlo-sermon-tTMb5O49Hkk",
       "attempts": 0,
+      "audio_bytes": 22115170,
+      "audio_url": "https://archive.org/download/nlo-sermon-tTMb5O49Hkk/tTMb5O49Hkk.mp3",
       "backfill_rank": 36,
+      "description": "In the sermon \"What Do You Really Want?\", Pastor Ryan delivers a powerful message about the transformative nature of choosing to follow Jesus completely. He encourages you to embrace the change that comes with a life committed to Christ, reminding us that while we may feel stuck in our current season, God is a way maker who meets us in our weakness to bring healing and new purpose. It\u2019s a heartening call to step out of spiritual complacency and experience the supernatural joy and freedom that only a full surrender to Him can provide.\n\nStay Connected:\n\ud83c\udf10 Website: https://www.newlifeoxnard.com\n\ud83d\udcf1 Instagram: https://www.instagram.com/newlifeoxnard\n\ud83d\udc65 Facebook: https://www.facebook.com/newlifeoxnard\n\nIf you\u2019d like to support this ministry and help us continue spreading the gospel, you can give here:\n\ud83d\udc49 https://www.newlifeoxnard.com/give",
+      "duration_seconds": 2598,
       "first_seen": "2026-08-06T23:31:06+00:00",
-      "published": "",
-      "status": "queued",
-      "title": "What Do You Really Want? | John 5:2-14 | Ryan Abraham"
+      "published": "2026-05-31T17:16:34+00:00",
+      "status": "uploaded",
+      "title": "What Do You Really Want? | John 5:2-14 | Ryan Abraham",
+      "uploaded_at": "2026-08-09T21:58:43+00:00"
     },
     "ty9Js7UT54w": {
       "attempts": 0,
