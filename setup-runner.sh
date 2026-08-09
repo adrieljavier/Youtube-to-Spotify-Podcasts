@@ -47,8 +47,11 @@ echo "Architecture : macOS $ARCH"
 echo "Install into : $RUNNER_DIR"
 echo
 
-if [ -x "$RUNNER_DIR/svc.sh" ]; then
-  echo "A runner is already installed here."
+# .runner is only written once registration actually succeeds. Testing for it
+# (rather than for the unpacked files) means a failed attempt — an expired
+# token, say — can simply be re-run with a fresh token.
+if [ -f "$RUNNER_DIR/.runner" ]; then
+  echo "A runner is already registered here."
   echo "To start over:  cd actions-runner && ./svc.sh uninstall && cd .. && rm -rf actions-runner"
   exit 1
 fi
@@ -63,14 +66,18 @@ URL="https://github.com/actions/runner/releases/download/v${VERSION}/${TARBALL}"
 mkdir -p "$RUNNER_DIR"
 cd "$RUNNER_DIR"
 
-echo "Downloading runner ${VERSION}..."
-curl -fsSL -o "$TARBALL" "$URL"
-tar xzf "./$TARBALL"
-rm -f "./$TARBALL"
+if [ -x "./config.sh" ]; then
+  echo "Runner files already unpacked — reusing them."
+else
+  echo "Downloading runner ${VERSION}..."
+  curl -fsSL -o "$TARBALL" "$URL"
+  tar xzf "./$TARBALL"
+  rm -f "./$TARBALL"
+fi
 
 echo
 echo "Registering with GitHub..."
-./config.sh \
+if ! ./config.sh \
   --url "$REPO_URL" \
   --token "$TOKEN" \
   --name "$(scutil --get ComputerName 2>/dev/null || hostname)" \
@@ -78,6 +85,26 @@ echo "Registering with GitHub..."
   --work _work \
   --unattended \
   --replace
+then
+  cat >&2 <<'FAILED'
+
+------------------------------------------------------------------
+Registration failed.
+
+A "404 Not Found" from runner-registration almost always means the
+token has expired. They are only valid for about an hour, and each
+one can be used once.
+
+Get a fresh token and run this script again — the downloaded files
+are kept, so the retry is quick:
+
+  https://github.com/adrieljavier/Youtube-to-Spotify-Podcasts/settings/actions/runners/new
+
+Choose macOS + arm64, then copy the value after --token.
+------------------------------------------------------------------
+FAILED
+  exit 1
+fi
 
 echo
 echo "Installing as a background service..."
