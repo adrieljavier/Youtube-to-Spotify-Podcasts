@@ -69,6 +69,13 @@ cd "/Users/adrieljavier/Desktop/Youtube to Spotify Podcast" && ./setup-runner.sh
 That downloads GitHub's official runner, registers it against this repo,
 installs it as a background service and starts it. Takes about a minute.
 
+The runner is installed to **`~/actions-runner`**, deliberately outside this
+project folder. macOS privacy protection (TCC) refuses background services
+access to `~/Desktop`, `~/Documents` and `~/Downloads`, and this repo lives on
+the Desktop — a runner installed here registers fine and then dies on startup
+with `Operation not permitted`. The runner checks the repo out into its own
+`_work` directory, so it has no reason to sit inside the project.
+
 When it finishes, check **Settings → Actions → Runners**. Your Mac should show
 a green **Idle** — connected and waiting for work.
 
@@ -106,9 +113,8 @@ upload. Four episodes per run, and your 29-episode backlog clears over roughly
 
 Nothing. The runner sits idle, wakes each hour, publishes anything new.
 
-From inside the `actions-runner` folder:
-
 ```bash
+cd ~/actions-runner
 ./svc.sh status     # is it running?
 ./svc.sh stop       # pause the automation
 ./svc.sh start      # resume
@@ -124,9 +130,14 @@ That is not an error in the pipeline — it is the job waiting for a machine.
   asleep, off, or logged out. Wake it, then check `./svc.sh status`.
 - **The Mac restarted and nobody logged in** — the service starts at login, not
   at boot. Log in and it resumes by itself.
-- **You moved or renamed the project folder** — the service points at the old
-  path. Run `./svc.sh uninstall`, delete the `actions-runner` folder, and redo
-  the two setup steps.
+- **You moved or renamed `~/actions-runner`** — the service points at the old
+  path. Run `./svc.sh uninstall`, delete the folder, and redo the two setup
+  steps. (Moving the *project* folder is fine; the runner is independent of it.)
+- **`Operation not permitted` in `~/Library/Logs/actions.runner.*/stderr.log`** —
+  the runner ended up somewhere macOS shields from background services. Move it
+  to `~/actions-runner`: `./svc.sh uninstall`, move the folder, then
+  `./svc.sh install && ./svc.sh start`. Registration survives the move, so no
+  new token is needed.
 
 ### Moving it to a different Mac
 

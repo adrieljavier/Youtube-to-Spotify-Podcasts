@@ -127,10 +127,12 @@ archive:
   collection: "opensource_audio"
   # Applied as the item's license metadata.
   license_url: "https://creativecommons.org/licenses/by-nc-nd/4.0/"
-  # Seconds to wait for archive.org to make a freshly uploaded file
-  # downloadable before giving up on this episode (it will be retried on the
-  # next run — nothing is lost).
-  availability_timeout_seconds: 600
+  # A freshly uploaded archive.org item can take 10-30 minutes to start being
+  # served. The pipeline does not block for that: it records the upload, waits
+  # this long for the URL to go live, and if it has not, leaves the episode in
+  # the "uploaded" state so a later run adds it to the feed. Nothing is lost
+  # and nothing is uploaded twice.
+  availability_check_seconds: 90
 
 run:
   # Maximum episodes to publish per pipeline run. Keeps any single GitHub

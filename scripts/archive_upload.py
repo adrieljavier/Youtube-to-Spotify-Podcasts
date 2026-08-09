@@ -126,9 +126,18 @@ def upload(
                 "wrong or the account is not yet verified." % (identifier, codes)
             )
 
-    url = download_url(identifier, filename)
-    wait_until_available(cfg, url, expected_bytes=size)
-    return {"identifier": identifier, "filename": filename, "url": url, "bytes": size}
+    # Deliberately does NOT wait for the file to become downloadable. A fresh
+    # archive.org item routinely takes 10-30 minutes to appear on the download
+    # nodes, and blocking here would either time out (losing the record of a
+    # perfectly good upload) or stall the run for half an hour per episode.
+    # The caller records the upload straight away and checks availability
+    # separately, retrying on a later run if needed.
+    return {
+        "identifier": identifier,
+        "filename": filename,
+        "url": download_url(identifier, filename),
+        "bytes": size,
+    }
 
 
 def _already_uploaded(item, filename: str, size: int) -> bool:
@@ -141,37 +150,41 @@ def _already_uploaded(item, filename: str, size: int) -> bool:
     return False
 
 
-def wait_until_available(cfg, url: str, expected_bytes: Optional[int] = None) -> None:
-    """Block until the file actually serves over HTTP.
+def is_available(cfg, url: str, expected_bytes: Optional[int] = None) -> bool:
+    """Is the uploaded file actually being served yet?
 
-    A fresh upload takes a little while to propagate to archive.org's download
-    nodes. Publishing a feed entry that 404s would push a broken episode to
-    Spotify, so an episode is not marked published until its URL is live.
+    Publishing a feed entry whose audio 404s would push a broken episode to
+    Spotify, so an episode only enters the feed once its URL really serves.
+    This gives archive.org a short grace period rather than blocking for as
+    long as propagation might take — if it is not ready, the episode stays in
+    the "uploaded" state and a later run finishes the job without re-uploading
+    anything.
     """
-    timeout = int(cfg.get("archive.availability_timeout_seconds", 600))
-    deadline = time.time() + timeout
-    delay = 10
+    budget = int(cfg.get("archive.availability_check_seconds", 90))
+    deadline = time.time() + max(0, budget)
+    delay = 5
     last = "no response"
 
-    while time.time() < deadline:
+    while True:
         try:
             response = requests.head(url, allow_redirects=True, timeout=30)
             if response.status_code == 200:
                 length = int(response.headers.get("Content-Length") or 0)
                 if not expected_bytes or not length or length == expected_bytes:
-                    log("    archive.org: %s is live" % url)
-                    return
+                    log("    archive.org: live at %s" % url)
+                    return True
                 last = "size mismatch (%s vs %s)" % (length, expected_bytes)
             else:
                 last = "HTTP %s" % response.status_code
         except requests.RequestException as exc:
             last = str(exc)
 
-        time.sleep(delay)
-        delay = min(delay * 2, 60)
+        if time.time() + delay >= deadline:
+            log(
+                "    archive.org: not serving yet (%s). The upload succeeded; "
+                "a later run will add it to the feed." % last
+            )
+            return False
 
-    raise ArchiveError(
-        "%s did not become downloadable within %ss (last: %s). The upload most "
-        "likely succeeded — the next run will pick it up from where it left "
-        "off without re-uploading." % (url, timeout, last)
-    )
+        time.sleep(delay)
+        delay = min(delay * 2, 30)

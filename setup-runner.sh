@@ -40,7 +40,14 @@ case "$(uname -m)" in
   *) echo "Unsupported CPU architecture: $(uname -m)" >&2; exit 1 ;;
 esac
 
-RUNNER_DIR="$(cd "$(dirname "$0")" && pwd)/actions-runner"
+# Deliberately OUTSIDE the project folder. This repo lives on the Desktop, and
+# macOS privacy protection (TCC) refuses background launchd services access to
+# ~/Desktop, ~/Documents and ~/Downloads. A runner installed there registers
+# fine and then dies on startup with:
+#   /bin/bash: .../runsvc.sh: Operation not permitted
+# The runner checks the repo out into its own _work directory anyway, so it has
+# no reason to sit inside the project.
+RUNNER_DIR="$HOME/actions-runner"
 
 echo "Repository   : $REPO_URL"
 echo "Architecture : macOS $ARCH"
@@ -52,7 +59,7 @@ echo
 # token, say — can simply be re-run with a fresh token.
 if [ -f "$RUNNER_DIR/.runner" ]; then
   echo "A runner is already registered here."
-  echo "To start over:  cd actions-runner && ./svc.sh uninstall && cd .. && rm -rf actions-runner"
+  echo "To start over:  cd \"$RUNNER_DIR\" && ./svc.sh uninstall && cd .. && rm -rf \"$RUNNER_DIR\""
   exit 1
 fi
 
@@ -129,7 +136,7 @@ The screen may sleep. The machine must not.
 Then run the pipeline:
   Actions -> Publish sermon episodes -> Run workflow
 
-Useful later, from the actions-runner folder:
-  ./svc.sh status | stop | start
+Useful later:
+  cd ~/actions-runner && ./svc.sh status | stop | start
 ------------------------------------------------------------------
 DONE

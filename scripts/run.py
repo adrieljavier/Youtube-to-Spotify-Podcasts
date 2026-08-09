@@ -52,13 +52,16 @@ def discover(cfg, state: State) -> int:
 def process_one(cfg, state: State, entry: dict, tree) -> str:
     """Take one video from wherever it stopped to published.
 
-    Returns "published", "deferred" or "skipped".
+    Returns "published", "waiting", "deferred" or "skipped". "waiting" means
+    the audio is safely on archive.org but not being served yet — no work is
+    lost and a later run finishes it.
     """
     video_id = entry["video_id"]
     log("  -> %s  %s" % (video_id, entry.get("title") or ""))
 
     if entry.get("status") == "uploaded" and entry.get("audio_url"):
-        # A previous run uploaded the audio but did not finish. Resume at the
+        # A previous run uploaded the audio but could not finish — usually
+        # because archive.org had not started serving it yet. Resume at the
         # feed step; never pay for the download and upload twice.
         log("    resuming: audio already on archive.org")
         episode = {
@@ -70,9 +73,10 @@ def process_one(cfg, state: State, entry: dict, tree) -> str:
             "audio_bytes": entry["audio_bytes"],
             "duration_seconds": entry.get("duration_seconds", 0),
         }
-        archive_upload.wait_until_available(
+        if not archive_upload.is_available(
             cfg, episode["audio_url"], expected_bytes=episode["audio_bytes"]
-        )
+        ):
+            return "waiting"
         feed.add_episode(cfg, tree, episode)
         state.mark_published(video_id)
         return "published"
@@ -113,6 +117,9 @@ def process_one(cfg, state: State, entry: dict, tree) -> str:
         # not stay in the repo checkout.
         audio.cleanup(WORK_DIR, video_id)
 
+    # Record the upload BEFORE checking availability. The expensive work —
+    # download, convert, upload — is done at this point, and it must survive
+    # whatever happens next.
     state.mark_uploaded(
         video_id,
         identifier=uploaded["identifier"],
@@ -123,6 +130,14 @@ def process_one(cfg, state: State, entry: dict, tree) -> str:
     # Kept only while the episode is in flight; dropped once published.
     state.upsert(video_id, description=description[:1500])
     state.save()
+
+    if not archive_upload.is_available(
+        cfg, uploaded["url"], expected_bytes=uploaded["bytes"]
+    ):
+        # Perfectly normal for a fresh item — archive.org can take half an hour
+        # to start serving. The episode stays "uploaded" and the next run adds
+        # it to the feed without re-downloading anything.
+        return "waiting"
 
     feed.add_episode(
         cfg,
@@ -142,13 +157,15 @@ def process_one(cfg, state: State, entry: dict, tree) -> str:
     return "published"
 
 
-def summarize(state: State, published, failed, feed_written: bool) -> None:
+def summarize(state: State, published, waiting, failed, feed_written: bool) -> None:
     counts = state.counts()
     lines = [
         "",
         "Run summary",
         "-----------",
         "published this run : %d" % len(published),
+        "uploaded, awaiting : %d  (on archive.org; feed entry follows)"
+        % len(waiting),
         "failed this run    : %d" % len(failed),
         "feed rewritten     : %s" % ("yes" if feed_written else "no change"),
         "totals             : %s"
@@ -215,7 +232,7 @@ def main(argv=None) -> int:
         warn("Discovery failed: %s" % exc)
     state.save()
 
-    published, failed = [], []
+    published, waiting, failed = [], [], []
     limit = args.limit or int(cfg.get("run.max_episodes_per_run", 4))
     max_attempts = int(cfg.get("run.max_attempts", 5))
     pending = state.pending()
@@ -234,6 +251,8 @@ def main(argv=None) -> int:
             if result == "published":
                 published.append(video_id)
                 log("    published.")
+            elif result == "waiting":
+                waiting.append(video_id)
         except Exception as exc:
             failed.append((video_id, str(exc)))
             state.mark_failure(video_id, str(exc), max_attempts)
@@ -249,7 +268,7 @@ def main(argv=None) -> int:
     feed_written = feed.commit(tree)
     state.save()
 
-    summarize(state, published, failed, feed_written)
+    summarize(state, published, waiting, failed, feed_written)
     return 1 if failed else 0
 
 
