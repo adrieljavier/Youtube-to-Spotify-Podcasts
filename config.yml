@@ -139,6 +139,10 @@ run:
   # Actions run well inside its time budget while a backfill drains.
   # At hourly runs, 4 per run clears your 29-episode backlog in ~8 hours.
   max_episodes_per_run: 4
+  # Separate, larger allowance for episodes whose audio is already on
+  # archive.org and only need their feed entry written. That costs a HEAD
+  # request, not a download, so it does not compete with the budget above.
+  max_finish_per_run: 12
   # A video that fails this many times in a row is parked and no longer
   # retried automatically. Reset it with: python -m scripts.run --retry <id>
   max_attempts: 5

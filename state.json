@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-09T19:16:40+00:00",
+  "updated_at": "2026-08-09T19:19:54+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -152,14 +152,19 @@
       "title": "We're either imprisoned by what we go through or we worship God despite it all."
     },
     "3BhJbF5G-uE": {
-      "attempts": 3,
+      "archive_identifier": "nlo-sermon-3BhJbF5G-uE",
+      "attempts": 0,
+      "audio_bytes": 33935177,
+      "audio_url": "https://archive.org/download/nlo-sermon-3BhJbF5G-uE/3BhJbF5G-uE.mp3",
       "backfill_rank": 4,
+      "description": "Stay connected \nWebsite: https://www.newlifeoxnard.com\nInstagram: https://www.instagram.com/newlifeoxnard/?hl=en\nFacebook: https://www.facebook.com/newlifeoxnard/\n\nTo support this ministry and help us to spread the gospel please click here: https://www.newlifeoxnard.com/give",
+      "duration_seconds": 4167,
       "first_seen": "2026-08-06T23:31:06+00:00",
       "last_attempt": "2026-08-09T18:17:50+00:00",
-      "last_error": "https://archive.org/download/nlo-sermon-3BhJbF5G-uE/3BhJbF5G-uE.mp3 did not become downloadable within 600s (last: HTTP 404). The upload most likely succeeded \u2014 the next run will pick it up from where it left off without re-uploading.",
       "published": "2026-01-29T03:01:35+00:00",
-      "status": "queued",
-      "title": "ARE YOU HUNGRY? | MATTHEW 5:6 | STEVE ABRAHAM // FIRST THINGS FIRST 2026"
+      "status": "uploaded",
+      "title": "ARE YOU HUNGRY? | MATTHEW 5:6 | STEVE ABRAHAM // FIRST THINGS FIRST 2026",
+      "uploaded_at": "2026-08-09T19:18:38+00:00"
     },
     "3JUw4x8ii9w": {
       "attempts": 0,
@@ -1226,14 +1231,19 @@
       "title": "First Wednesday Service"
     },
     "ZpilaauN0C0": {
-      "attempts": 3,
+      "archive_identifier": "nlo-sermon-ZpilaauN0C0",
+      "attempts": 0,
+      "audio_bytes": 32435464,
+      "audio_url": "https://archive.org/download/nlo-sermon-ZpilaauN0C0/ZpilaauN0C0.mp3",
       "backfill_rank": 5,
+      "description": "Stay connected \nWebsite: https://www.newlifeoxnard.com\nInstagram: https://www.instagram.com/newlifeoxnard/?hl=en\nFacebook: https://www.facebook.com/newlifeoxnard/\n\nTo support this ministry and help us to spread the gospel please click here: https://www.newlifeoxnard.com/give",
+      "duration_seconds": 3977,
       "first_seen": "2026-08-06T23:31:06+00:00",
       "last_attempt": "2026-08-09T18:29:14+00:00",
-      "last_error": "https://archive.org/download/nlo-sermon-ZpilaauN0C0/ZpilaauN0C0.mp3 did not become downloadable within 600s (last: HTTP 404). The upload most likely succeeded \u2014 the next run will pick it up from where it left off without re-uploading.",
       "published": "2026-01-30T03:01:34+00:00",
-      "status": "queued",
-      "title": "I AM A CHILD OF GOD | ROMANS 8:14-17 | TIM ROSS // FIRST THINGS FIRST 2026"
+      "status": "uploaded",
+      "title": "I AM A CHILD OF GOD | ROMANS 8:14-17 | TIM ROSS // FIRST THINGS FIRST 2026",
+      "uploaded_at": "2026-08-09T19:18:40+00:00"
     },
     "_H-lqxIPr5w": {
       "attempts": 0,
@@ -1379,14 +1389,19 @@
       "title": "Everyone Serves | Series: Everyone \u2013 Steve Abraham"
     },
     "dGggBpJV_fs": {
-      "attempts": 3,
+      "archive_identifier": "nlo-sermon-dGggBpJV_fs",
+      "attempts": 0,
+      "audio_bytes": 21391882,
+      "audio_url": "https://archive.org/download/nlo-sermon-dGggBpJV_fs/dGggBpJV_fs.mp3",
       "backfill_rank": 7,
+      "description": "Thanks for joining us for church online today! \ud83d\ude4c\nWe\u2019re so glad you\u2019re here. If this ministry has been a blessing to you, we\u2019d love for you to stay connected and see all that God is doing through our church.\n\nStay Connected:\n\ud83c\udf10 Website: https://www.newlifeoxnard.com\n\ud83d\udcf1 Instagram: https://www.instagram.com/newlifeoxnard/?hl=en\n\ud83d\udc65 Facebook: https://www.facebook.com/newlifeoxnard/\n\nIf you\u2019d like to support this ministry and help us continue spreading the gospel, you can give here:\n\ud83d\udc49 https://www.newlifeoxnard.com/give",
+      "duration_seconds": 2513,
       "first_seen": "2026-08-06T23:31:06+00:00",
       "last_attempt": "2026-08-09T18:51:40+00:00",
-      "last_error": "https://archive.org/download/nlo-sermon-dGggBpJV_fs/dGggBpJV_fs.mp3 did not become downloadable within 600s (last: HTTP 404). The upload most likely succeeded \u2014 the next run will pick it up from where it left off without re-uploading.",
       "published": "2026-02-01T18:16:35+00:00",
-      "status": "queued",
-      "title": "BOLD FAITH | Memorials | Joshua 4:1-7 | Steve Abraham"
+      "status": "uploaded",
+      "title": "BOLD FAITH | Memorials | Joshua 4:1-7 | Steve Abraham",
+      "uploaded_at": "2026-08-09T19:18:41+00:00"
     },
     "deDJ9EpuL7g": {
       "attempts": 0,
@@ -1698,14 +1713,19 @@
       "uploaded_at": "2026-08-09T19:10:15+00:00"
     },
     "l2DRrg87-UA": {
-      "attempts": 3,
+      "archive_identifier": "nlo-sermon-l2DRrg87-UA",
+      "attempts": 0,
+      "audio_bytes": 34589682,
+      "audio_url": "https://archive.org/download/nlo-sermon-l2DRrg87-UA/l2DRrg87-UA.mp3",
       "backfill_rank": 6,
+      "description": "Stay connected \nWebsite: https://www.newlifeoxnard.com\nInstagram: https://www.instagram.com/newlifeoxnard/?hl=en\nFacebook: https://www.facebook.com/newlifeoxnard/\n\nTo support this ministry and help us to spread the gospel please click here: https://www.newlifeoxnard.com/give",
+      "duration_seconds": 4256,
       "first_seen": "2026-08-06T23:31:06+00:00",
       "last_attempt": "2026-08-09T18:40:39+00:00",
-      "last_error": "https://archive.org/download/nlo-sermon-l2DRrg87-UA/l2DRrg87-UA.mp3 did not become downloadable within 600s (last: HTTP 404). The upload most likely succeeded \u2014 the next run will pick it up from where it left off without re-uploading.",
       "published": "2026-01-31T03:01:35+00:00",
-      "status": "queued",
-      "title": "JOHN 8:31-32 | BEN PRESCOTT // FIRST THINGS FIRST 2026"
+      "status": "uploaded",
+      "title": "JOHN 8:31-32 | BEN PRESCOTT // FIRST THINGS FIRST 2026",
+      "uploaded_at": "2026-08-09T19:18:42+00:00"
     },
     "lAUAXxepnVE": {
       "attempts": 0,

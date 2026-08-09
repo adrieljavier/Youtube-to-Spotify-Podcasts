@@ -234,17 +234,37 @@ def main(argv=None) -> int:
 
     published, waiting, failed = [], [], []
     limit = args.limit or int(cfg.get("run.max_episodes_per_run", 4))
+    finish_cap = int(cfg.get("run.max_finish_per_run", 12))
     max_attempts = int(cfg.get("run.max_attempts", 5))
     pending = state.pending()
 
+    # Two separate budgets. Downloading, transcoding and uploading an episode
+    # takes minutes; finishing one whose audio is already on archive.org takes
+    # a HEAD request. Charging both to the same allowance would let a backfill
+    # keep finished episodes out of the feed for hours.
+    selected, downloads, finishes = [], 0, 0
+    for entry in pending:
+        if entry.get("status") == "uploaded":
+            if finishes < finish_cap:
+                finishes += 1
+                selected.append(entry)
+        elif downloads < limit:
+            downloads += 1
+            selected.append(entry)
+        if downloads >= limit and finishes >= finish_cap:
+            break
+
     if args.dry_run:
         log("\nDry run: %d pending episode(s)" % len(pending))
-        for entry in pending[:limit]:
-            log("  would publish %s  %s" % (entry["video_id"], entry.get("title")))
+        for entry in selected:
+            log("  would %s %s  %s"
+                % ("finish " if entry.get("status") == "uploaded" else "publish",
+                   entry["video_id"], entry.get("title")))
         return 0
 
-    log("\n%d pending, publishing up to %d this run." % (len(pending), limit))
-    for entry in pending[:limit]:
+    log("\n%d pending: %d to download and publish, %d already uploaded to finish."
+        % (len(pending), downloads, finishes))
+    for entry in selected:
         video_id = entry["video_id"]
         try:
             result = process_one(cfg, state, entry, tree)

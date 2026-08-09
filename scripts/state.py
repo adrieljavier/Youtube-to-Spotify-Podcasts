@@ -80,6 +80,12 @@ class State:
         Oldest-first matters during a backfill: episodes then enter the feed in
         the order they were preached.
 
+        Work already in flight comes first. An "uploaded" episode only needs a
+        HEAD request and a feed entry — seconds — whereas a "queued" one costs a
+        download, a transcode and an upload. Finishing what is already paid for
+        before starting anything new gets episodes live sooner and keeps a
+        stalled item from sitting behind a long backfill.
+
         Backfilled videos may not carry a publication date — seeding one costs
         a metadata request per video, which YouTube rate-limits — so they fall
         back to `backfill_rank`, assigned oldest-first when the queue was
@@ -91,7 +97,13 @@ class State:
             for vid, entry in self.videos.items()
             if entry.get("status") in ("queued", "uploaded")
         ]
-        items.sort(key=lambda e: (e.get("published") or "", e.get("backfill_rank") or 0))
+        items.sort(
+            key=lambda e: (
+                0 if e.get("status") == "uploaded" else 1,
+                e.get("published") or "",
+                e.get("backfill_rank") or 0,
+            )
+        )
         return items
 
     def counts(self) -> Dict[str, int]:
