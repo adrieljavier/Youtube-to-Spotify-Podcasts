@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-07T00:57:25+00:00",
+  "updated_at": "2026-08-09T18:51:40+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -152,12 +152,12 @@
       "title": "We're either imprisoned by what we go through or we worship God despite it all."
     },
     "3BhJbF5G-uE": {
-      "attempts": 2,
+      "attempts": 3,
       "backfill_rank": 4,
       "first_seen": "2026-08-06T23:31:06+00:00",
-      "last_attempt": "2026-08-07T00:57:08+00:00",
-      "last_error": "Could not read metadata for 3BhJbF5G-uE (tried player clients: tv_embedded, android_vr, web_embedded, mweb, default). Last error: ERROR: [youtube] 3BhJbF5G-uE: Sign in to confirm you\u2019re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTu",
-      "published": "",
+      "last_attempt": "2026-08-09T18:17:50+00:00",
+      "last_error": "https://archive.org/download/nlo-sermon-3BhJbF5G-uE/3BhJbF5G-uE.mp3 did not become downloadable within 600s (last: HTTP 404). The upload most likely succeeded \u2014 the next run will pick it up from where it left off without re-uploading.",
+      "published": "2026-01-29T03:01:35+00:00",
       "status": "queued",
       "title": "ARE YOU HUNGRY? | MATTHEW 5:6 | STEVE ABRAHAM // FIRST THINGS FIRST 2026"
     },
@@ -488,6 +488,14 @@
       "skip_reason": "before backfill cutoff",
       "status": "skipped",
       "title": "PASTOR STEVE ABRAHAM // SHE'S NOT WHO SHE USED TO BE"
+    },
+    "CokWprXT5YM": {
+      "attempts": 0,
+      "first_seen": "2026-08-09T18:06:22+00:00",
+      "published": "2026-08-09T17:13:05+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "New Life Worship Experience"
     },
     "CuTWxUCr94s": {
       "attempts": 0,
@@ -1097,6 +1105,14 @@
       "status": "skipped",
       "title": "The One About God's House"
     },
+    "WeQNMhyjfSg": {
+      "attempts": 0,
+      "first_seen": "2026-08-09T18:06:22+00:00",
+      "published": "2026-08-09T17:53:01+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "New Life Worship Experience"
+    },
     "X0QyHuv6iXI": {
       "attempts": 0,
       "first_seen": "2026-08-06T23:31:08+00:00",
@@ -1190,12 +1206,12 @@
       "title": "First Wednesday Service"
     },
     "ZpilaauN0C0": {
-      "attempts": 2,
+      "attempts": 3,
       "backfill_rank": 5,
       "first_seen": "2026-08-06T23:31:06+00:00",
-      "last_attempt": "2026-08-07T00:57:13+00:00",
-      "last_error": "Could not read metadata for ZpilaauN0C0 (tried player clients: tv_embedded, android_vr, web_embedded, mweb, default). Last error: ERROR: [youtube] ZpilaauN0C0: Sign in to confirm you\u2019re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTu",
-      "published": "",
+      "last_attempt": "2026-08-09T18:29:14+00:00",
+      "last_error": "https://archive.org/download/nlo-sermon-ZpilaauN0C0/ZpilaauN0C0.mp3 did not become downloadable within 600s (last: HTTP 404). The upload most likely succeeded \u2014 the next run will pick it up from where it left off without re-uploading.",
+      "published": "2026-01-30T03:01:34+00:00",
       "status": "queued",
       "title": "I AM A CHILD OF GOD | ROMANS 8:14-17 | TIM ROSS // FIRST THINGS FIRST 2026"
     },
@@ -1343,12 +1359,12 @@
       "title": "Everyone Serves | Series: Everyone \u2013 Steve Abraham"
     },
     "dGggBpJV_fs": {
-      "attempts": 2,
+      "attempts": 3,
       "backfill_rank": 7,
       "first_seen": "2026-08-06T23:31:06+00:00",
-      "last_attempt": "2026-08-07T00:57:25+00:00",
-      "last_error": "Could not read metadata for dGggBpJV_fs (tried player clients: tv_embedded, android_vr, web_embedded, mweb, default). Last error: ERROR: [youtube] dGggBpJV_fs: Sign in to confirm you\u2019re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTu",
-      "published": "",
+      "last_attempt": "2026-08-09T18:51:40+00:00",
+      "last_error": "https://archive.org/download/nlo-sermon-dGggBpJV_fs/dGggBpJV_fs.mp3 did not become downloadable within 600s (last: HTTP 404). The upload most likely succeeded \u2014 the next run will pick it up from where it left off without re-uploading.",
+      "published": "2026-02-01T18:16:35+00:00",
       "status": "queued",
       "title": "BOLD FAITH | Memorials | Joshua 4:1-7 | Steve Abraham"
     },
@@ -1650,12 +1666,12 @@
       "title": "BOLD FAITH | Walls Still Fall | Joshua 6:1-20 | Steve Abraham"
     },
     "l2DRrg87-UA": {
-      "attempts": 2,
+      "attempts": 3,
       "backfill_rank": 6,
       "first_seen": "2026-08-06T23:31:06+00:00",
-      "last_attempt": "2026-08-07T00:57:19+00:00",
-      "last_error": "Could not read metadata for l2DRrg87-UA (tried player clients: tv_embedded, android_vr, web_embedded, mweb, default). Last error: ERROR: [youtube] l2DRrg87-UA: Sign in to confirm you\u2019re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTu",
-      "published": "",
+      "last_attempt": "2026-08-09T18:40:39+00:00",
+      "last_error": "https://archive.org/download/nlo-sermon-l2DRrg87-UA/l2DRrg87-UA.mp3 did not become downloadable within 600s (last: HTTP 404). The upload most likely succeeded \u2014 the next run will pick it up from where it left off without re-uploading.",
+      "published": "2026-01-31T03:01:35+00:00",
       "status": "queued",
       "title": "JOHN 8:31-32 | BEN PRESCOTT // FIRST THINGS FIRST 2026"
     },
