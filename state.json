@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-09T18:51:40+00:00",
+  "updated_at": "2026-08-09T19:16:40+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -454,12 +454,18 @@
       "title": "WHILE I\"M WAITING // NEW LIFE WORSHIP"
     },
     "BVjTtnmQuAY": {
+      "archive_identifier": "nlo-sermon-BVjTtnmQuAY",
       "attempts": 0,
+      "audio_bytes": 20180367,
+      "audio_url": "https://archive.org/download/nlo-sermon-BVjTtnmQuAY/BVjTtnmQuAY.mp3",
       "backfill_rank": 9,
+      "description": "Thanks for joining us for church online today! \ud83d\ude4c\nWe\u2019re so glad you\u2019re here. If this ministry has been a blessing to you, we\u2019d love for you to stay connected and see all that God is doing through our church.\n\nStay Connected:\n\ud83c\udf10 Website: https://www.newlifeoxnard.com\n\ud83d\udcf1 Instagram: https://www.instagram.com/newlifeoxnard/?hl=en\n\ud83d\udc65 Facebook: https://www.facebook.com/newlifeoxnard/\n\nIf you\u2019d like to support this ministry and help us continue spreading the gospel, you can give here:\n\ud83d\udc49 https://www.newlifeoxnard.com/give",
+      "duration_seconds": 2364,
       "first_seen": "2026-08-06T23:31:06+00:00",
-      "published": "",
-      "status": "queued",
-      "title": "Who Is God & Who Am I? | Ryan Abraham"
+      "published": "2026-02-08T16:31:35+00:00",
+      "status": "uploaded",
+      "title": "Who Is God & Who Am I? | Ryan Abraham",
+      "uploaded_at": "2026-08-09T19:08:01+00:00"
     },
     "BgvSnrO6kn0": {
       "attempts": 0,
@@ -912,6 +918,14 @@
       "status": "skipped",
       "title": "PASTOR STEVE ABRAHAM // LOVE WELL"
     },
+    "PQYze3EJ-fE": {
+      "attempts": 0,
+      "first_seen": "2026-08-09T19:07:15+00:00",
+      "published": "2026-08-09T18:53:06+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "New Life Worship Experience"
+    },
     "PRGZhQidgmk": {
       "attempts": 0,
       "first_seen": "2026-08-06T23:31:08+00:00",
@@ -1013,12 +1027,18 @@
       "title": "PASTOR STEVE ABRAHAM // WORSHIP RIGHT"
     },
     "TcuhYqbN58U": {
+      "archive_identifier": "nlo-sermon-TcuhYqbN58U",
       "attempts": 0,
+      "audio_bytes": 21125478,
+      "audio_url": "https://archive.org/download/nlo-sermon-TcuhYqbN58U/TcuhYqbN58U.mp3",
       "backfill_rank": 11,
+      "description": "The message, titled \"Get It Out,\" focuses on the biblical account of Achan in Joshua 7. After the victory at Jericho, Israel suffered a surprising defeat at the small city of Ai. This defeat was rooted in Achan\u2019s secret sin\u2014taking \"devoted things\" that belonged to God and hiding them in his tent. The sermon explores three critical truths about sin and its impact on our lives.",
+      "duration_seconds": 2518,
       "first_seen": "2026-08-06T23:31:06+00:00",
-      "published": "",
-      "status": "queued",
-      "title": "BOLD FAITH | Get It Out | Joshua 7:1-26 | Steve Abraham"
+      "published": "2026-02-22T18:16:34+00:00",
+      "status": "uploaded",
+      "title": "BOLD FAITH | Get It Out | Joshua 7:1-26 | Steve Abraham",
+      "uploaded_at": "2026-08-09T19:13:28+00:00"
     },
     "ThZsreOIkB4": {
       "attempts": 0,
@@ -1397,12 +1417,18 @@
       "title": "A Wedding to Remember | Steve Abraham"
     },
     "f4hhSLEl2EE": {
+      "archive_identifier": "nlo-sermon-f4hhSLEl2EE",
       "attempts": 0,
+      "audio_bytes": 21541061,
+      "audio_url": "https://archive.org/download/nlo-sermon-f4hhSLEl2EE/f4hhSLEl2EE.mp3",
       "backfill_rank": 12,
+      "description": "In this powerful message, Pastor Steve Abraham continues our BOLD FAITH series with a deep dive into Joshua 14:6-13. Caleb\u2019s request to \"Give Me This Mountain\" wasn't just about land; it was a testament to 45 years of unwavering trust in God\u2019s promises.\n\nIf you are facing \"giants\" or waiting for your own promised land, this message provides three practical pillars to help you move forward in faith:\n\nWATCH YOUR WORDS \u2013 Caleb didn't speak from fear; he spoke from conviction. Learn how to align your speech with God\u2019s truth over your life and family.\n\nSTAND ON THE PROMISES \u2013 Character is built on our relationship with the Word. Discover how to navigate the \"wait\" with the right attitude.\n\nCONFRONT YOUR GIANTS \u2013 Stop tolerating generational cycles. It\u2019s time to drive out the giants that stand between you and your spiritual inheritance.\n\nGod isn't done with your story yet. We hope this message encourages you to step into everything He has for you.\n\nStay Connected:\n\ud83c\udf10 Website: https://www.newlifeoxnard.com\n\ud83d\udcf1 Instagram: https://www.instagram.com/newlifeoxnard/?hl=en\n\ud83d\udc65 Facebook: https://www.facebook.com/newlifeoxnard/\n\nIf you\u2019d like to support this ministry and help us continue spreading the gospel, you can give here:\n\ud83d\udc49 https://www.newlifeoxnard.com/give",
+      "duration_seconds": 2619,
       "first_seen": "2026-08-06T23:31:06+00:00",
-      "published": "",
-      "status": "queued",
-      "title": "BOLD FAITH | Give Me This Mountain | Joshua 14:6-13 | Steve Abraham"
+      "published": "2026-03-01T18:16:34+00:00",
+      "status": "uploaded",
+      "title": "BOLD FAITH | Give Me This Mountain | Joshua 14:6-13 | Steve Abraham",
+      "uploaded_at": "2026-08-09T19:15:32+00:00"
     },
     "fDOFSIjZszU": {
       "attempts": 0,
@@ -1658,12 +1684,18 @@
       "title": "PASTOR STEVE ABRAHAM // I'M OVER IT"
     },
     "l-iXrdcp7MM": {
+      "archive_identifier": "nlo-sermon-l-iXrdcp7MM",
       "attempts": 0,
+      "audio_bytes": 25131478,
+      "audio_url": "https://archive.org/download/nlo-sermon-l-iXrdcp7MM/l-iXrdcp7MM.mp3",
       "backfill_rank": 10,
+      "description": "Thanks for joining us for church online today! \ud83d\ude4c\nWe\u2019re so glad you\u2019re here. If this ministry has been a blessing to you, we\u2019d love for you to stay connected and see all that God is doing through our church.\n\nStay Connected:\n\ud83c\udf10 Website: https://www.newlifeoxnard.com\n\ud83d\udcf1 Instagram: https://www.instagram.com/newlifeoxnard/?hl=en\n\ud83d\udc65 Facebook: https://www.facebook.com/newlifeoxnard/\n\nIf you\u2019d like to support this ministry and help us continue spreading the gospel, you can give here:\n\ud83d\udc49 https://www.newlifeoxnard.com/give",
+      "duration_seconds": 3030,
       "first_seen": "2026-08-06T23:31:06+00:00",
-      "published": "",
-      "status": "queued",
-      "title": "BOLD FAITH | Walls Still Fall | Joshua 6:1-20 | Steve Abraham"
+      "published": "2026-02-15T18:16:36+00:00",
+      "status": "uploaded",
+      "title": "BOLD FAITH | Walls Still Fall | Joshua 6:1-20 | Steve Abraham",
+      "uploaded_at": "2026-08-09T19:10:15+00:00"
     },
     "l2DRrg87-UA": {
       "attempts": 3,
