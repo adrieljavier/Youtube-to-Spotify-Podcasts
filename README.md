@@ -334,7 +334,13 @@ Progress is saved in stages, so a retry never repeats expensive work:
 | State | Meaning | On retry |
 | --- | --- | --- |
 | `queued` | known and eligible, not yet processed | download → upload → publish |
-| `uploaded` | audio is on archive.org, feed entry not written | resumes at the feed step |
+| `uploaded` | audio is on archive.org, feed entry not written yet | resumes at the feed step |
+
+A fresh archive.org item takes 10–30 minutes to start being served, so an
+episode normally sits in `uploaded` for a run or two before its feed entry
+appears. That is expected, not a fault — these are finished first on each run,
+on their own budget, since writing the feed entry costs a single HEAD request.
+
 | `published` | live in the feed | done, never touched again |
 | `skipped` | filtered out or before the backfill cutoff | done, never touched again |
 | `parked` | failed `run.max_attempts` times in a row | ignored until you `--retry` it |
