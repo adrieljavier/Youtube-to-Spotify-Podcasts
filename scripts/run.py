@@ -21,6 +21,45 @@ from .config import load as load_config
 from .state import State
 
 
+def reconsider_renamed(cfg, state: State, known: dict, video: dict) -> int:
+    """Re-judge a video that was skipped on its title and has since been renamed.
+
+    Sunday services are streamed under a placeholder title — "New Life Worship
+    Experience" — and retitled to the sermon afterwards. The skip is correct at
+    the time it is made and wrong an hour later, so a title-based skip is never
+    final while the video is still in the channel feed.
+
+    Only title-based skips are revisited. A video excluded for its length, or
+    because it predates the backfill cutoff, is settled: those facts do not
+    change when someone edits a title.
+
+    Returns 1 if the video was queued as a result.
+    """
+    if known.get("status") != "skipped":
+        return 0
+    if not str(known.get("skip_reason") or "").startswith("title"):
+        return 0
+
+    old_title = known.get("title") or ""
+    new_title = video["title"]
+    if old_title == new_title:
+        return 0
+
+    eligible, reason = youtube.check_eligibility(cfg, new_title, duration=None)
+    if eligible:
+        state.mark_queued(video["video_id"], new_title, video["published"])
+        state.videos[video["video_id"]].pop("skip_reason", None)
+        log("  renamed, now eligible: %s" % video["video_id"])
+        log("      was: %s" % (old_title[:66] or "(none)"))
+        log("      now: %s" % new_title[:66])
+        return 1
+
+    # Still not a sermon, but record the new title so the comparison stays
+    # meaningful if it is renamed again.
+    state.upsert(video["video_id"], title=new_title, skip_reason=reason)
+    return 0
+
+
 def discover(cfg, state: State) -> int:
     """Poll the public YouTube feed and queue anything new."""
     videos = youtube.fetch_channel_feed(cfg.channel_id)
@@ -29,7 +68,10 @@ def discover(cfg, state: State) -> int:
     added = 0
     for video in videos:
         video_id = video["video_id"]
-        if state.knows(video_id):
+        known = state.get(video_id)
+
+        if known:
+            added += reconsider_renamed(cfg, state, known, video)
             continue
 
         eligible, reason = youtube.check_eligibility(cfg, video["title"], duration=None)
