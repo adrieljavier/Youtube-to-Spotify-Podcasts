@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-10T21:07:26+00:00",
+  "updated_at": "2026-08-10T22:06:16+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -364,11 +364,13 @@
     "6zjni2nM3qk": {
       "archive_identifier": "nlo-sermon-6zjni2nM3qk",
       "attempts": 0,
-      "audio_bytes": 20120132,
+      "audio_bytes": 39495675,
       "audio_url": "https://archive.org/download/nlo-sermon-6zjni2nM3qk/6zjni2nM3qk.mp3",
       "backfill_rank": 23,
       "description": "This powerful message reminds us that while storms in life are inevitable, building our foundation on the \"Rock\" of Jesus Christ ensures we remain standing through every trial. By putting God\u2019s word into practice, we can move from sinking sand to a place of sure blessing, finding peace and strength even in the midst of chaos. It's a motivating call to trust in God\u2019s faithfulness to sustain and protect your family, marriage, and future.\n\nStay Connected:\n\ud83c\udf10 Website: https://www.newlifeoxnard.com\n\ud83d\udcf1 Instagram: https://www.instagram.com/newlifeoxnard/?hl=en\n\ud83d\udc65 Facebook: https://www.facebook.com/newlifeoxnard/\n\nIf you\u2019d like to support this ministry and help us continue spreading the gospel, you can give here:\n\ud83d\udc49 https://www.newlifeoxnard.com/give",
       "duration_seconds": 2422,
+      "encoded_channels": 1,
+      "encoded_kbps": 128,
       "first_seen": "2026-08-06T23:31:06+00:00",
       "published": "2026-04-19T17:16:35+00:00",
       "published_at": "2026-08-09T21:53:46+00:00",
@@ -379,11 +381,13 @@
     "7LJkQSZ0hg8": {
       "archive_identifier": "nlo-sermon-7LJkQSZ0hg8",
       "attempts": 0,
-      "audio_bytes": 22883785,
+      "audio_bytes": 45293503,
       "audio_url": "https://archive.org/download/nlo-sermon-7LJkQSZ0hg8/7LJkQSZ0hg8.mp3",
       "backfill_rank": 24,
       "description": "In this sermon, Pastor Steve encourages families to \"stop the bleeding\" by addressing the deep pain that can often occur within family units. He highlights that while family struggles are difficult, there is hope and healing through repentance, letting go of the need for control, and choosing the path of forgiveness. Ultimately, he invites you to release any past hurts to the Lord, trusting that His grace can restore relationships and bring a \"family revival\" to your home.\n\nStay Connected:\n\ud83c\udf10 Website: https://www.newlifeoxnard.com\n\ud83d\udcf1 Instagram: https://www.instagram.com/newlifeoxnard\n\ud83d\udc65 Facebook: https://www.facebook.com/newlifeoxnard\n\nIf you\u2019d like to support this ministry and help us continue spreading the gospel, you can give here:\n\ud83d\udc49 https://www.newlifeoxnard.com/give",
       "duration_seconds": 2801,
+      "encoded_channels": 1,
+      "encoded_kbps": 128,
       "first_seen": "2026-08-06T23:31:06+00:00",
       "published": "2026-04-26T17:16:34+00:00",
       "published_at": "2026-08-09T21:53:48+00:00",
@@ -558,12 +562,19 @@
       "title": "PASTOR STEVE ABRAHAM // SHE'S NOT WHO SHE USED TO BE"
     },
     "CokWprXT5YM": {
+      "archive_identifier": "nlo-sermon-CokWprXT5YM",
       "attempts": 0,
+      "audio_bytes": 41708532,
+      "audio_url": "https://archive.org/download/nlo-sermon-CokWprXT5YM/CokWprXT5YM.mp3",
+      "description": "In this sermon, Pastor Bernie Federmann explores how life\u2019s trials are not meant to break us, but to produce steadfast perseverance and spiritual maturity in our walk with God. By seeking Him with single-minded trust and prayer during difficult seasons, you can receive divine wisdom, strength, and peace through every challenge. Be encouraged that as you remain faithful through testing, God is actively refining your character and building a deeper, unwavering faith within you.",
+      "duration_seconds": 2519,
+      "encoded_channels": 1,
+      "encoded_kbps": 128,
       "first_seen": "2026-08-09T18:06:22+00:00",
-      "published": "2026-08-09T17:13:05+00:00",
-      "skip_reason": "title does not match the sermon pattern '\\\\|'",
-      "status": "skipped",
-      "title": "New Life Worship Experience"
+      "published": "2026-08-09T17:16:33+00:00",
+      "status": "uploaded",
+      "title": "When Faith Is Tested | James 1: 1-8, 12 | Bernie Federmann",
+      "uploaded_at": "2026-08-10T22:02:57+00:00"
     },
     "CuTWxUCr94s": {
       "archive_identifier": "nlo-sermon-CuTWxUCr94s",
@@ -1471,11 +1482,13 @@
     "c3Bp7mx_684": {
       "archive_identifier": "nlo-sermon-c3Bp7mx_684",
       "attempts": 0,
-      "audio_bytes": 20134113,
+      "audio_bytes": 39646955,
       "audio_url": "https://archive.org/download/nlo-sermon-c3Bp7mx_684/c3Bp7mx_684.mp3",
       "backfill_rank": 27,
       "description": "Stay Connected:\n\ud83c\udf10 Website: https://www.newlifeoxnard.com\n\ud83d\udcf1 Instagram: https://www.instagram.com/newlifeoxnard\n\ud83d\udc65 Facebook: https://www.facebook.com/newlifeoxnard\n\nIf you\u2019d like to support this ministry and help us continue spreading the gospel, you can give here:\n\ud83d\udc49 https://www.newlifeoxnard.com/give",
       "duration_seconds": 2439,
+      "encoded_channels": 1,
+      "encoded_kbps": 128,
       "first_seen": "2026-08-06T23:31:06+00:00",
       "published": "2026-05-03T17:16:34+00:00",
       "published_at": "2026-08-09T22:54:34+00:00",
@@ -2162,11 +2175,13 @@
     "tTMb5O49Hkk": {
       "archive_identifier": "nlo-sermon-tTMb5O49Hkk",
       "attempts": 0,
-      "audio_bytes": 22115170,
+      "audio_bytes": 42900071,
       "audio_url": "https://archive.org/download/nlo-sermon-tTMb5O49Hkk/tTMb5O49Hkk.mp3",
       "backfill_rank": 36,
       "description": "In the sermon \"What Do You Really Want?\", Pastor Ryan delivers a powerful message about the transformative nature of choosing to follow Jesus completely. He encourages you to embrace the change that comes with a life committed to Christ, reminding us that while we may feel stuck in our current season, God is a way maker who meets us in our weakness to bring healing and new purpose. It\u2019s a heartening call to step out of spiritual complacency and experience the supernatural joy and freedom that only a full surrender to Him can provide.\n\nStay Connected:\n\ud83c\udf10 Website: https://www.newlifeoxnard.com\n\ud83d\udcf1 Instagram: https://www.instagram.com/newlifeoxnard\n\ud83d\udc65 Facebook: https://www.facebook.com/newlifeoxnard\n\nIf you\u2019d like to support this ministry and help us continue spreading the gospel, you can give here:\n\ud83d\udc49 https://www.newlifeoxnard.com/give",
       "duration_seconds": 2598,
+      "encoded_channels": 1,
+      "encoded_kbps": 128,
       "first_seen": "2026-08-06T23:31:06+00:00",
       "published": "2026-05-31T17:16:34+00:00",
       "published_at": "2026-08-09T22:54:36+00:00",
