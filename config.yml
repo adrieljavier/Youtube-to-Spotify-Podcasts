@@ -68,13 +68,15 @@ site:
   base_url: "https://adrieljavier.github.io/Youtube-to-Spotify-Podcasts"
 
 podcast:
-  title: "New Life Oxnard Sermons"
+  # Matches the existing Spotify show exactly, so switching the RSS URL is
+  # invisible to listeners — same name, same artwork, same episodes.
+  title: "New Life with Steve Abraham"
   # Shown in Spotify's episode list header and in Apple Podcasts.
   description: >-
-    Weekly sermons from New Life Oxnard. Audio from our Sunday services,
-    published automatically each week.
+    New Life Community Church in Oxnard CA led by Pastor Steve Abraham.
+    Weekly sermons from our Sunday services.
   # Public-facing website for the show.
-  link: "https://www.newlifeoxnard.com"
+  link: "https://www.newlifeoxnard.com/nlcc-podcast/"
   language: "en-us"
 
   # Show-level author. This is the podcast's byline in Spotify and Apple, so it
@@ -91,7 +93,7 @@ podcast:
 
   # itunes:owner — used by directories to verify feed ownership, and the
   # address Spotify sends its verification code to.
-  owner_name: "New Life Oxnard"
+  owner_name: "New Life Community Church"
   owner_email: "adrieljavier@newlifeoxnard.com"
   # Apple/Spotify category. Must be an exact match from Apple's list.
   # For sermons: "Religion & Spirituality" / "Christianity".
