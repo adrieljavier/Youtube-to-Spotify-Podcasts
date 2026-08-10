@@ -126,6 +126,8 @@ def process_one(cfg, state: State, entry: dict, tree) -> str:
         audio_url=uploaded["url"],
         audio_bytes=uploaded["bytes"],
         duration_seconds=extracted["duration"] or int(duration or 0),
+        encoded_kbps=int(cfg.get("audio.bitrate_kbps", 64)),
+        encoded_channels=int(cfg.get("audio.channels", 1)),
     )
     # Kept only while the episode is in flight; dropped once published.
     state.upsert(video_id, description=description[:1500])

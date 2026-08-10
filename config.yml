@@ -111,9 +111,15 @@ podcast:
   locked: true
 
 audio:
-  # Bitrate in kbps. 64k mono is spoken-word optimised: a 45-minute sermon
-  # lands around 20 MB.
-  bitrate_kbps: 64
+  # Bitrate in kbps. The YouTube source is 129 kbps AAC stereo and the historic
+  # catalogue is 192 kbps, so 128 kbps mono sits close enough to the source to
+  # be effectively transparent for preaching — mp3 at 128 mono gives the single
+  # channel more bits than the source spends on two. A 45-minute sermon lands
+  # around 43 MB.
+  #
+  # Changing this makes every episode encoded at the old setting "stale";
+  # scripts.reencode brings them up to date a few per run, automatically.
+  bitrate_kbps: 128
   channels: 1              # 1 = mono, 2 = stereo
   sample_rate: 44100
   # Embed the video thumbnail into the mp3 as episode artwork.
@@ -145,6 +151,9 @@ run:
   # archive.org and only need their feed entry written. That costs a HEAD
   # request, not a download, so it does not compete with the budget above.
   max_finish_per_run: 12
+  # Episodes re-encoded per run when the audio settings change. Each costs a
+  # download plus an upload, so this is kept small and the work spreads out.
+  max_reencode_per_run: 4
   # A video that fails this many times in a row is parked and no longer
   # retried automatically. Reset it with: python -m scripts.run --retry <id>
   max_attempts: 5

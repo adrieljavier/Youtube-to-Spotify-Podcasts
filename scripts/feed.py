@@ -353,12 +353,74 @@ def insert_item(channel: ET.Element, new_item: ET.Element) -> None:
     channel.insert(insert_at, new_item)
 
 
+def find_item(channel: ET.Element, guid: str) -> Optional[ET.Element]:
+    for item in channel.findall("item"):
+        if (item.findtext("guid") or "").strip() == guid:
+            return item
+    return None
+
+
+def update_episode_audio(
+    channel: ET.Element,
+    video_id: str,
+    audio_url: str,
+    audio_bytes: int,
+    duration_seconds=None,
+) -> bool:
+    """Point an existing episode at different audio, in place.
+
+    Used when audio is re-encoded — a bitrate change, a video episode converted
+    to audio. The <guid> is deliberately untouched, so podcast apps treat it as
+    the same episode being corrected rather than a new one to announce.
+
+    Returns True if anything actually changed.
+    """
+    item = find_item(channel, "yt:video:%s" % video_id)
+    if item is None:
+        return False
+
+    changed = False
+    enclosure = item.find("enclosure")
+    if enclosure is not None:
+        for key, value in (
+            ("url", audio_url),
+            ("length", str(int(audio_bytes))),
+            ("type", "audio/mpeg"),
+        ):
+            if enclosure.get(key) != value:
+                enclosure.set(key, value)
+                changed = True
+
+    if duration_seconds:
+        node = item.find(_q(ITUNES, "duration"))
+        formatted = format_duration(duration_seconds)
+        if node is not None and node.text != formatted:
+            node.text = formatted
+            changed = True
+
+    return changed
+
+
 def add_episode(cfg, tree: ET.ElementTree, episode: dict) -> bool:
-    """Add one episode. Returns False if its GUID is already in the feed."""
+    """Add one episode, or refresh its audio if it is already present.
+
+    Returns True only when a new <item> was inserted. An episode that is
+    already in the feed still has its enclosure refreshed, so a re-encode can
+    never leave the feed advertising a stale size.
+    """
     channel = channel_of(tree)
     guid = "yt:video:%s" % episode["video_id"]
     if guid in existing_guids(channel):
-        log("    feed: %s already present, not duplicating" % guid)
+        if update_episode_audio(
+            channel,
+            episode["video_id"],
+            episode["audio_url"],
+            episode["audio_bytes"],
+            episode.get("duration_seconds"),
+        ):
+            log("    feed: %s already present — audio details refreshed" % guid)
+        else:
+            log("    feed: %s already present and unchanged" % guid)
         return False
     insert_item(channel, build_item(cfg, episode))
     return True

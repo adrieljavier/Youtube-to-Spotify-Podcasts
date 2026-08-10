@@ -140,6 +140,8 @@ class State:
         audio_url: str,
         audio_bytes: int,
         duration_seconds: int,
+        encoded_kbps: int = None,
+        encoded_channels: int = None,
     ) -> dict:
         entry = self.upsert(
             video_id,
@@ -149,6 +151,10 @@ class State:
             audio_bytes=audio_bytes,
             duration_seconds=duration_seconds,
             uploaded_at=_now(),
+            # Recorded so a later change to the audio settings can be detected
+            # and the episode re-encoded to match.
+            encoded_kbps=encoded_kbps,
+            encoded_channels=encoded_channels,
         )
         # The upload succeeded, so any error from a previous attempt is history
         # and would otherwise sit in state.json looking like a live problem.
@@ -170,6 +176,25 @@ class State:
         if entry["attempts"] >= max_attempts and entry.get("status") != "uploaded":
             entry["status"] = "parked"
         return entry
+
+    def stale_encodings(self, kbps: int, channels: int) -> List[dict]:
+        """Published episodes whose audio was not made at the current settings.
+
+        An entry with no recorded settings predates this tracking, so it is
+        treated as stale — which is exactly right for the episodes published
+        before the bitrate was raised.
+        """
+        out = []
+        for video_id, entry in self.videos.items():
+            if entry.get("status") != "published" or not entry.get("audio_url"):
+                continue
+            if (
+                entry.get("encoded_kbps") != kbps
+                or entry.get("encoded_channels") != channels
+            ):
+                out.append(dict(entry, video_id=video_id))
+        out.sort(key=lambda e: e.get("published") or "", reverse=True)
+        return out
 
     def unpark(self, video_id: str) -> bool:
         entry = self.get(video_id)
