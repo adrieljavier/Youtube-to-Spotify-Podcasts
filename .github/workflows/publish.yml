@@ -93,6 +93,17 @@ jobs:
           if [ "$INPUT_DRY_RUN" = "true" ]; then ARGS="$ARGS --dry-run"; fi
           .venv-runner/bin/python -m scripts.run $ARGS
 
+      - name: Convert any non-audio episodes
+        # Spotify rejects an entire feed if even one episode has a video
+        # enclosure. Imported back catalogues can contain one. A no-op unless
+        # there is something to fix, and never allowed to block the commit.
+        continue-on-error: true
+        if: ${{ !cancelled() }}
+        env:
+          IA_ACCESS_KEY: ${{ secrets.IA_ACCESS_KEY }}
+          IA_SECRET_KEY: ${{ secrets.IA_SECRET_KEY }}
+        run: .venv-runner/bin/python -m scripts.rehost --apply
+
       - name: Validate the feed before committing
         id: validate
         if: ${{ !cancelled() }}
