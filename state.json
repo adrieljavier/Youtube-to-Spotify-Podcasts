@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-10T02:42:36+00:00",
+  "updated_at": "2026-08-10T04:59:43+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -1257,7 +1257,8 @@
       "first_seen": "2026-08-06T23:31:06+00:00",
       "last_attempt": "2026-08-09T21:58:02+00:00",
       "published": "2026-05-24T17:16:34+00:00",
-      "status": "uploaded",
+      "published_at": "2026-08-10T04:59:42+00:00",
+      "status": "published",
       "title": "Cancel Comfort | Matthew 14:15-21 | Steve Abraham",
       "uploaded_at": "2026-08-10T02:41:28+00:00"
     },
@@ -1442,7 +1443,8 @@
       "duration_seconds": 2017,
       "first_seen": "2026-08-06T23:31:06+00:00",
       "published": "2026-08-02T17:16:34+00:00",
-      "status": "uploaded",
+      "published_at": "2026-08-10T04:59:43+00:00",
+      "status": "published",
       "title": "Refresh | Steve Abraham",
       "uploaded_at": "2026-08-10T02:39:25+00:00"
     },
