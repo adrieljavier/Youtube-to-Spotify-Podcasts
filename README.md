@@ -24,6 +24,10 @@ media. There is no podcast host and no paid tier anywhere in the chain.
 
 ---
 
+> **New here? Read [RUNBOOK.md](RUNBOOK.md)** — every setup step in order, plus
+> every obstacle this build actually hit and why each one matters. This README
+> covers the same ground in less depth.
+
 > **The download step runs on your own Mac, not GitHub's servers.**
 > YouTube blocks GitHub Actions runners outright — every player client is
 > answered with "Sign in to confirm you're not a bot", because the whole
