@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-11T02:33:50+00:00",
+  "updated_at": "2026-08-11T04:45:30+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -172,11 +172,13 @@
     "3BhJbF5G-uE": {
       "archive_identifier": "nlo-sermon-3BhJbF5G-uE",
       "attempts": 0,
-      "audio_bytes": 33935177,
+      "audio_bytes": 67278707,
       "audio_url": "https://archive.org/download/nlo-sermon-3BhJbF5G-uE/3BhJbF5G-uE.mp3",
       "backfill_rank": 4,
       "description": "Stay connected \nWebsite: https://www.newlifeoxnard.com\nInstagram: https://www.instagram.com/newlifeoxnard/?hl=en\nFacebook: https://www.facebook.com/newlifeoxnard/\n\nTo support this ministry and help us to spread the gospel please click here: https://www.newlifeoxnard.com/give",
-      "duration_seconds": 4167,
+      "duration_seconds": 4168,
+      "encoded_channels": 1,
+      "encoded_kbps": 128,
       "first_seen": "2026-08-06T23:31:06+00:00",
       "last_attempt": "2026-08-09T18:17:50+00:00",
       "published": "2026-01-29T03:01:35+00:00",
@@ -1366,11 +1368,13 @@
     "ZpilaauN0C0": {
       "archive_identifier": "nlo-sermon-ZpilaauN0C0",
       "attempts": 0,
-      "audio_bytes": 32435464,
+      "audio_bytes": 64258040,
       "audio_url": "https://archive.org/download/nlo-sermon-ZpilaauN0C0/ZpilaauN0C0.mp3",
       "backfill_rank": 5,
       "description": "Stay connected \nWebsite: https://www.newlifeoxnard.com\nInstagram: https://www.instagram.com/newlifeoxnard/?hl=en\nFacebook: https://www.facebook.com/newlifeoxnard/\n\nTo support this ministry and help us to spread the gospel please click here: https://www.newlifeoxnard.com/give",
-      "duration_seconds": 3977,
+      "duration_seconds": 3978,
+      "encoded_channels": 1,
+      "encoded_kbps": 128,
       "first_seen": "2026-08-06T23:31:06+00:00",
       "last_attempt": "2026-08-09T18:29:14+00:00",
       "published": "2026-01-30T03:01:34+00:00",
