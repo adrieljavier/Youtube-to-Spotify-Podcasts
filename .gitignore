@@ -34,3 +34,4 @@ actions-runner/
 .ffmpeg-bin/
 
 # Source artwork lives here; docs/cover.jpg is the published version.
+sq.jpg
