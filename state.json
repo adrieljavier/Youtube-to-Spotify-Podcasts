@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-13T22:06:47+00:00",
+  "updated_at": "2026-08-13T23:07:07+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -478,6 +478,14 @@
       "skip_reason": "before backfill cutoff",
       "status": "skipped",
       "title": "JUST JESUS // Pastors Steve and Tami Abraham"
+    },
+    "9t46ByHpt5Q": {
+      "attempts": 0,
+      "first_seen": "2026-08-13T23:07:07+00:00",
+      "published": "2026-08-13T22:09:08+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "Trials are not for God to pay you back, He uses your trials to get you back to Him.  #love#gospel"
     },
     "9yPer9Oz6LQ": {
       "attempts": 0,
