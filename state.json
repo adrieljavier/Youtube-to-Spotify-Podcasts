@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-16T18:50:41+00:00",
+  "updated_at": "2026-08-16T19:39:25+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -2445,6 +2445,14 @@
       "skip_reason": "before backfill cutoff",
       "status": "skipped",
       "title": "God With Us | Steve Abraham"
+    },
+    "zZSwZZrvEjQ": {
+      "attempts": 0,
+      "first_seen": "2026-08-16T19:39:25+00:00",
+      "published": "2026-08-16T18:53:03+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "New Life Worship Experience"
     },
     "zhE04IZBLdQ": {
       "attempts": 0,
