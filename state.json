@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-17T16:50:37+00:00",
+  "updated_at": "2026-08-17T17:51:33+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -2188,12 +2188,19 @@
       "title": "PASTOR STEVE ABRAHAM // LET IT GO"
     },
     "sz62z0XN6MI": {
+      "archive_identifier": "nlo-sermon-sz62z0XN6MI",
       "attempts": 0,
+      "audio_bytes": 42567140,
+      "audio_url": "https://archive.org/download/nlo-sermon-sz62z0XN6MI/sz62z0XN6MI.mp3",
+      "description": "In the sermon \"Come Home\", Pastor Ryan Abraham shares an encouraging message through the parable of the two sons, reminding us that God eagerly welcomes both those who have lost their way in wandering and those who have become trapped in cold, self-righteous religion. Whether you are returning from a season of struggle or needing to break free from the pressure of religious performance, the Father meets you right where you are with open arms, clothing you in unconditional grace rather than asking you to earn His love through your own works. No matter your story, you are warmly invited to step out of shame or self-reliance and enter into a genuine, life-changing relationship with God.\n\nStay Connected:\n\ud83c\udf10 Website: https://www.newlifeoxnard.com\n\ud83d\udcf1 Instagram: https://www.instagram.com/newlifeoxnard\n\ud83d\udc65 Facebook: https://www.facebook.com/newlifeoxnard\n\nIf you\u2019d like to support this ministry and help us continue spreading the gospel, you can give here:\n\ud83d\udc49 https://www.newlifeoxnard.com/give",
+      "duration_seconds": 2581,
+      "encoded_channels": 1,
+      "encoded_kbps": 128,
       "first_seen": "2026-08-16T15:41:09+00:00",
-      "published": "2026-08-16T15:28:09+00:00",
-      "skip_reason": "title does not match the sermon pattern '\\\\|'",
-      "status": "skipped",
-      "title": "New Life Worship Experience"
+      "published": "2026-08-16T15:31:36+00:00",
+      "status": "uploaded",
+      "title": "Come Home | Luke 15:11-32 | Ryan Abraham",
+      "uploaded_at": "2026-08-17T17:50:25+00:00"
     },
     "tFv3d74J0ws": {
       "attempts": 0,
