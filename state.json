@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-18T17:48:39+00:00",
+  "updated_at": "2026-08-18T19:03:18+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -555,6 +555,14 @@
       "skip_reason": "before backfill cutoff",
       "status": "skipped",
       "title": "A Glimpse of Heaven // Pastor Steve Abraham"
+    },
+    "BhgIwBV7HAw": {
+      "attempts": 0,
+      "first_seen": "2026-08-18T19:03:18+00:00",
+      "published": "2026-08-18T18:50:36+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "The love of God doesn't wait for you to get your act straight. It accepts you now and changes you!"
     },
     "Br-xJMXwjYs": {
       "attempts": 0,
