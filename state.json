@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-23T14:44:18+00:00",
+  "updated_at": "2026-08-23T15:41:32+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -2476,6 +2476,14 @@
       "skip_reason": "before backfill cutoff",
       "status": "skipped",
       "title": "A Generous Heart | Steve Abraham"
+    },
+    "zs4c4XPX1Go": {
+      "attempts": 0,
+      "first_seen": "2026-08-23T15:41:32+00:00",
+      "published": "2026-08-23T15:28:03+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "New Life Worship Experience"
     }
   }
 }
