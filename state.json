@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-23T18:52:27+00:00",
+  "updated_at": "2026-08-23T19:54:29+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -2305,6 +2305,14 @@
       "skip_reason": "title does not match the sermon pattern '\\\\|'",
       "status": "skipped",
       "title": "Live a life where we can bring people to Jesus, not hinder them from Jesus! #faith #gospel #sermon"
+    },
+    "vCTEXr__Q_o": {
+      "attempts": 0,
+      "first_seen": "2026-08-23T19:54:29+00:00",
+      "published": "2026-08-23T18:53:02+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "New Life Worship Experience"
     },
     "visnbd9hDl0": {
       "attempts": 0,
