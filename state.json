@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-23T16:47:06+00:00",
+  "updated_at": "2026-08-23T17:40:01+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -750,6 +750,14 @@
       "skip_reason": "before backfill cutoff",
       "status": "skipped",
       "title": "There is nothing too far that God cannot redeem.  #faith #motivation #jesus #christian #sermon"
+    },
+    "HblqOO8ca5E": {
+      "attempts": 0,
+      "first_seen": "2026-08-23T17:40:01+00:00",
+      "published": "2026-08-23T17:13:02+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "New Life Worship Experience"
     },
     "Hkqj1Ww3-OI": {
       "attempts": 0,
