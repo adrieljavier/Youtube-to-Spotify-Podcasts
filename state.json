@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-24T19:49:17+00:00",
+  "updated_at": "2026-08-24T20:53:43+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -752,9 +752,9 @@
       "title": "There is nothing too far that God cannot redeem.  #faith #motivation #jesus #christian #sermon"
     },
     "HblqOO8ca5E": {
-      "attempts": 1,
+      "attempts": 2,
       "first_seen": "2026-08-23T17:40:01+00:00",
-      "last_attempt": "2026-08-24T19:49:17+00:00",
+      "last_attempt": "2026-08-24T20:53:43+00:00",
       "last_error": "yt-dlp failed for HblqOO8ca5E: ERROR: unable to download video data: HTTP Error 403: Forbidden",
       "published": "2026-08-23T17:16:33+00:00",
       "status": "queued",
