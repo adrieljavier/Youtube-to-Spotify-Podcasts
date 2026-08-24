@@ -40,6 +40,34 @@ jobs:
     runs-on: self-hosted
     timeout-minutes: 55
 
+    # Applies to every step, so `actions/checkout` gets the same treatment as
+    # the push at the end. Both talk to github.com over HTTPS; both broke on
+    # 2026-08-24, when the connection to GitHub dropped on and off all day.
+    env:
+      # Abort any HTTP transfer that stalls below 1 KB/s for 30 seconds. A dead
+      # TCP connection to GitHub otherwise just sits there: one push on
+      # 2026-08-24 hung for 56 minutes before giving up, eating the whole
+      # timeout for a failure that was obvious in the first half-minute.
+      GIT_HTTP_LOW_SPEED_LIMIT: "1000"
+      GIT_HTTP_LOW_SPEED_TIME: "30"
+
+      # There is no terminal on a launchd-managed runner, so never let git
+      # decide to ask for a password. It cannot be answered.
+      GIT_TERMINAL_PROMPT: "0"
+
+      # And never let git fall back to the macOS keychain either. The Command
+      # Line Tools ship a system gitconfig that turns on the osxkeychain
+      # credential helper for every repo on the machine. From a background
+      # service with no GUI session the helper blocks, then returns -25308
+      # (errSecInteractionNotAllowed) — so a brief network blip surfaced as
+      # "fatal: could not read Username for 'https://github.com'", which points
+      # at the wrong problem entirely. Auth here comes from the Actions token
+      # that actions/checkout installs as an HTTP extraheader, and nothing else.
+      # (Empty value = reset the helper list; needs git >= 2.31.)
+      GIT_CONFIG_COUNT: "1"
+      GIT_CONFIG_KEY_0: credential.helper
+      GIT_CONFIG_VALUE_0: ""
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -161,16 +189,34 @@ jobs:
             exit 0
           fi
           git commit -m "chore(podcast): publish new sermon episodes [skip ci]"
-          for attempt in 1 2 3; do
+          # Retry with a real backoff: 30s, then 90s, then 270s. The old loop
+          # slept 5s between tries and so gave up 16 seconds in — useless
+          # against the multi-minute GitHub outages seen on 2026-08-24. This
+          # rides out about 6.5 minutes, well inside the 55-minute timeout.
+          #
+          # Sleep before rebasing, not after: if the push failed because the
+          # network is down, the pull would fail for the same reason.
+          ATTEMPTS=4
+          attempt=1
+          delay=30
+          while :; do
             if git push; then
               echo "Pushed on attempt $attempt."
               exit 0
             fi
-            echo "Push failed, rebasing and retrying..."
+            if [ "$attempt" -ge "$ATTEMPTS" ]; then
+              break
+            fi
+            echo "Push failed (attempt $attempt of $ATTEMPTS). Retrying in ${delay}s..."
+            sleep "$delay"
             git pull --rebase --autostash origin "${GITHUB_REF_NAME}" || true
-            sleep 5
+            attempt=$((attempt + 1))
+            delay=$((delay * 3))
           done
-          echo "::error::Could not push the updated state after 3 attempts."
+          echo "::error::Could not push the updated state after $ATTEMPTS attempts."
+          echo "::error::If the log shows connection resets or stalled transfers,"
+          echo "::error::this is a network problem, not a repo problem — the work"
+          echo "::error::is idempotent and the next run will redo it."
           exit 1
 
       - name: Fail the job if any episode failed
