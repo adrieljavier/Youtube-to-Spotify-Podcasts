@@ -45,21 +45,31 @@ youtube:
   # client (the TV app, the embedded player, the mobile site) is gated
   # differently and usually still served.
   #
-  # These are tried in order until one works, per video. Measured against this
-  # channel on 2026-08-07: android_vr was the only client that served audio.
-  # tv_embedded is retired ("no longer supported in this application"),
-  # web_embedded returns error 152, and mweb/default/tv/web_safari all hit
-  # "The page needs to be reloaded". The rest are kept as fallbacks because
-  # which clients work changes every few months.
+  # These are tried in order until one works, per video. Re-measured against
+  # this channel on 2026-08-25, after YouTube broke android_vr on 2026-08-17
+  # (yt-dlp issue #17456) — it now returns "HTTP Error 403: Forbidden" on
+  # every video, including ones it had successfully served weeks earlier.
+  # `android` was the only client that still worked; mweb/web_safari/tv/
+  # default all hit "The page needs to be reloaded" (a signature-extraction
+  # failure, not client-specific — a newer yt-dlp release would likely fix
+  # it, but none is installable through pip on this machine as of that date).
+  # android_vr is kept at the end rather than dropped, in case YouTube's
+  # block or yt-dlp's handling of it changes again.
+  #
+  # Note: `android` only exposes one muxed 360p format for this channel, not
+  # a dedicated audio-only stream — yt-dlp still extracts just the audio via
+  # ffmpeg, but it downloads more data per episode than an audio-only client
+  # would. Worth revisiting if a working audio-only client turns up later.
   #
   # If runs start failing with bot-check errors, reordering this list is the
   # first thing to try.
   player_clients:
-    - "android_vr"
+    - "android"
     - "mweb"
     - "web_safari"
     - "tv"
     - "default"
+    - "android_vr"
 
 site:
   # Public base URL of your GitHub Pages site, no trailing slash.

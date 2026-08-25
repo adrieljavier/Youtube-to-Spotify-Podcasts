@@ -467,12 +467,21 @@ cd "/path/to/project"
 **Jobs queued then cancelled** — no runner available. The Mac is asleep, off, or
 logged out. This is not a pipeline error; the job is waiting for a machine.
 
-**"Sign in to confirm you're not a bot"** — YouTube rotated which player clients
-work. Reorder `youtube.player_clients` in `config.yml`. Measured on 2026-08-07,
-`android_vr` was the only client serving audio; `tv_embedded` is retired,
-`web_embedded` returns error 152, and the rest hit throttling. Expect to revisit
-this every few months. It is the one foreseeable maintenance task, and the price
-of the zero-budget constraint.
+**"Sign in to confirm you're not a bot", "HTTP Error 403", or "The page needs to
+be reloaded"** — YouTube rotated which player clients work. Reorder
+`youtube.player_clients` in `config.yml`; the comment above that list explains
+how to figure out which client currently works. Re-measured 2026-08-25 after
+YouTube broke `android_vr` on 2026-08-17 (it started returning 403 on every
+video, including ones already published) — `android` was the only client
+still serving audio. Expect to revisit this every few months. It is the one
+foreseeable maintenance task, and the price of the zero-budget constraint.
+
+If every configured client fails, check whether a newer yt-dlp release exists
+before assuming the channel itself is blocked — `pip index versions yt-dlp`
+lags behind real PyPI on this machine (confirm against
+`https://pypi.org/pypi/yt-dlp/json` directly), and a stale yt-dlp can fail to
+extract YouTube's current signature scheme across every client at once
+("The page needs to be reloaded" on all of them is the symptom).
 
 **`Operation not permitted` in the runner log** — it is in a TCC-protected
 folder. Move it to `~/actions-runner`.

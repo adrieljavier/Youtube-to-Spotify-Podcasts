@@ -148,6 +148,23 @@ def _run_download(cfg, video_id: str, work_dir: pathlib.Path, embed_thumbnail: b
     On a datacenter address — which is what a GitHub Actions runner is —
     YouTube refuses the default web client with "Sign in to confirm you're not
     a bot". Other player clients are gated differently and usually still serve.
+
+    Always try every configured client on a DownloadError, rather than only
+    those matching a known rejection phrase. YouTube's per-client rejection
+    text turns out to be far more varied than any fixed list keeps up with —
+    diagnosing a stuck episode on 2026-08-25 found six different clients
+    failing with four different messages ("HTTP Error 403", "The page needs
+    to be reloaded", "Requested format is not available", "Please sign in"),
+    only two of which matched youtube.client_rejected()'s markers. The
+    original reasoning ("an unrecognized error means a genuinely broken video
+    or a network failure, so trying more clients would just obscure it") is
+    what caused that episode to get stuck: the first configured client
+    (android_vr) had been broken by a YouTube-side change days earlier, its
+    403 wasn't a recognized marker, and every other configured client — one
+    of which (android) demonstrably still worked — was never even attempted.
+    A DownloadError only ever comes from this client's attempt at this video,
+    so cycling through the rest costs little and is what youtube.py's own
+    fetch_video_info already does.
     """
     clients = youtube.player_clients(cfg)
     last_error = None
@@ -165,11 +182,6 @@ def _run_download(cfg, video_id: str, work_dir: pathlib.Path, embed_thumbnail: b
             last_error = str(exc).strip()
             # Clear partial files before the next client tries.
             cleanup(work_dir, video_id)
-            if not youtube.client_rejected(last_error):
-                # Not a client problem — a genuinely broken video, a network
-                # failure, a full disk. Trying four more clients would only
-                # obscure it.
-                raise AudioError("yt-dlp failed for %s: %s" % (video_id, last_error))
 
     raise AudioError(
         "No player client could download %s (tried: %s). Last error: %s"
