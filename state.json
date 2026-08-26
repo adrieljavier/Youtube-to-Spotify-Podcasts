@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-26T02:05:12+00:00",
+  "updated_at": "2026-08-26T03:31:11+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -752,12 +752,20 @@
       "title": "There is nothing too far that God cannot redeem.  #faith #motivation #jesus #christian #sermon"
     },
     "HblqOO8ca5E": {
+      "archive_identifier": "nlo-sermon-HblqOO8ca5E",
       "attempts": 0,
+      "audio_bytes": 43153636,
+      "audio_url": "https://archive.org/download/nlo-sermon-HblqOO8ca5E/HblqOO8ca5E.mp3",
+      "description": "In this powerful sermon, Pastor Steve reminds us that God specializes in transforming our most bitter situations into something beautiful for His glory. No matter what \"Mara\" you are facing today, remember that the cross of Christ has the power to absorb your pain and lead you into a season of fruitfulness and peace. Keep walking and trusting in His leadership, because your \"Elim\" (your place of refreshment and blessing) is much closer than you think!",
+      "duration_seconds": 2603,
+      "encoded_channels": 1,
+      "encoded_kbps": 128,
       "first_seen": "2026-08-23T17:40:01+00:00",
       "last_attempt": "2026-08-24T23:41:18+00:00",
       "published": "2026-08-23T17:16:33+00:00",
-      "status": "queued",
-      "title": "From Bitter to Better | Exodus 15:22-27 | Steve Abraham"
+      "status": "uploaded",
+      "title": "From Bitter to Better | Exodus 15:22-27 | Steve Abraham",
+      "uploaded_at": "2026-08-26T03:30:03+00:00"
     },
     "Hkqj1Ww3-OI": {
       "attempts": 0,
