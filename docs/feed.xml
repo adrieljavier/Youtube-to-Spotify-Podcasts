@@ -6,7 +6,7 @@
     <description>New Life Community Church in Oxnard CA led by Pastor Steve Abraham. Weekly sermons from our Sunday services.</description>
     <language>en-us</language>
     <copyright>© New Life Oxnard</copyright>
-    <lastBuildDate>Mon, 17 Aug 2026 19:03:15 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 26 Aug 2026 05:00:17 +0000</lastBuildDate>
     <generator>sermon-podcast-pipeline</generator>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <atom:link href="https://adrieljavier.github.io/Youtube-to-Spotify-Podcasts/feed.xml" rel="self" type="application/rss+xml" />
@@ -29,6 +29,26 @@
     </image>
     <podcast:locked owner="adrieljavier@newlifeoxnard.com">yes</podcast:locked>
     <podcast:guid>56747bda-78a7-5e32-9b43-00a51ddf865b</podcast:guid>
+    <item>
+      <title>From Bitter to Better | Exodus 15:22-27 | Steve Abraham</title>
+      <link>https://www.youtube.com/watch?v=HblqOO8ca5E</link>
+      <description>In this powerful sermon, Pastor Steve reminds us that God specializes in transforming our most bitter situations into something beautiful for His glory. No matter what "Mara" you are facing today, remember that the cross of Christ has the power to absorb your pain and lead you into a season of fruitfulness and peace. Keep walking and trusting in His leadership, because your "Elim" (your place of refreshment and blessing) is much closer than you think!
+
+Watch this message on YouTube: https://www.youtube.com/watch?v=HblqOO8ca5E</description>
+      <content:encoded>&lt;p&gt;In this powerful sermon, Pastor Steve reminds us that God specializes in transforming our most bitter situations into something beautiful for His glory. No matter what "Mara" you are facing today, remember that the cross of Christ has the power to absorb your pain and lead you into a season of fruitfulness and peace. Keep walking and trusting in His leadership, because your "Elim" (your place of refreshment and blessing) is much closer than you think!&lt;/p&gt;&lt;p&gt;Watch this message on YouTube: &lt;a href="https://www.youtube.com/watch?v=HblqOO8ca5E"&gt;https://www.youtube.com/watch?v=HblqOO8ca5E&lt;/a&gt;&lt;/p&gt;</content:encoded>
+      <pubDate>Sun, 23 Aug 2026 17:16:33 +0000</pubDate>
+      <guid isPermaLink="false">yt:video:HblqOO8ca5E</guid>
+      <enclosure url="https://archive.org/download/nlo-sermon-HblqOO8ca5E/HblqOO8ca5E.mp3" length="43153636" type="audio/mpeg" />
+      <itunes:title>From Bitter to Better | Exodus 15:22-27 | Steve Abraham</itunes:title>
+      <itunes:author>Steve Abraham</itunes:author>
+      <itunes:summary>In this powerful sermon, Pastor Steve reminds us that God specializes in transforming our most bitter situations into something beautiful for His glory. No matter what "Mara" you are facing today, remember that the cross of Christ has the power to absorb your pain and lead you into a season of fruitfulness and peace. Keep walking and trusting in His leadership, because your "Elim" (your place of refreshment and blessing) is much closer than you think!
+
+Watch this message on YouTube: https://www.youtube.com/watch?v=HblqOO8ca5E</itunes:summary>
+      <itunes:duration>0:43:23</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:image href="https://adrieljavier.github.io/Youtube-to-Spotify-Podcasts/cover.jpg" />
+    </item>
     <item>
       <title>Come Home | Luke 15:11-32 | Ryan Abraham</title>
       <link>https://www.youtube.com/watch?v=sz62z0XN6MI</link>

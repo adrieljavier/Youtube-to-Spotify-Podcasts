@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-26T03:31:11+00:00",
+  "updated_at": "2026-08-26T05:00:17+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -763,7 +763,8 @@
       "first_seen": "2026-08-23T17:40:01+00:00",
       "last_attempt": "2026-08-24T23:41:18+00:00",
       "published": "2026-08-23T17:16:33+00:00",
-      "status": "uploaded",
+      "published_at": "2026-08-26T05:00:17+00:00",
+      "status": "published",
       "title": "From Bitter to Better | Exodus 15:22-27 | Steve Abraham",
       "uploaded_at": "2026-08-26T03:30:03+00:00"
     },
