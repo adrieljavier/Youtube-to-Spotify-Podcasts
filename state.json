@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-30T14:39:59+00:00",
+  "updated_at": "2026-08-30T17:36:46+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -398,6 +398,14 @@
       "status": "published",
       "title": "FAMILY MATTERS | Please Stop the Bleeding | Genesis 29-32 | Steve Abraham",
       "uploaded_at": "2026-08-09T21:03:32+00:00"
+    },
+    "7xNq6-ACkxA": {
+      "attempts": 0,
+      "first_seen": "2026-08-30T17:36:46+00:00",
+      "published": "2026-08-30T15:28:03+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "New Life Worship Experience"
     },
     "8WU5m7req04": {
       "archive_identifier": "nlo-sermon-8WU5m7req04",
@@ -1287,6 +1295,14 @@
       "skip_reason": "before backfill cutoff",
       "status": "skipped",
       "title": "The One About God's House"
+    },
+    "WL4o5oBbskY": {
+      "attempts": 0,
+      "first_seen": "2026-08-30T17:36:46+00:00",
+      "published": "2026-08-30T17:13:04+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "New Life Worship Experience"
     },
     "WeQNMhyjfSg": {
       "attempts": 0,
