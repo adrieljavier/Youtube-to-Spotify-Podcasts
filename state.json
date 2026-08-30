@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-30T17:36:46+00:00",
+  "updated_at": "2026-08-30T21:31:17+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -22,6 +22,14 @@
       "skip_reason": "before backfill cutoff",
       "status": "skipped",
       "title": "First Things First: Night 2"
+    },
+    "-v8znFibDHM": {
+      "attempts": 0,
+      "first_seen": "2026-08-30T21:31:17+00:00",
+      "published": "2026-08-30T18:53:04+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "New Life Worship Experience"
     },
     "0FPrvKIa9_w": {
       "attempts": 0,
