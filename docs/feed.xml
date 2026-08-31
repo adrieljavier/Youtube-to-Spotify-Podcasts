@@ -6,7 +6,7 @@
     <description>New Life Community Church in Oxnard CA led by Pastor Steve Abraham. Weekly sermons from our Sunday services.</description>
     <language>en-us</language>
     <copyright>© New Life Oxnard</copyright>
-    <lastBuildDate>Wed, 26 Aug 2026 05:00:17 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 31 Aug 2026 23:55:44 +0000</lastBuildDate>
     <generator>sermon-podcast-pipeline</generator>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <atom:link href="https://adrieljavier.github.io/Youtube-to-Spotify-Podcasts/feed.xml" rel="self" type="application/rss+xml" />
@@ -29,6 +29,26 @@
     </image>
     <podcast:locked owner="adrieljavier@newlifeoxnard.com">yes</podcast:locked>
     <podcast:guid>56747bda-78a7-5e32-9b43-00a51ddf865b</podcast:guid>
+    <item>
+      <title>THE REAL DEAL | Be Real | 1 John 1:1-10 | Steve Abraham</title>
+      <link>https://www.youtube.com/watch?v=WL4o5oBbskY</link>
+      <description>Sunday Worship at New Life Community Church, Oxnard, CA.
+
+Watch this message on YouTube: https://www.youtube.com/watch?v=WL4o5oBbskY</description>
+      <content:encoded>&lt;p&gt;Sunday Worship at New Life Community Church, Oxnard, CA.&lt;/p&gt;&lt;p&gt;Watch this message on YouTube: &lt;a href="https://www.youtube.com/watch?v=WL4o5oBbskY"&gt;https://www.youtube.com/watch?v=WL4o5oBbskY&lt;/a&gt;&lt;/p&gt;</content:encoded>
+      <pubDate>Sun, 30 Aug 2026 17:16:36 +0000</pubDate>
+      <guid isPermaLink="false">yt:video:WL4o5oBbskY</guid>
+      <enclosure url="https://archive.org/download/nlo-sermon-WL4o5oBbskY/WL4o5oBbskY.mp3" length="44855926" type="audio/mpeg" />
+      <itunes:title>THE REAL DEAL | Be Real | 1 John 1:1-10 | Steve Abraham</itunes:title>
+      <itunes:author>Steve Abraham</itunes:author>
+      <itunes:summary>Sunday Worship at New Life Community Church, Oxnard, CA.
+
+Watch this message on YouTube: https://www.youtube.com/watch?v=WL4o5oBbskY</itunes:summary>
+      <itunes:duration>0:46:08</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:image href="https://adrieljavier.github.io/Youtube-to-Spotify-Podcasts/cover.jpg" />
+    </item>
     <item>
       <title>From Bitter to Better | Exodus 15:22-27 | Steve Abraham</title>
       <link>https://www.youtube.com/watch?v=HblqOO8ca5E</link>
