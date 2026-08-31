@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-31T14:06:58+00:00",
+  "updated_at": "2026-08-31T20:14:06+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -1305,12 +1305,19 @@
       "title": "The One About God's House"
     },
     "WL4o5oBbskY": {
+      "archive_identifier": "nlo-sermon-WL4o5oBbskY",
       "attempts": 0,
+      "audio_bytes": 44855926,
+      "audio_url": "https://archive.org/download/nlo-sermon-WL4o5oBbskY/WL4o5oBbskY.mp3",
+      "description": "Sunday Worship at New Life Community Church, Oxnard, CA.",
+      "duration_seconds": 2768,
+      "encoded_channels": 1,
+      "encoded_kbps": 128,
       "first_seen": "2026-08-30T17:36:46+00:00",
-      "published": "2026-08-30T17:13:04+00:00",
-      "skip_reason": "title does not match the sermon pattern '\\\\|'",
-      "status": "skipped",
-      "title": "New Life Worship Experience"
+      "published": "2026-08-30T17:16:36+00:00",
+      "status": "uploaded",
+      "title": "THE REAL DEAL | Be Real | 1 John 1:1-10 | Steve Abraham",
+      "uploaded_at": "2026-08-31T20:12:58+00:00"
     },
     "WeQNMhyjfSg": {
       "attempts": 0,
