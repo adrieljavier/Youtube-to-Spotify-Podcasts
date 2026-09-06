@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-06T14:14:31+00:00",
+  "updated_at": "2026-09-06T17:08:51+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -640,6 +640,14 @@
       "skip_reason": "before backfill cutoff",
       "status": "skipped",
       "title": "Under Authority | Phillip Trank"
+    },
+    "DZaJjg2dFJk": {
+      "attempts": 0,
+      "first_seen": "2026-09-06T17:08:51+00:00",
+      "published": "2026-09-06T15:28:07+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "New Life Worship Experience"
     },
     "DtNAY6AhcbQ": {
       "attempts": 0,
