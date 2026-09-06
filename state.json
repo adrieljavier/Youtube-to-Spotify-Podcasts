@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-06T17:08:51+00:00",
+  "updated_at": "2026-09-06T19:18:07+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -914,6 +914,14 @@
       "status": "skipped",
       "title": "STAND: STRONG"
     },
+    "Kr9CWiVM2W8": {
+      "attempts": 0,
+      "first_seen": "2026-09-06T19:18:07+00:00",
+      "published": "2026-09-06T17:13:03+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "New Life Worship Experience"
+    },
     "L9CYCnnZplA": {
       "attempts": 0,
       "first_seen": "2026-08-06T23:31:08+00:00",
@@ -1025,6 +1033,14 @@
       "skip_reason": "title does not match the sermon pattern '\\\\|'",
       "status": "skipped",
       "title": "Step into what God has for you & praise God even if you don't see the miracle yet!  #faith#sermon"
+    },
+    "NtpW3gaMBGo": {
+      "attempts": 0,
+      "first_seen": "2026-09-06T19:18:07+00:00",
+      "published": "2026-09-06T18:53:03+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "New Life Worship Experience"
     },
     "NuFnhUavFQ4": {
       "attempts": 0,
