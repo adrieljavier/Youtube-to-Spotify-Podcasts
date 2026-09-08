@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T14:38:43+00:00",
+  "updated_at": "2026-09-08T18:50:14+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -915,12 +915,19 @@
       "title": "STAND: STRONG"
     },
     "Kr9CWiVM2W8": {
+      "archive_identifier": "nlo-sermon-Kr9CWiVM2W8",
       "attempts": 0,
+      "audio_bytes": 37131518,
+      "audio_url": "https://archive.org/download/nlo-sermon-Kr9CWiVM2W8/Kr9CWiVM2W8.mp3",
+      "description": "Sunday Worship at New Life Community Church, Oxnard, CA.",
+      "duration_seconds": 2218,
+      "encoded_channels": 1,
+      "encoded_kbps": 128,
       "first_seen": "2026-09-06T19:18:07+00:00",
-      "published": "2026-09-06T17:13:03+00:00",
-      "skip_reason": "title does not match the sermon pattern '\\\\|'",
-      "status": "skipped",
-      "title": "New Life Worship Experience"
+      "published": "2026-09-06T17:16:36+00:00",
+      "status": "uploaded",
+      "title": "THE REAL DEAL | Prove It! | 1 John 2:3-11 | Steve Abraham",
+      "uploaded_at": "2026-09-08T18:49:06+00:00"
     },
     "L9CYCnnZplA": {
       "attempts": 0,
