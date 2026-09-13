@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-13T12:05:22+00:00",
+  "updated_at": "2026-09-13T18:47:50+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -1294,6 +1294,14 @@
       "status": "skipped",
       "title": "PASTOR STEVE ABRAHAM // STANDING AGAINST OPPOSITION"
     },
+    "VLyj5wmwA2s": {
+      "attempts": 0,
+      "first_seen": "2026-09-13T18:47:50+00:00",
+      "published": "2026-09-13T17:13:03+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "New Life Worship Experience"
+    },
     "VPuaIEYBcf4": {
       "attempts": 0,
       "first_seen": "2026-08-06T23:31:08+00:00",
@@ -2031,6 +2039,14 @@
       "skip_reason": "before backfill cutoff",
       "status": "skipped",
       "title": "QUIET // ELEVATION RHYTHM // COVER"
+    },
+    "lPjn_i_Jpv0": {
+      "attempts": 0,
+      "first_seen": "2026-09-13T18:47:50+00:00",
+      "published": "2026-09-13T18:06:56+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "New Life Worship Experience"
     },
     "m8scKvuCrSc": {
       "attempts": 0,
