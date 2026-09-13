@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-13T18:47:50+00:00",
+  "updated_at": "2026-09-13T19:32:51+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -281,6 +281,14 @@
       "skip_reason": "title does not match the sermon pattern '\\\\|'",
       "status": "skipped",
       "title": "We usually miss this part of the miracle... #sermon #faith #hope"
+    },
+    "4SBgpcRK6fg": {
+      "attempts": 0,
+      "first_seen": "2026-09-13T19:32:51+00:00",
+      "published": "2026-09-13T18:53:03+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "New Life Worship Experience"
     },
     "4vbGwL8a1U0": {
       "attempts": 0,
