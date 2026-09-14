@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Restarts the GitHub Actions runner listener when its long-poll connection
+  to GitHub's broker gets silently stuck (a confirmed, still-open upstream
+  bug in actions/runner -- see github.com/actions/runner issues #3904,
+  #4668, #4703). The connection dies without the process crashing, so
+  launchd sees nothing wrong and never restarts it on its own; measured on
+  this runner on 2026-09-14, the median gap between hourly runs was 4.2
+  hours, with two 20+ hour outliers, while the machine itself never slept.
+
+  The actual script lives at ~/actions-runner/watchdog.sh, not in this repo
+  -- same reasoning as the runner install itself (see SETUP-RUNNER.md):
+  anything a launchd service depends on needs to live outside a
+  TCC-protected Desktop path, or it dies on startup with "Operation not
+  permitted". This plist is just the versioned reference copy; the one that
+  matters is the one installed to ~/Library/LaunchAgents.
+
+  Checks every 5 minutes. Only acts if nothing has happened (no job started,
+  no job finished, no "Listening for Jobs") in the last 20 minutes, and
+  never interrupts a job that's actively in flight. See watchdog.sh for the
+  full detection logic.
+
+  Install:    cp mac/podcast-runner-watchdog.sh ~/actions-runner/watchdog.sh
+              chmod +x ~/actions-runner/watchdog.sh
+              cp mac/com.newlifeoxnard.podcast-runner-watchdog.plist ~/Library/LaunchAgents/
+              launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.newlifeoxnard.podcast-runner-watchdog.plist
+  Remove:     launchctl bootout gui/$(id -u)/com.newlifeoxnard.podcast-runner-watchdog
+              rm ~/Library/LaunchAgents/com.newlifeoxnard.podcast-runner-watchdog.plist
+  Check:      tail -20 ~/actions-runner/_diag/watchdog.log   # only has lines when it actually acts
+              launchctl list | grep podcast-runner-watchdog
+-->
+<plist version="1.0">
+  <dict>
+    <key>Label</key>
+    <string>com.newlifeoxnard.podcast-runner-watchdog</string>
+    <key>ProgramArguments</key>
+    <array>
+      <string>/Users/adrieljavier/actions-runner/watchdog.sh</string>
+    </array>
+    <key>StartInterval</key>
+    <integer>300</integer>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>StandardOutPath</key>
+    <string>/Users/adrieljavier/actions-runner/_diag/watchdog-launchd.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/adrieljavier/actions-runner/_diag/watchdog-launchd.log</string>
+    <key>ProcessType</key>
+    <string>Background</string>
+  </dict>
+</plist>

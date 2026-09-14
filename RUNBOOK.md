@@ -301,6 +301,31 @@ pmset -g assertions | grep caffeinate     # confirm it is holding
 
 **Keep the Mac plugged in.** That part no software can arrange.
 
+### Gotcha: the runner's connection can get silently stuck
+
+Separately from sleep — the runner's long-poll connection to
+`broker.actions.githubusercontent.com` can die without the process crashing,
+a confirmed open bug upstream (github.com/actions/runner issues #3904, #4668,
+#4703). Nothing looks wrong (the service is "running", the Mac is awake), it
+just never reconnects on its own — measured gaps up to 20+ hours against an
+hourly schedule before this was caught (2026-09-14).
+
+`mac/com.newlifeoxnard.podcast-runner-watchdog.plist` +
+`mac/podcast-runner-watchdog.sh` (also already installed) check every 5
+minutes and restart the listener if nothing has happened in 20 minutes,
+without ever interrupting a job that's actively running.
+
+```bash
+tail -20 ~/actions-runner/_diag/watchdog.log   # only has lines when it acted
+```
+
+If a run looks stuck right now and you don't want to wait for the next
+watchdog check: `svc.sh stop`/`svc.sh start` do **not** reliably fix this
+(`start` fails with `Load failed: 5: Input/output error` against the
+already-registered, already-stopped service). Use
+`launchctl kickstart -k gui/$(id -u)/actions.runner.adrieljavier-Youtube-to-Spotify-Podcasts.MacBook_Pro`
+instead — confirmed working by hand.
+
 ## Step 12: Run it
 
 **Actions → Publish sermon episodes → Run workflow.**
@@ -467,6 +492,13 @@ cd "/path/to/project"
 **Jobs queued then cancelled** — no runner available. The Mac is asleep, off, or
 logged out. This is not a pipeline error; the job is waiting for a machine.
 
+**Runs are hourly-scheduled but keep landing hours late, or not at all, even
+though the Mac is awake and plugged in** — this is the runner's own
+connection getting stuck, not a scheduling or sleep problem. See "Gotcha: the
+runner's connection can get silently stuck" a few sections up — a watchdog is
+already installed for this; if it's somehow not running, that's the thing to
+check first, not `pmset`/caffeinate.
+
 **"Sign in to confirm you're not a bot", "HTTP Error 403", or "The page needs to
 be reloaded"** — YouTube rotated which player clients work. Reorder
 `youtube.player_clients` in `config.yml`; the comment above that list explains
@@ -546,6 +578,16 @@ CONSTRAINTS THE OBVIOUS IMPLEMENTATION GETS WRONG - handle all of these:
     well-formed XML before committing.
 11. The workflow must have NO pull_request trigger - a self-hosted runner on a
     public repo would otherwise execute strangers' code.
+12. The self-hosted runner's own long-poll connection to GitHub can die
+    silently - process stays alive, service looks "running", but it never
+    picks up another job, sometimes for 20+ hours (open upstream bug,
+    actions/runner #3904/#4668/#4703). This is invisible to the pipeline
+    itself - the workflow never runs, so nothing in its own logs shows a
+    failure. Install a launchd watchdog (checking every few minutes,
+    restarting via `launchctl kickstart -k` if nothing has happened in ~20
+    minutes, never interrupting a job in progress) alongside the runner -
+    same rule as #1, keep both the watchdog script and the runner itself
+    outside Desktop/Documents/Downloads.
 
 Also write: a seeding/backfill script with a cutoff so the first run does not
 publish the whole channel history, a cover-art script producing a compliant
