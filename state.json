@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-14T19:31:17+00:00",
+  "updated_at": "2026-09-14T23:13:05+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -1313,7 +1313,8 @@
       "encoded_kbps": 128,
       "first_seen": "2026-09-13T18:47:50+00:00",
       "published": "2026-09-13T17:16:34+00:00",
-      "status": "uploaded",
+      "published_at": "2026-09-14T23:13:05+00:00",
+      "status": "published",
       "title": "THE REAL DEAL | Living In The Last Days | 1 John 2:15-27 | Steve Abraham",
       "uploaded_at": "2026-09-14T19:30:08+00:00"
     },

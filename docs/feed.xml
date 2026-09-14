@@ -6,7 +6,7 @@
     <description>New Life Community Church in Oxnard CA led by Pastor Steve Abraham. Weekly sermons from our Sunday services.</description>
     <language>en-us</language>
     <copyright>© New Life Oxnard</copyright>
-    <lastBuildDate>Tue, 08 Sep 2026 21:55:49 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 14 Sep 2026 23:13:05 +0000</lastBuildDate>
     <generator>sermon-podcast-pipeline</generator>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <atom:link href="https://adrieljavier.github.io/Youtube-to-Spotify-Podcasts/feed.xml" rel="self" type="application/rss+xml" />
@@ -29,6 +29,26 @@
     </image>
     <podcast:locked owner="adrieljavier@newlifeoxnard.com">yes</podcast:locked>
     <podcast:guid>56747bda-78a7-5e32-9b43-00a51ddf865b</podcast:guid>
+    <item>
+      <title>THE REAL DEAL | Living In The Last Days | 1 John 2:15-27 | Steve Abraham</title>
+      <link>https://www.youtube.com/watch?v=VLyj5wmwA2s</link>
+      <description>In this message, Pastor Steve reminds us to stay spiritually awake and anchored in God's Word rather than conforming to the patterns and distractions of the world. By staying alert to the truth and deeply abiding in Christ, you can walk confidently in the Holy Spirit's anointing each day. Take heart knowing that as you remain in Him, you are held secure in His everlasting love and the promise of eternal life.
+
+Watch this message on YouTube: https://www.youtube.com/watch?v=VLyj5wmwA2s</description>
+      <content:encoded>&lt;p&gt;In this message, Pastor Steve reminds us to stay spiritually awake and anchored in God's Word rather than conforming to the patterns and distractions of the world. By staying alert to the truth and deeply abiding in Christ, you can walk confidently in the Holy Spirit's anointing each day. Take heart knowing that as you remain in Him, you are held secure in His everlasting love and the promise of eternal life.&lt;/p&gt;&lt;p&gt;Watch this message on YouTube: &lt;a href="https://www.youtube.com/watch?v=VLyj5wmwA2s"&gt;https://www.youtube.com/watch?v=VLyj5wmwA2s&lt;/a&gt;&lt;/p&gt;</content:encoded>
+      <pubDate>Sun, 13 Sep 2026 17:16:34 +0000</pubDate>
+      <guid isPermaLink="false">yt:video:VLyj5wmwA2s</guid>
+      <enclosure url="https://archive.org/download/nlo-sermon-VLyj5wmwA2s/VLyj5wmwA2s.mp3" length="88389213" type="audio/mpeg" />
+      <itunes:title>THE REAL DEAL | Living In The Last Days | 1 John 2:15-27 | Steve Abraham</itunes:title>
+      <itunes:author>Steve Abraham</itunes:author>
+      <itunes:summary>In this message, Pastor Steve reminds us to stay spiritually awake and anchored in God's Word rather than conforming to the patterns and distractions of the world. By staying alert to the truth and deeply abiding in Christ, you can walk confidently in the Holy Spirit's anointing each day. Take heart knowing that as you remain in Him, you are held secure in His everlasting love and the promise of eternal life.
+
+Watch this message on YouTube: https://www.youtube.com/watch?v=VLyj5wmwA2s</itunes:summary>
+      <itunes:duration>1:30:10</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:image href="https://adrieljavier.github.io/Youtube-to-Spotify-Podcasts/cover.jpg" />
+    </item>
     <item>
       <title>THE REAL DEAL | Prove It! | 1 John 2:3-11 | Steve Abraham</title>
       <link>https://www.youtube.com/watch?v=Kr9CWiVM2W8</link>
