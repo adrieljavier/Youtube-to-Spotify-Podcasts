@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-20T16:52:37+00:00",
+  "updated_at": "2026-09-20T19:32:35+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -1631,6 +1631,14 @@
       "title": "Refresh | Steve Abraham",
       "uploaded_at": "2026-08-10T02:39:25+00:00"
     },
+    "c2uC5aG56OI": {
+      "attempts": 0,
+      "first_seen": "2026-09-20T19:32:35+00:00",
+      "published": "2026-09-20T18:53:27+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "New Life Worship Experience"
+    },
     "c3Bp7mx_684": {
       "archive_identifier": "nlo-sermon-c3Bp7mx_684",
       "attempts": 0,
@@ -2576,6 +2584,14 @@
       "skip_reason": "before backfill cutoff",
       "status": "skipped",
       "title": "PASTOR STEVE ABRAHAM // HOW TO HANDLE MY FEAR"
+    },
+    "zRPkkUepK-Q": {
+      "attempts": 0,
+      "first_seen": "2026-09-20T19:32:35+00:00",
+      "published": "2026-09-20T17:13:29+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "New Life Worship Experience"
     },
     "zVDxaW6reB4": {
       "attempts": 0,
