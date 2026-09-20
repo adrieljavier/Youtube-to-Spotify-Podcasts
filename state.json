@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-20T12:29:10+00:00",
+  "updated_at": "2026-09-20T16:52:37+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -1225,6 +1225,14 @@
       "skip_reason": "before backfill cutoff",
       "status": "skipped",
       "title": "PASTOR STEVE ABRAHAM // TAKE ME TO THE KING"
+    },
+    "TOFFWtkEkKk": {
+      "attempts": 0,
+      "first_seen": "2026-09-20T16:52:37+00:00",
+      "published": "2026-09-20T15:28:30+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "New Life Worship Experience"
     },
     "TcAT1-FsIZE": {
       "attempts": 0,
