@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-21T14:19:56+00:00",
+  "updated_at": "2026-09-21T19:37:40+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -2586,12 +2586,19 @@
       "title": "PASTOR STEVE ABRAHAM // HOW TO HANDLE MY FEAR"
     },
     "zRPkkUepK-Q": {
+      "archive_identifier": "nlo-sermon-zRPkkUepK-Q",
       "attempts": 0,
+      "audio_bytes": 40545043,
+      "audio_url": "https://archive.org/download/nlo-sermon-zRPkkUepK-Q/zRPkkUepK-Q.mp3",
+      "description": "What we fail to celebrate, we soon forget! In this encouraging message from 1 Chronicles 16:1\u201318, Pastor Steve reminds us to reflect on God\u2019s unwavering presence, miraculous works, and faithful promises over every season of our lives. No matter what mountains or valleys you are facing today, remember that the God who brought you through yesterday will faithfully carry you through tomorrow.\n\nStay Connected:\n\ud83c\udf10 Website: https://www.newlifeoxnard.com\n\ud83d\udcf1 Instagram: https://www.instagram.com/newlifeoxnard\n\ud83d\udc65 Facebook: https://www.facebook.com/newlifeoxnard\n\nIf you\u2019d like to support this ministry and help us continue spreading the gospel, you can give here:\n\ud83d\udc49 https://www.newlifeoxnard.com/give\n\nChurch Copyright License\u00ae (CCLI): 1377750\nCCLI Streaming License\u00ae: CSPL077395",
+      "duration_seconds": 2462,
+      "encoded_channels": 1,
+      "encoded_kbps": 128,
       "first_seen": "2026-09-20T19:32:35+00:00",
-      "published": "2026-09-20T17:13:29+00:00",
-      "skip_reason": "title does not match the sermon pattern '\\\\|'",
-      "status": "skipped",
-      "title": "New Life Worship Experience"
+      "published": "2026-09-20T17:16:36+00:00",
+      "status": "uploaded",
+      "title": "We Will Remember | 1 Chronicles 16:1-18 | Steve Abraham",
+      "uploaded_at": "2026-09-21T19:36:28+00:00"
     },
     "zVDxaW6reB4": {
       "attempts": 0,
