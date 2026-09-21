@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-21T19:37:40+00:00",
+  "updated_at": "2026-09-21T23:22:45+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -2596,7 +2596,8 @@
       "encoded_kbps": 128,
       "first_seen": "2026-09-20T19:32:35+00:00",
       "published": "2026-09-20T17:16:36+00:00",
-      "status": "uploaded",
+      "published_at": "2026-09-21T23:22:45+00:00",
+      "status": "published",
       "title": "We Will Remember | 1 Chronicles 16:1-18 | Steve Abraham",
       "uploaded_at": "2026-09-21T19:36:28+00:00"
     },
