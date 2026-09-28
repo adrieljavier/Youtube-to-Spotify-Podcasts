@@ -317,7 +317,16 @@ without ever interrupting a job that's actively running.
 
 ```bash
 tail -20 ~/actions-runner/_diag/watchdog.log   # only has lines when it acted
+launchctl print gui/$(id -u)/com.newlifeoxnard.podcast-runner-watchdog | grep "runs ="
 ```
+
+**Check `runs`, not just the log.** An empty `watchdog.log` looked healthy for
+two weeks (2026-09-14 to 2026-09-28) while the watchdog had actually stopped
+running entirely — its original `StartInterval` schedule silently died after
+two executions, and the log stays empty on the healthy path regardless. Fixed
+by switching to `StartCalendarInterval`; see SETUP-RUNNER.md for the full
+story. `runs` should climb by ~12/hour — if it's flat, the watchdog itself is
+broken, independent of whether the runner is.
 
 If a run looks stuck right now and you don't want to wait for the next
 watchdog check: `svc.sh stop`/`svc.sh start` do **not** reliably fix this

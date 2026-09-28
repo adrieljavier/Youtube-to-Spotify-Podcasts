@@ -16,10 +16,21 @@
   permitted". This plist is just the versioned reference copy; the one that
   matters is the one installed to ~/Library/LaunchAgents.
 
-  Checks every 5 minutes. Only acts if nothing has happened (no job started,
-  no job finished, no "Listening for Jobs") in the last 20 minutes, and
-  never interrupts a job that's actively in flight. See watchdog.sh for the
-  full detection logic.
+  Checks every 5 minutes, at fixed wall-clock minutes (StartCalendarInterval),
+  NOT StartInterval. StartInterval measured "runs = 2" after two full weeks
+  installed (2026-09-14 to 2026-09-28) -- confirmed via `launchctl print`,
+  it silently stopped firing after the initial RunAtLoad + one manual test,
+  and the run-gap data for that whole window was statistically identical to
+  before the watchdog existed (median ~4.3h both periods). This is a known
+  macOS LaunchAgent gotcha: StartInterval is best-effort and can be silently
+  coalesced/dropped by the OS's background-timer power management, even with
+  caffeinate holding a sleep assertion (that prevents system sleep, not
+  per-agent timer throttling). StartCalendarInterval fires at real wall-clock
+  times and does not have this failure mode.
+
+  Only acts if nothing has happened (no job started, no job finished, no
+  "Listening for Jobs") in the last 20 minutes, and never interrupts a job
+  that's actively in flight. See watchdog.sh for the full detection logic.
 
   Install:    cp mac/podcast-runner-watchdog.sh ~/actions-runner/watchdog.sh
               chmod +x ~/actions-runner/watchdog.sh
@@ -29,6 +40,11 @@
               rm ~/Library/LaunchAgents/com.newlifeoxnard.podcast-runner-watchdog.plist
   Check:      tail -20 ~/actions-runner/_diag/watchdog.log   # only has lines when it actually acts
               launchctl list | grep podcast-runner-watchdog
+              launchctl print gui/$(id -u)/com.newlifeoxnard.podcast-runner-watchdog | grep runs
+                # ^ THIS IS THE ONE THAT MATTERS. Check it periodically -- "runs"
+                # should keep climbing by ~12/hour. If it stalls again, the
+                # scheduling mechanism itself is broken again, regardless of
+                # what watchdog.log says.
 -->
 <plist version="1.0">
   <dict>
@@ -38,8 +54,21 @@
     <array>
       <string>/Users/adrieljavier/actions-runner/watchdog.sh</string>
     </array>
-    <key>StartInterval</key>
-    <integer>300</integer>
+    <key>StartCalendarInterval</key>
+    <array>
+      <dict><key>Minute</key><integer>0</integer></dict>
+      <dict><key>Minute</key><integer>5</integer></dict>
+      <dict><key>Minute</key><integer>10</integer></dict>
+      <dict><key>Minute</key><integer>15</integer></dict>
+      <dict><key>Minute</key><integer>20</integer></dict>
+      <dict><key>Minute</key><integer>25</integer></dict>
+      <dict><key>Minute</key><integer>30</integer></dict>
+      <dict><key>Minute</key><integer>35</integer></dict>
+      <dict><key>Minute</key><integer>40</integer></dict>
+      <dict><key>Minute</key><integer>45</integer></dict>
+      <dict><key>Minute</key><integer>50</integer></dict>
+      <dict><key>Minute</key><integer>55</integer></dict>
+    </array>
     <key>RunAtLoad</key>
     <true/>
     <key>StandardOutPath</key>

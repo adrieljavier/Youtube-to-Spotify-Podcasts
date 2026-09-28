@@ -132,7 +132,20 @@ while the machine itself never slept.
 ```bash
 tail -20 ~/actions-runner/_diag/watchdog.log   # only has lines when it actually acts
 launchctl list | grep podcast-runner-watchdog  # confirm it's loaded
+launchctl print gui/$(id -u)/com.newlifeoxnard.podcast-runner-watchdog | grep "runs ="
 ```
+
+**An empty `watchdog.log` is not proof it's working — check `runs` too.**
+The watchdog originally used `StartInterval`, which fired exactly twice
+(RunAtLoad + one manual test) and then silently stopped for the following
+two weeks — `watchdog.log` stayed empty the whole time because the healthy
+path never logs anything, so it *looked* fine while doing nothing at all.
+Caught on 2026-09-28 by checking `runs` in `launchctl print`, which should
+climb by ~12/hour; it wasn't climbing at all. Fixed by switching to
+`StartCalendarInterval` (fixed wall-clock minutes), which doesn't have this
+failure mode — confirmed firing on schedule without manual intervention
+after the fix. If `runs` ever stalls again, the scheduling mechanism itself
+is broken, regardless of what the log says.
 
 **`svc.sh stop` / `svc.sh start` do not reliably restart the runner** in this
 setup — `stop` (`launchctl unload`) leaves the service registered but
