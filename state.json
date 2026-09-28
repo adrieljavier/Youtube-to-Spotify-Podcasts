@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-28T15:37:59+00:00",
+  "updated_at": "2026-09-28T22:11:18+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -2118,12 +2118,19 @@
       "title": "New Life Conference"
     },
     "meMU9ZMhD4Q": {
+      "archive_identifier": "nlo-sermon-meMU9ZMhD4Q",
       "attempts": 0,
+      "audio_bytes": 39408891,
+      "audio_url": "https://archive.org/download/nlo-sermon-meMU9ZMhD4Q/meMU9ZMhD4Q.mp3",
+      "description": "Sunday Worship Service at New Life Community Church, Oxnard, CA.\n\n\n\n\nChurch Copyright License\u00ae (CCLI): 1377750\nCCLI Streaming License\u00ae: CSPL077395",
+      "duration_seconds": 2420,
+      "encoded_channels": 1,
+      "encoded_kbps": 128,
       "first_seen": "2026-09-27T18:30:44+00:00",
-      "published": "2026-09-27T17:37:14+00:00",
-      "skip_reason": "title does not match the sermon pattern '\\\\|'",
-      "status": "skipped",
-      "title": "New Life Worship Experience"
+      "published": "2026-09-27T15:31:39+00:00",
+      "status": "uploaded",
+      "title": "THE REAL DEAL | Not All In The Family | 1 John 2:28-3:10 | Phillip Trank",
+      "uploaded_at": "2026-09-28T22:10:10+00:00"
     },
     "mitMa2Pc45g": {
       "attempts": 0,
