@@ -6,7 +6,7 @@
     <description>New Life Community Church in Oxnard CA led by Pastor Steve Abraham. Weekly sermons from our Sunday services.</description>
     <language>en-us</language>
     <copyright>© New Life Oxnard</copyright>
-    <lastBuildDate>Mon, 21 Sep 2026 23:22:45 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2026 02:04:10 +0000</lastBuildDate>
     <generator>sermon-podcast-pipeline</generator>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <atom:link href="https://adrieljavier.github.io/Youtube-to-Spotify-Podcasts/feed.xml" rel="self" type="application/rss+xml" />
@@ -29,6 +29,26 @@
     </image>
     <podcast:locked owner="adrieljavier@newlifeoxnard.com">yes</podcast:locked>
     <podcast:guid>56747bda-78a7-5e32-9b43-00a51ddf865b</podcast:guid>
+    <item>
+      <title>THE REAL DEAL | Not All In The Family | 1 John 2:28-3:10 | Phillip Trank</title>
+      <link>https://www.youtube.com/watch?v=meMU9ZMhD4Q</link>
+      <description>Sunday Worship Service at New Life Community Church, Oxnard, CA.     Church Copyright License® (CCLI): 1377750 CCLI Streaming License®: CSPL077395
+
+Watch this message on YouTube: https://www.youtube.com/watch?v=meMU9ZMhD4Q</description>
+      <content:encoded>&lt;p&gt;Sunday Worship Service at New Life Community Church, Oxnard, CA.     Church Copyright License® (CCLI): 1377750 CCLI Streaming License®: CSPL077395&lt;/p&gt;&lt;p&gt;Watch this message on YouTube: &lt;a href="https://www.youtube.com/watch?v=meMU9ZMhD4Q"&gt;https://www.youtube.com/watch?v=meMU9ZMhD4Q&lt;/a&gt;&lt;/p&gt;</content:encoded>
+      <pubDate>Sun, 27 Sep 2026 15:31:39 +0000</pubDate>
+      <guid isPermaLink="false">yt:video:meMU9ZMhD4Q</guid>
+      <enclosure url="https://archive.org/download/nlo-sermon-meMU9ZMhD4Q/meMU9ZMhD4Q.mp3" length="39408891" type="audio/mpeg" />
+      <itunes:title>THE REAL DEAL | Not All In The Family | 1 John 2:28-3:10 | Phillip Trank</itunes:title>
+      <itunes:author>Phillip Trank</itunes:author>
+      <itunes:summary>Sunday Worship Service at New Life Community Church, Oxnard, CA.     Church Copyright License® (CCLI): 1377750 CCLI Streaming License®: CSPL077395
+
+Watch this message on YouTube: https://www.youtube.com/watch?v=meMU9ZMhD4Q</itunes:summary>
+      <itunes:duration>0:40:20</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:image href="https://adrieljavier.github.io/Youtube-to-Spotify-Podcasts/cover.jpg" />
+    </item>
     <item>
       <title>We Will Remember | 1 Chronicles 16:1-18 | Steve Abraham</title>
       <link>https://www.youtube.com/watch?v=zRPkkUepK-Q</link>
