@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-04T17:40:30+00:00",
+  "updated_at": "2026-10-04T21:38:47+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -2618,6 +2618,14 @@
       "skip_reason": "before backfill cutoff",
       "status": "skipped",
       "title": "PASTOR STEVE ABRAHAM // IT'S NOT OVER"
+    },
+    "z2eSW_VU6Aw": {
+      "attempts": 0,
+      "first_seen": "2026-10-04T21:38:47+00:00",
+      "published": "2026-10-04T18:53:03+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "New Life Worship Experience"
     },
     "z7lMmIjcK-U": {
       "attempts": 0,
