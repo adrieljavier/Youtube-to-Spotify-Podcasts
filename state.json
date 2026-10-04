@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-04T13:18:15+00:00",
+  "updated_at": "2026-10-04T17:40:30+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -791,6 +791,14 @@
       "status": "skipped",
       "title": "There is nothing too far that God cannot redeem.  #faith #motivation #jesus #christian #sermon"
     },
+    "HPSiUReCY3Y": {
+      "attempts": 0,
+      "first_seen": "2026-10-04T17:40:30+00:00",
+      "published": "2026-10-04T15:28:07+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "New Life Worship Experience"
+    },
     "HblqOO8ca5E": {
       "archive_identifier": "nlo-sermon-HblqOO8ca5E",
       "attempts": 0,
@@ -980,6 +988,14 @@
       "skip_reason": "before backfill cutoff",
       "status": "skipped",
       "title": "JUST JESUS // Pastor Steve Abraham"
+    },
+    "LwHDZXLGILM": {
+      "attempts": 0,
+      "first_seen": "2026-10-04T17:40:30+00:00",
+      "published": "2026-10-04T17:13:06+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "New Life Worship Experience"
     },
     "Lxz_93kHH7M": {
       "attempts": 0,
