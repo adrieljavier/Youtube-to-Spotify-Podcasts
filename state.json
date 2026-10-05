@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05T16:11:03+00:00",
+  "updated_at": "2026-10-05T22:48:04+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -792,12 +792,19 @@
       "title": "There is nothing too far that God cannot redeem.  #faith #motivation #jesus #christian #sermon"
     },
     "HPSiUReCY3Y": {
+      "archive_identifier": "nlo-sermon-HPSiUReCY3Y",
       "attempts": 0,
+      "audio_bytes": 47901733,
+      "audio_url": "https://archive.org/download/nlo-sermon-HPSiUReCY3Y/HPSiUReCY3Y.mp3",
+      "description": "Sunday Worship Service at New Life Community Church, Oxnard, CA.\n\n\n\n\nChurch Copyright License\u00ae (CCLI): 1377750\nCCLI Streaming License\u00ae: CSPL077395",
+      "duration_seconds": 2877,
+      "encoded_channels": 1,
+      "encoded_kbps": 128,
       "first_seen": "2026-10-04T17:40:30+00:00",
-      "published": "2026-10-04T15:28:07+00:00",
-      "skip_reason": "title does not match the sermon pattern '\\\\|'",
-      "status": "skipped",
-      "title": "New Life Worship Experience"
+      "published": "2026-10-04T15:31:33+00:00",
+      "status": "uploaded",
+      "title": "THE REAL DEAL | Love Wins | 1 John 3:11-18 | Steve Abraham",
+      "uploaded_at": "2026-10-05T22:46:56+00:00"
     },
     "HblqOO8ca5E": {
       "archive_identifier": "nlo-sermon-HblqOO8ca5E",
