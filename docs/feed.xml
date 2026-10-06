@@ -6,7 +6,7 @@
     <description>New Life Community Church in Oxnard CA led by Pastor Steve Abraham. Weekly sermons from our Sunday services.</description>
     <language>en-us</language>
     <copyright>© New Life Oxnard</copyright>
-    <lastBuildDate>Tue, 29 Sep 2026 02:04:10 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 03:07:33 +0000</lastBuildDate>
     <generator>sermon-podcast-pipeline</generator>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <atom:link href="https://adrieljavier.github.io/Youtube-to-Spotify-Podcasts/feed.xml" rel="self" type="application/rss+xml" />
@@ -29,6 +29,26 @@
     </image>
     <podcast:locked owner="adrieljavier@newlifeoxnard.com">yes</podcast:locked>
     <podcast:guid>56747bda-78a7-5e32-9b43-00a51ddf865b</podcast:guid>
+    <item>
+      <title>THE REAL DEAL | Love Wins | 1 John 3:11-18 | Steve Abraham</title>
+      <link>https://www.youtube.com/watch?v=HPSiUReCY3Y</link>
+      <description>Sunday Worship Service at New Life Community Church, Oxnard, CA.     Church Copyright License® (CCLI): 1377750 CCLI Streaming License®: CSPL077395
+
+Watch this message on YouTube: https://www.youtube.com/watch?v=HPSiUReCY3Y</description>
+      <content:encoded>&lt;p&gt;Sunday Worship Service at New Life Community Church, Oxnard, CA.     Church Copyright License® (CCLI): 1377750 CCLI Streaming License®: CSPL077395&lt;/p&gt;&lt;p&gt;Watch this message on YouTube: &lt;a href="https://www.youtube.com/watch?v=HPSiUReCY3Y"&gt;https://www.youtube.com/watch?v=HPSiUReCY3Y&lt;/a&gt;&lt;/p&gt;</content:encoded>
+      <pubDate>Sun, 04 Oct 2026 15:31:33 +0000</pubDate>
+      <guid isPermaLink="false">yt:video:HPSiUReCY3Y</guid>
+      <enclosure url="https://archive.org/download/nlo-sermon-HPSiUReCY3Y/HPSiUReCY3Y.mp3" length="47901733" type="audio/mpeg" />
+      <itunes:title>THE REAL DEAL | Love Wins | 1 John 3:11-18 | Steve Abraham</itunes:title>
+      <itunes:author>Steve Abraham</itunes:author>
+      <itunes:summary>Sunday Worship Service at New Life Community Church, Oxnard, CA.     Church Copyright License® (CCLI): 1377750 CCLI Streaming License®: CSPL077395
+
+Watch this message on YouTube: https://www.youtube.com/watch?v=HPSiUReCY3Y</itunes:summary>
+      <itunes:duration>0:47:57</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:image href="https://adrieljavier.github.io/Youtube-to-Spotify-Podcasts/cover.jpg" />
+    </item>
     <item>
       <title>THE REAL DEAL | Not All In The Family | 1 John 2:28-3:10 | Phillip Trank</title>
       <link>https://www.youtube.com/watch?v=meMU9ZMhD4Q</link>

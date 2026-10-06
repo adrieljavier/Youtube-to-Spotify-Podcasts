@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05T22:48:04+00:00",
+  "updated_at": "2026-10-06T03:07:33+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -802,7 +802,8 @@
       "encoded_kbps": 128,
       "first_seen": "2026-10-04T17:40:30+00:00",
       "published": "2026-10-04T15:31:33+00:00",
-      "status": "uploaded",
+      "published_at": "2026-10-06T03:07:33+00:00",
+      "status": "published",
       "title": "THE REAL DEAL | Love Wins | 1 John 3:11-18 | Steve Abraham",
       "uploaded_at": "2026-10-05T22:46:56+00:00"
     },
