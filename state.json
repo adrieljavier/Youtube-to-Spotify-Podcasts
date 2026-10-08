@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T22:04:48+00:00",
+  "updated_at": "2026-10-08T02:04:05+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -679,6 +679,14 @@
       "skip_reason": "before backfill cutoff",
       "status": "skipped",
       "title": "Guest Speaker Pastor Tyran Meredith"
+    },
+    "E436SoWwI2Q": {
+      "attempts": 0,
+      "first_seen": "2026-10-08T02:04:05+00:00",
+      "published": "2026-10-08T02:00:06+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "First Wednesday"
     },
     "E57xIVaNVCY": {
       "attempts": 0,
