@@ -2,9 +2,17 @@ name: Publish sermon episodes
 
 on:
   schedule:
-    # Hourly, at :23 past. Off-the-hour times are less contended on the shared
-    # GitHub Actions scheduler, so runs start closer to on time.
+    # Twice an hour, at :23 and :53 past. Off-the-hour times are less contended
+    # on the shared GitHub Actions scheduler, so runs start closer to on time.
+    #
+    # Two ticks, not one, because GitHub delivers scheduled runs best-effort and
+    # this repo measured only ~4-6 runs/day from a one-per-hour cron (median gap
+    # 4-5 hours, 2026-09 to 2026-10). The runner was proven healthy the whole
+    # time, so the dropped ticks are GitHub-side. An extra tick is harmless: the
+    # concurrency group below queues overlapping runs, and a run with nothing
+    # new to do finishes in seconds and commits nothing.
     - cron: "23 * * * *"
+    - cron: "53 * * * *"
   workflow_dispatch:
     inputs:
       limit:
