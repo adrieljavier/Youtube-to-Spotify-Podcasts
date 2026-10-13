@@ -112,56 +112,51 @@ rm ~/Library/LaunchAgents/com.newlifeoxnard.podcast-caffeinate.plist
 battery the agent deliberately does nothing, so an unplugged laptop still
 sleeps and publishing pauses until it is powered again.
 
-## Runner connection watchdog
+## Scheduled runs arrive late (this is GitHub, not the runner)
 
-**Also already installed.** Separately from sleep, the runner's own connection
-to GitHub can get silently stuck — a confirmed, still-open upstream bug
-(github.com/actions/runner issues #3904, #4668, #4703): the long-poll
-connection to `broker.actions.githubusercontent.com` dies without the process
-crashing, so nothing about the machine or the service looks wrong, but it
-never reconnects on its own. Measured on 2026-09-14: the median gap between
-runs was 4.2 hours against an hourly schedule, with gaps up to 20+ hours,
-while the machine itself never slept.
+The workflow asks for a run every hour, but GitHub delivers `schedule:` triggers
+best-effort, and for this repo it delivers only a fraction of them. Measured
+from 2026-09-01 to 2026-10-12: about 4-6 runs a day against 24 requested, a
+median gap of 4-5 hours, and two gaps of ~20 hours. A new sermon can wait most
+of a day to be picked up. Nothing is lost - the pipeline is idempotent and each
+run resumes where the last stopped - it is latency only.
 
-[mac/com.newlifeoxnard.podcast-runner-watchdog.plist](mac/com.newlifeoxnard.podcast-runner-watchdog.plist)
-+ [mac/podcast-runner-watchdog.sh](mac/podcast-runner-watchdog.sh) check every
-5 minutes: if nothing has happened (no job started, no job finished, no
-"Listening for Jobs") in the last 20 minutes, restart the listener with
-`launchctl kickstart -k`. It never interrupts a job that's actively running.
+**It is almost certainly not the runner.** The runner process stayed up for
+weeks and logged "Listening for Jobs" throughout. We also tested the obvious
+theory - that its long-poll connection to GitHub silently dies (there are open
+upstream reports of that: github.com/actions/runner issues #3904, #4668,
+#4703) - by installing a watchdog that restarted the listener whenever it had
+been idle for 20 minutes. It fired 410 times in 8 days. Only 13 of those
+restarts (3%) were followed by a run within 10 minutes, which is chance, and
+the median gap got *worse* (252 -> 341 min). If a dead connection were the
+cause, restarts would have been followed by jobs. The watchdog was retired on
+2026-10-05 and removed from the repo; it is in git history if you ever want it
+(`mac/podcast-runner-watchdog.sh`).
+
+The earlier version of this section claimed the stuck connection was the cause
+and that the watchdog fixed it. That was never verified - a restart was seen to
+reconnect, but nobody saw one pick up a stalled job - and the data above
+disproves it. Left here so nobody re-derives it.
+
+**Mitigation (2026-10-12):** `publish.yml` now has two cron ticks, `:23` and
+`:53`. If GitHub drops most ticks, more ticks means more runs. Overlap is
+harmless: the `concurrency` group queues runs, and a run with nothing new
+finishes in seconds and commits nothing. To check whether it helped, count runs
+per day (baseline before the change: 4-6):
 
 ```bash
-tail -20 ~/actions-runner/_diag/watchdog.log   # only has lines when it actually acts
-launchctl list | grep podcast-runner-watchdog  # confirm it's loaded
-launchctl print gui/$(id -u)/com.newlifeoxnard.podcast-runner-watchdog | grep "runs ="
+ls ~/actions-runner/_diag/Worker_*.log | sed -E 's/.*Worker_([0-9]{8})-.*/\1/' | sort | uniq -c | tail -14
 ```
 
-**An empty `watchdog.log` is not proof it's working — check `runs` too.**
-The watchdog originally used `StartInterval`, which fired exactly twice
-(RunAtLoad + one manual test) and then silently stopped for the following
-two weeks — `watchdog.log` stayed empty the whole time because the healthy
-path never logs anything, so it *looked* fine while doing nothing at all.
-Caught on 2026-09-28 by checking `runs` in `launchctl print`, which should
-climb by ~12/hour; it wasn't climbing at all. Fixed by switching to
-`StartCalendarInterval` (fixed wall-clock minutes), which doesn't have this
-failure mode — confirmed firing on schedule without manual intervention
-after the fix. If `runs` ever stalls again, the scheduling mechanism itself
-is broken, regardless of what the log says.
+**Need a run now** (new sermon just posted): Actions -> Publish sermon
+episodes -> Run workflow.
 
 **`svc.sh stop` / `svc.sh start` do not reliably restart the runner** in this
-setup — `stop` (`launchctl unload`) leaves the service registered but
+setup - `stop` (`launchctl unload`) leaves the service registered but
 stopped, and the follow-up `start` (`launchctl load`) then fails with
 `Load failed: 5: Input/output error` against an already-registered label.
-`launchctl kickstart -k gui/$(id -u)/<label>` is what actually works; that's
-what the watchdog uses, and it's the right manual fallback too if a run looks
-stuck and you don't want to wait for the watchdog's next check.
-
-To remove the watchdog:
-
-```bash
-launchctl bootout gui/$(id -u)/com.newlifeoxnard.podcast-runner-watchdog
-rm ~/Library/LaunchAgents/com.newlifeoxnard.podcast-runner-watchdog.plist
-rm ~/actions-runner/watchdog.sh
-```
+Use `launchctl kickstart -k gui/$(id -u)/actions.runner.adrieljavier-Youtube-to-Spotify-Podcasts.MacBook_Pro`
+if you ever do need to restart it.
 
 ---
 
