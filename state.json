@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-12T18:04:12+00:00",
+  "updated_at": "2026-10-13T00:50:25+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -1236,7 +1236,8 @@
       "encoded_kbps": 128,
       "first_seen": "2026-10-11T20:23:37+00:00",
       "published": "2026-10-11T17:16:34+00:00",
-      "status": "uploaded",
+      "published_at": "2026-10-13T00:50:24+00:00",
+      "status": "published",
       "title": "THE REAL DEAL | Put It To The Test | 1 John 4:1-6 | Steve Abraham",
       "uploaded_at": "2026-10-12T18:02:58+00:00"
     },
