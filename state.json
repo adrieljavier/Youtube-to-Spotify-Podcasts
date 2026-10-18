@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-18T18:43:21+00:00",
+  "updated_at": "2026-10-18T21:05:37+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -2370,6 +2370,14 @@
       "skip_reason": "before backfill cutoff",
       "status": "skipped",
       "title": "PASTOR STEVE ABRAHAM // OVERWHELMED BUT NOT OVERCOME"
+    },
+    "s1D4Ecoz7sY": {
+      "attempts": 0,
+      "first_seen": "2026-10-18T21:05:37+00:00",
+      "published": "2026-10-18T18:53:02+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "New Life Worship Experience"
     },
     "s9uupKpqDKY": {
       "attempts": 0,
