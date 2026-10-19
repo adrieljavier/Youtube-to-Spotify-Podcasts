@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T17:36:13+00:00",
+  "updated_at": "2026-10-19T20:44:33+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -1081,7 +1081,8 @@
       "encoded_kbps": 128,
       "first_seen": "2026-10-18T18:18:09+00:00",
       "published": "2026-10-18T17:16:35+00:00",
-      "status": "uploaded",
+      "published_at": "2026-10-19T20:44:33+00:00",
+      "status": "published",
       "title": "THE REAL DEAL | Proof Positive | 1 John 5:1-13 | Steve Abraham",
       "uploaded_at": "2026-10-19T17:35:05+00:00"
     },
