@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T15:01:47+00:00",
+  "updated_at": "2026-10-19T17:36:13+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -1071,12 +1071,19 @@
       "title": "NICK VUJICIC // BLESSED ARE THOSE WHO PERSEVERE"
     },
     "MwQPCDpIlDw": {
+      "archive_identifier": "nlo-sermon-MwQPCDpIlDw",
       "attempts": 0,
+      "audio_bytes": 44349563,
+      "audio_url": "https://archive.org/download/nlo-sermon-MwQPCDpIlDw/MwQPCDpIlDw.mp3",
+      "description": "Sunday Worship at New Life Community Church, Oxnard, CA.\n\n\n\n\nChurch Copyright License\u00ae (CCLI): 1377750\nCCLI Streaming License\u00ae: CSPL077395",
+      "duration_seconds": 2662,
+      "encoded_channels": 1,
+      "encoded_kbps": 128,
       "first_seen": "2026-10-18T18:18:09+00:00",
-      "published": "2026-10-18T17:13:07+00:00",
-      "skip_reason": "title does not match the sermon pattern '\\\\|'",
-      "status": "skipped",
-      "title": "New Life Worship Experience"
+      "published": "2026-10-18T17:16:35+00:00",
+      "status": "uploaded",
+      "title": "THE REAL DEAL | Proof Positive | 1 John 5:1-13 | Steve Abraham",
+      "uploaded_at": "2026-10-19T17:35:05+00:00"
     },
     "N9zxdwhh4fo": {
       "attempts": 0,
