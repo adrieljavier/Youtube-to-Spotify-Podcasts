@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T14:35:40+00:00",
+  "updated_at": "2026-10-25T17:53:57+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -1005,6 +1005,14 @@
       "skip_reason": "before backfill cutoff",
       "status": "skipped",
       "title": "PASTOR ANDREW CARROLL // GOD'S GOT YOU"
+    },
+    "Leu2GBZjAgw": {
+      "attempts": 0,
+      "first_seen": "2026-10-25T17:53:57+00:00",
+      "published": "2026-10-25T15:28:08+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "New Life Worship Experience"
     },
     "LvqfZr4BVvA": {
       "attempts": 0,
@@ -2263,6 +2271,14 @@
       "skip_reason": "before backfill cutoff",
       "status": "skipped",
       "title": "A Church God Loves | Steve Abraham"
+    },
+    "nzmaDY9Ibd4": {
+      "attempts": 0,
+      "first_seen": "2026-10-25T17:53:57+00:00",
+      "published": "2026-10-25T17:13:06+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "New Life Worship Experience"
     },
     "o4mXCNI1igo": {
       "attempts": 0,
