@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T20:13:37+00:00",
+  "updated_at": "2026-10-26T20:36:15+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -1017,7 +1017,8 @@
       "encoded_kbps": 128,
       "first_seen": "2026-10-25T17:53:57+00:00",
       "published": "2026-10-25T15:31:34+00:00",
-      "status": "uploaded",
+      "published_at": "2026-10-26T20:36:15+00:00",
+      "status": "published",
       "title": "God Is Still With Me | Ryan Abraham",
       "uploaded_at": "2026-10-26T20:12:28+00:00"
     },

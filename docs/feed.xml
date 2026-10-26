@@ -6,7 +6,7 @@
     <description>New Life Community Church in Oxnard CA led by Pastor Steve Abraham. Weekly sermons from our Sunday services.</description>
     <language>en-us</language>
     <copyright>© New Life Oxnard</copyright>
-    <lastBuildDate>Mon, 19 Oct 2026 20:44:33 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 20:36:15 +0000</lastBuildDate>
     <generator>sermon-podcast-pipeline</generator>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <atom:link href="https://adrieljavier.github.io/Youtube-to-Spotify-Podcasts/feed.xml" rel="self" type="application/rss+xml" />
@@ -29,6 +29,26 @@
     </image>
     <podcast:locked owner="adrieljavier@newlifeoxnard.com">yes</podcast:locked>
     <podcast:guid>56747bda-78a7-5e32-9b43-00a51ddf865b</podcast:guid>
+    <item>
+      <title>God Is Still With Me | Ryan Abraham</title>
+      <link>https://www.youtube.com/watch?v=Leu2GBZjAgw</link>
+      <description>Sunday Worship Service at New Life Community Church, Oxnard, CA.     Church Copyright License® (CCLI): 1377750 CCLI Streaming License®: CSPL077395
+
+Watch this message on YouTube: https://www.youtube.com/watch?v=Leu2GBZjAgw</description>
+      <content:encoded>&lt;p&gt;Sunday Worship Service at New Life Community Church, Oxnard, CA.     Church Copyright License® (CCLI): 1377750 CCLI Streaming License®: CSPL077395&lt;/p&gt;&lt;p&gt;Watch this message on YouTube: &lt;a href="https://www.youtube.com/watch?v=Leu2GBZjAgw"&gt;https://www.youtube.com/watch?v=Leu2GBZjAgw&lt;/a&gt;&lt;/p&gt;</content:encoded>
+      <pubDate>Sun, 25 Oct 2026 15:31:34 +0000</pubDate>
+      <guid isPermaLink="false">yt:video:Leu2GBZjAgw</guid>
+      <enclosure url="https://archive.org/download/nlo-sermon-Leu2GBZjAgw/Leu2GBZjAgw.mp3" length="36282999" type="audio/mpeg" />
+      <itunes:title>God Is Still With Me | Ryan Abraham</itunes:title>
+      <itunes:author>Ryan Abraham</itunes:author>
+      <itunes:summary>Sunday Worship Service at New Life Community Church, Oxnard, CA.     Church Copyright License® (CCLI): 1377750 CCLI Streaming License®: CSPL077395
+
+Watch this message on YouTube: https://www.youtube.com/watch?v=Leu2GBZjAgw</itunes:summary>
+      <itunes:duration>0:37:02</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:image href="https://adrieljavier.github.io/Youtube-to-Spotify-Podcasts/cover.jpg" />
+    </item>
     <item>
       <title>THE REAL DEAL | Proof Positive | 1 John 5:1-13 | Steve Abraham</title>
       <link>https://www.youtube.com/watch?v=MwQPCDpIlDw</link>
