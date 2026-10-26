@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T02:02:56+00:00",
+  "updated_at": "2026-10-26T14:52:36+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -2652,6 +2652,14 @@
       "skip_reason": "before backfill cutoff",
       "status": "skipped",
       "title": "SAY SO // FIRST THINGS FIRST // TERRELL PENNY, PAULINE RIVERA, PHILLIP TRANK, PASTOR TAMI ABRAHAM"
+    },
+    "xLXDd-9zS78": {
+      "attempts": 0,
+      "first_seen": "2026-10-26T14:52:36+00:00",
+      "published": "2026-10-26T07:24:27+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "New Life Worship Experience"
     },
     "xNibgjN526Q": {
       "attempts": 0,
