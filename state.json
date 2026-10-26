@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T14:52:36+00:00",
+  "updated_at": "2026-10-26T20:13:37+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -1007,12 +1007,19 @@
       "title": "PASTOR ANDREW CARROLL // GOD'S GOT YOU"
     },
     "Leu2GBZjAgw": {
+      "archive_identifier": "nlo-sermon-Leu2GBZjAgw",
       "attempts": 0,
+      "audio_bytes": 36282999,
+      "audio_url": "https://archive.org/download/nlo-sermon-Leu2GBZjAgw/Leu2GBZjAgw.mp3",
+      "description": "Sunday Worship Service at New Life Community Church, Oxnard, CA.\n\n\n\n\nChurch Copyright License\u00ae (CCLI): 1377750\nCCLI Streaming License\u00ae: CSPL077395",
+      "duration_seconds": 2222,
+      "encoded_channels": 1,
+      "encoded_kbps": 128,
       "first_seen": "2026-10-25T17:53:57+00:00",
-      "published": "2026-10-25T15:28:08+00:00",
-      "skip_reason": "title does not match the sermon pattern '\\\\|'",
-      "status": "skipped",
-      "title": "New Life Worship Experience"
+      "published": "2026-10-25T15:31:34+00:00",
+      "status": "uploaded",
+      "title": "God Is Still With Me | Ryan Abraham",
+      "uploaded_at": "2026-10-26T20:12:28+00:00"
     },
     "LvqfZr4BVvA": {
       "attempts": 0,
