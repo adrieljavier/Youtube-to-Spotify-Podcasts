@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T16:29:32+00:00",
+  "updated_at": "2026-11-03T20:05:34+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -1120,9 +1120,8 @@
       "attempts": 0,
       "first_seen": "2026-11-01T23:58:03+00:00",
       "published": "2026-11-01T19:53:07+00:00",
-      "skip_reason": "title does not match the sermon pattern '\\\\|'",
-      "status": "skipped",
-      "title": "New Life Worship Experience"
+      "status": "queued",
+      "title": "Chairs and Ladders | Series: Story Changers | Luke 19:1-10 | Steve Abraham"
     },
     "NRBA8jaFiEY": {
       "attempts": 0,
