@@ -168,9 +168,15 @@ class State:
         entry["attempts"] = 0
         return entry
 
-    def mark_failure(self, video_id: str, error: str, max_attempts: int) -> dict:
+    def mark_failure(
+        self, video_id: str, error: str, max_attempts: int, counts: bool = True
+    ) -> dict:
+        """Record a failed attempt. `counts=False` is for outages that are not
+        the episode's fault (archive.org throttling everyone): the error is
+        noted but the attempt does not move it toward `parked`."""
         entry = self.upsert(video_id)
-        entry["attempts"] = int(entry.get("attempts", 0)) + 1
+        if counts:
+            entry["attempts"] = int(entry.get("attempts", 0)) + 1
         entry["last_error"] = error[:500]
         entry["last_attempt"] = _now()
         if entry["attempts"] >= max_attempts and entry.get("status") != "uploaded":

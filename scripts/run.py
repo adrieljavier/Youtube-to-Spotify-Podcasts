@@ -319,7 +319,10 @@ def main(argv=None) -> int:
                 waiting.append(video_id)
         except Exception as exc:
             failed.append((video_id, str(exc)))
-            state.mark_failure(video_id, str(exc), max_attempts)
+            state.mark_failure(
+                video_id, str(exc), max_attempts,
+                counts=not isinstance(exc, archive_upload.ArchiveThrottled),
+            )
             warn("%s failed: %s" % (video_id, exc))
             traceback.print_exc(file=sys.stderr)
         finally:

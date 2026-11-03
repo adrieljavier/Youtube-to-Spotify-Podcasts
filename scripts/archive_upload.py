@@ -30,6 +30,15 @@ class ArchiveError(RuntimeError):
     pass
 
 
+class ArchiveThrottled(ArchiveError):
+    """archive.org is shedding load for everyone (its global task queue is over
+    its limit), so the upload was refused through no fault of ours or the
+    episode's. Retry later; it must not count toward parking the episode."""
+
+
+_THROTTLE_MARKERS = ("reduce your request rate", "global_limit", "slowdown")
+
+
 def build_identifier(cfg, video_id: str) -> str:
     prefix = str(cfg.get("archive.identifier_prefix", "sermon")).strip("-")
     identifier = _IDENTIFIER_SAFE.sub("-", "%s-%s" % (prefix, video_id))
@@ -115,7 +124,12 @@ def upload(
                 verbose=False,
             )
         except Exception as exc:  # network, auth, quota — all retryable next run
-            raise ArchiveError("Upload to %s failed: %s" % (identifier, exc))
+            kind = (
+                ArchiveThrottled
+                if any(m in str(exc).lower() for m in _THROTTLE_MARKERS)
+                else ArchiveError
+            )
+            raise kind("Upload to %s failed: %s" % (identifier, exc))
 
         bad = [r for r in responses if getattr(r, "status_code", None) not in (200, None)]
         if bad:
