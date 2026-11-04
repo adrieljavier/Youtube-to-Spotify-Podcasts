@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:19:15+00:00",
+  "updated_at": "2026-11-04T01:30:57+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -1117,13 +1117,20 @@
       "title": "Battle Belongs + Heart of God | New Life Worship"
     },
     "NFU37Rd-604": {
-      "attempts": 2,
+      "archive_identifier": "nlo-sermon-NFU37Rd-604",
+      "attempts": 0,
+      "audio_bytes": 47962468,
+      "audio_url": "https://archive.org/download/nlo-sermon-NFU37Rd-604/NFU37Rd-604.mp3",
+      "description": "Sunday Morning Worship at New Life Community Church in Oxnard, California. Join us for Worship, Word, and to magnify the name of Jesus. www.newlifeoxnard.com\n\n\n\n\nChurch Copyright License\u00ae (CCLI): 1377750\nCCLI Streaming License\u00ae: CSPL077395",
+      "duration_seconds": 2945,
+      "encoded_channels": 1,
+      "encoded_kbps": 128,
       "first_seen": "2026-11-01T23:58:03+00:00",
       "last_attempt": "2026-11-03T21:19:15+00:00",
-      "last_error": "Upload to nlo-sermon-NFU37Rd-604 failed:  error uploading NFU37Rd-604.mp3 to nlo-sermon-NFU37Rd-604, Please reduce your request rate. - total_tasks_queued exceeds global_limit",
       "published": "2026-11-01T19:57:26+00:00",
-      "status": "queued",
-      "title": "Chairs and Ladders | Series: Story Changers | Luke 19:1-10 | Steve Abraham"
+      "status": "uploaded",
+      "title": "Chairs and Ladders | Series: Story Changers | Luke 19:1-10 | Steve Abraham",
+      "uploaded_at": "2026-11-04T01:29:49+00:00"
     },
     "NRBA8jaFiEY": {
       "attempts": 0,
