@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T01:30:57+00:00",
+  "updated_at": "2026-11-04T01:43:34+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -1128,7 +1128,8 @@
       "first_seen": "2026-11-01T23:58:03+00:00",
       "last_attempt": "2026-11-03T21:19:15+00:00",
       "published": "2026-11-01T19:57:26+00:00",
-      "status": "uploaded",
+      "published_at": "2026-11-04T01:43:34+00:00",
+      "status": "published",
       "title": "Chairs and Ladders | Series: Story Changers | Luke 19:1-10 | Steve Abraham",
       "uploaded_at": "2026-11-04T01:29:49+00:00"
     },
