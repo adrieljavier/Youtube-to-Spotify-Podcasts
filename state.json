@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-08T15:23:05+00:00",
+  "updated_at": "2026-11-08T19:12:04+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -2354,6 +2354,14 @@
       "status": "skipped",
       "title": "New Life Sunday Experience"
     },
+    "p21f0nbFH28": {
+      "attempts": 0,
+      "first_seen": "2026-11-08T19:12:04+00:00",
+      "published": "2026-11-08T18:13:02+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "New Life Worship Experience"
+    },
     "pD4CJuERgCs": {
       "attempts": 0,
       "first_seen": "2026-08-06T23:31:08+00:00",
@@ -2707,6 +2715,14 @@
       "skip_reason": "before backfill cutoff",
       "status": "skipped",
       "title": "PASTOR TYRAN MEREDITH // THE CHANGE UP"
+    },
+    "xib1H32XBkI": {
+      "attempts": 0,
+      "first_seen": "2026-11-08T19:12:04+00:00",
+      "published": "2026-11-08T18:05:20+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "New Life Worship Experience"
     },
     "xkyikaC3WO0": {
       "attempts": 0,
