@@ -14,6 +14,7 @@ import argparse
 import os
 import sys
 import traceback
+from datetime import datetime, timedelta, timezone
 
 from . import archive_upload, audio, feed, youtube
 from .config import ConfigError, WORK_DIR, log, warn
@@ -86,8 +87,55 @@ def discover(cfg, state: State) -> int:
         log("  queue %s  %s" % (video_id, video["title"]))
         added += 1
 
+    added += recheck_recent_skips(cfg, state, {v["video_id"] for v in videos})
+
     if not added:
         log("  nothing new.")
+    return added
+
+
+DISCOVERY_ALARM_RUNS = 4
+
+RECHECK_DAYS = 10
+RECHECK_MAX = 12
+
+
+def recheck_recent_skips(cfg, state: State, in_feed: set) -> int:
+    """Catch retitles the channel feed has not shown us.
+
+    reconsider_renamed() only sees a video while it is in the Atom feed, and
+    that feed can serve a stale snapshot for hours. A Sunday stream skipped as
+    "New Life Worship Experience" would then stay skipped, with nothing in the
+    logs to say so. Re-ask YouTube directly for the title of every recent
+    title-based skip that the feed did not mention this run.
+    """
+    cutoff = datetime.now(timezone.utc) - timedelta(days=RECHECK_DAYS)
+    candidates = []
+    for video_id, known in state.videos.items():
+        if video_id in in_feed or known.get("status") != "skipped":
+            continue
+        if not str(known.get("skip_reason") or "").startswith("title"):
+            continue
+        try:
+            published = datetime.fromisoformat(known.get("published") or "")
+        except ValueError:
+            continue
+        if published.tzinfo is None:
+            published = published.replace(tzinfo=timezone.utc)
+        if published >= cutoff:
+            candidates.append((published, video_id, known))
+
+    added = 0
+    for _, video_id, known in sorted(candidates, reverse=True)[:RECHECK_MAX]:
+        title = youtube.fetch_title(video_id)
+        if not title:
+            continue
+        added += reconsider_renamed(
+            cfg,
+            state,
+            known,
+            {"video_id": video_id, "title": title, "published": known.get("published")},
+        )
     return added
 
 
@@ -269,11 +317,19 @@ def main(argv=None) -> int:
     for video_id in args.retry:
         log("Un-parking %s: %s" % (video_id, state.unpark(video_id)))
 
+    discovery_down = False
     try:
         discover(cfg, state)
+        if state.data.get("discovery_failures"):
+            state.data["discovery_failures"] = 0
     except Exception as exc:
         # Losing discovery is survivable — anything already queued still runs.
         warn("Discovery failed: %s" % exc)
+        failures = int(state.data.get("discovery_failures", 0)) + 1
+        state.data["discovery_failures"] = failures
+        # A single 404 is YouTube hiccuping; many in a row means new sermons
+        # are not being seen, which must not look like a green run.
+        discovery_down = failures >= DISCOVERY_ALARM_RUNS
     state.save()
 
     published, waiting, failed = [], [], []
@@ -336,7 +392,13 @@ def main(argv=None) -> int:
     state.save()
 
     summarize(state, published, waiting, failed, feed_written)
-    return 1 if failed else 0
+    if discovery_down:
+        print("::error::" + (
+            "YouTube discovery has failed %d runs in a row, so new sermons are "
+            "not being seen. Check the channel feed and youtube.channel_id."
+            % state.data["discovery_failures"]
+        ), flush=True)
+    return 1 if (failed or discovery_down) else 0
 
 
 if __name__ == "__main__":

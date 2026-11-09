@@ -203,6 +203,29 @@ def client_options(client: str) -> dict:
     return {"extractor_args": {"youtube": {"player_client": [client]}}}
 
 
+def fetch_title(video_id: str, timeout: int = 20) -> Optional[str]:
+    """Current title of one video via YouTube's oEmbed endpoint, or None.
+
+    The channel Atom feed is the only listing the pipeline reads, and it
+    sometimes serves a days-old snapshot (2026-11-02: stuck on Oct 25 for
+    most of a day). oEmbed is a per-video lookup that does not depend on it,
+    needs no sign-in and does not trip the bot check, so it can still see a
+    livestream's placeholder title change to the sermon title.
+    """
+    try:
+        response = requests.get(
+            "https://www.youtube.com/oembed",
+            params={"format": "json", "url": WATCH_URL % video_id},
+            timeout=timeout,
+            headers={"User-Agent": USER_AGENT},
+        )
+        if response.status_code != 200:
+            return None
+        return str(response.json().get("title") or "").strip() or None
+    except Exception:
+        return None
+
+
 def fetch_video_info(
     video_id: str, clients: Optional[List[str]] = None, attempts: int = 2
 ) -> dict:
