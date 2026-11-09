@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T17:39:42+00:00",
+  "updated_at": "2026-11-09T22:46:45+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -2363,12 +2363,19 @@
       "title": "New Life Sunday Experience"
     },
     "p21f0nbFH28": {
+      "archive_identifier": "nlo-sermon-p21f0nbFH28",
       "attempts": 0,
+      "audio_bytes": 42007351,
+      "audio_url": "https://archive.org/download/nlo-sermon-p21f0nbFH28/p21f0nbFH28.mp3",
+      "description": "Real change often starts in the dark, when you're stuck and can't see a way forward. In this message from our Story Changers series, Pastor Steve Abraham walks through Genesis 32:22-32, where Jacob wrestles with God all night and walks away with a new name and a limp.\n\nPastor Steve shares three things about change: it often begins with a crisis, it takes commitment to hold on and not tap out, and it means coming clean with God about who you really are. You'll also hear why still limping doesn't mean you've failed, plus a story of God changing one man's life.\n\nIf you're in a hard season right now, this one is for you. Share it with someone who needs it.\n\n\nChurch Copyright License\u00ae (CCLI): 1377750\nCCLI Streaming License\u00ae: CSPL077395",
+      "duration_seconds": 2564,
+      "encoded_channels": 1,
+      "encoded_kbps": 128,
       "first_seen": "2026-11-08T19:12:04+00:00",
-      "published": "2026-11-08T18:13:02+00:00",
-      "skip_reason": "title does not match the sermon pattern '\\\\|'",
-      "status": "skipped",
-      "title": "New Life Worship Experience"
+      "published": "2026-11-08T18:16:36+00:00",
+      "status": "uploaded",
+      "title": "Changed In The Dark | Series: Story Changers | Genesis 32:22-32 | Steve Abraham",
+      "uploaded_at": "2026-11-09T22:45:37+00:00"
     },
     "pD4CJuERgCs": {
       "attempts": 0,
