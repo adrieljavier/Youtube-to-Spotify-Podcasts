@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T22:46:45+00:00",
+  "updated_at": "2026-11-10T01:39:41+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -2373,7 +2373,8 @@
       "encoded_kbps": 128,
       "first_seen": "2026-11-08T19:12:04+00:00",
       "published": "2026-11-08T18:16:36+00:00",
-      "status": "uploaded",
+      "published_at": "2026-11-10T01:39:41+00:00",
+      "status": "published",
       "title": "Changed In The Dark | Series: Story Changers | Genesis 32:22-32 | Steve Abraham",
       "uploaded_at": "2026-11-09T22:45:37+00:00"
     },
