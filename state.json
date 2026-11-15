@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-15T11:33:23+00:00",
+  "updated_at": "2026-11-15T17:51:15+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -2691,6 +2691,14 @@
     "wuyyAYz9l4k": {
       "attempts": 0,
       "first_seen": "2026-08-06T23:31:06+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "New Life Worship Experience"
+    },
+    "x7ZcRxg9tbA": {
+      "attempts": 0,
+      "first_seen": "2026-11-15T17:51:15+00:00",
+      "published": "2026-11-15T16:28:09+00:00",
       "skip_reason": "title does not match the sermon pattern '\\\\|'",
       "status": "skipped",
       "title": "New Life Worship Experience"
