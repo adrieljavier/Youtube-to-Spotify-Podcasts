@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-16T22:35:03+00:00",
+  "updated_at": "2026-11-17T04:40:08+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -354,13 +354,20 @@
       "title": "A Nobody, Nobody Noticed"
     },
     "698Yi3CnaXU": {
+      "archive_identifier": "nlo-sermon-698Yi3CnaXU",
       "attempts": 0,
+      "audio_bytes": 35165755,
+      "audio_url": "https://archive.org/download/nlo-sermon-698Yi3CnaXU/698Yi3CnaXU.mp3",
+      "description": "Sometimes the biggest enemy we face is the one in the mirror. In Facing The Giant Within, Pastor Steve Abraham walks through Moses at the burning bush in Exodus 3-4 and shows how insecurity and the question \"Who am I?\" can keep us from what God has called us to do. God didn't answer Moses with a pep talk. He answered with who He is, and that's where our identity starts too.\n\nThis is week three of our Story Changers series. Share it with someone who needs to hear it.\n\nChurch Copyright License\u00ae (CCLI): 1377750\nCCLI Streaming License\u00ae: CSPL077395",
+      "duration_seconds": 2127,
+      "encoded_channels": 1,
+      "encoded_kbps": 128,
       "first_seen": "2026-11-16T22:19:46+00:00",
       "last_attempt": "2026-11-16T22:35:03+00:00",
-      "last_error": "Upload to nlo-sermon-698Yi3CnaXU failed:  error uploading 698Yi3CnaXU.mp3 to nlo-sermon-698Yi3CnaXU, Please reduce your request rate. - Your upload of nlo-sermon-698Yi3CnaXU from username adrieljavier@newlifeoxnard.com appears to be spam. If you believe this is a mistake, contact info@archive.org and include this entire message in your email.",
       "published": "2026-11-15T18:16:34+00:00",
-      "status": "queued",
-      "title": "Facing The Giant Within | Series: Story Changers | Exodus 3-4 | Steve Abraham"
+      "status": "uploaded",
+      "title": "Facing The Giant Within | Series: Story Changers | Exodus 3-4 | Steve Abraham",
+      "uploaded_at": "2026-11-17T04:39:00+00:00"
     },
     "6AlvOeU6hhI": {
       "attempts": 0,
