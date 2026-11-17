@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T04:40:08+00:00",
+  "updated_at": "2026-11-17T04:49:30+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -365,7 +365,8 @@
       "first_seen": "2026-11-16T22:19:46+00:00",
       "last_attempt": "2026-11-16T22:35:03+00:00",
       "published": "2026-11-15T18:16:34+00:00",
-      "status": "uploaded",
+      "published_at": "2026-11-17T04:49:30+00:00",
+      "status": "published",
       "title": "Facing The Giant Within | Series: Story Changers | Exodus 3-4 | Steve Abraham",
       "uploaded_at": "2026-11-17T04:39:00+00:00"
     },
