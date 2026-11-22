@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T16:26:46+00:00",
+  "updated_at": "2026-11-22T17:26:29+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -2053,6 +2053,14 @@
       "skip_reason": "before backfill cutoff",
       "status": "skipped",
       "title": "You can still have joy despite your situation. #faith #motivation #jesus #sermon #joy"
+    },
+    "huVUiC4YEbU": {
+      "attempts": 0,
+      "first_seen": "2026-11-22T17:26:29+00:00",
+      "published": "2026-11-22T16:28:05+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "New Life Worship Experience"
     },
     "hwJwMM63ENo": {
       "attempts": 0,
