@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T17:26:29+00:00",
+  "updated_at": "2026-11-22T22:34:35+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -1157,6 +1157,14 @@
       "status": "skipped",
       "title": "PASTOR TYRAN MERIDITH // EFFECTIVE IN PRAYER"
     },
+    "NcZSO8fSTb4": {
+      "attempts": 0,
+      "first_seen": "2026-11-22T22:34:34+00:00",
+      "published": "2026-11-22T19:53:06+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "New Life Worship Experience"
+    },
     "NmqSPqIOjcY": {
       "attempts": 0,
       "first_seen": "2026-08-06T23:31:06+00:00",
@@ -1521,6 +1529,14 @@
       "status": "published",
       "title": "THE REAL DEAL | Be Real | 1 John 1:1-10 | Steve Abraham",
       "uploaded_at": "2026-08-31T20:12:58+00:00"
+    },
+    "WOAnlYw3wII": {
+      "attempts": 0,
+      "first_seen": "2026-11-22T22:34:34+00:00",
+      "published": "2026-11-22T19:50:11+00:00",
+      "skip_reason": "title does not match the sermon pattern '\\\\|'",
+      "status": "skipped",
+      "title": "New Life Worship Experience"
     },
     "WeQNMhyjfSg": {
       "attempts": 0,
