@@ -6,7 +6,7 @@
     <description>New Life Community Church in Oxnard CA led by Pastor Steve Abraham. Weekly sermons from our Sunday services.</description>
     <language>en-us</language>
     <copyright>© New Life Oxnard</copyright>
-    <lastBuildDate>Thu, 19 Nov 2026 19:12:50 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 02:21:46 +0000</lastBuildDate>
     <generator>sermon-podcast-pipeline</generator>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <atom:link href="https://adrieljavier.github.io/Youtube-to-Spotify-Podcasts/feed.xml" rel="self" type="application/rss+xml" />
@@ -29,6 +29,26 @@
     </image>
     <podcast:locked owner="adrieljavier@newlifeoxnard.com">yes</podcast:locked>
     <podcast:guid>56747bda-78a7-5e32-9b43-00a51ddf865b</podcast:guid>
+    <item>
+      <title>The Hidden Hero | Series: The Story Changer | Judges 6:11-34 | Steve Abraham</title>
+      <link>https://www.youtube.com/watch?v=WOAnlYw3wII</link>
+      <description>What does God see when you feel like hiding? In week four of Story Changers, Pastor Steve walks through Judges 6, where God finds Gideon hiding in a winepress and calls him a "mighty warrior" before he has done anything brave. He shows how God affirms us, confronts our excuses, and transforms us, so we can stop waiting to feel ready and go in the strength we already have.  Share it with someone who's been hiding and needs to hear it.  #NewLifeOxnardChurch Copyright License® (CCLI): 1377750 CCLI Streaming License®: CSPL077395
+
+Watch this message on YouTube: https://www.youtube.com/watch?v=WOAnlYw3wII</description>
+      <content:encoded>&lt;p&gt;What does God see when you feel like hiding? In week four of Story Changers, Pastor Steve walks through Judges 6, where God finds Gideon hiding in a winepress and calls him a "mighty warrior" before he has done anything brave. He shows how God affirms us, confronts our excuses, and transforms us, so we can stop waiting to feel ready and go in the strength we already have.  Share it with someone who's been hiding and needs to hear it.  #NewLifeOxnardChurch Copyright License® (CCLI): 1377750 CCLI Streaming License®: CSPL077395&lt;/p&gt;&lt;p&gt;Watch this message on YouTube: &lt;a href="https://www.youtube.com/watch?v=WOAnlYw3wII"&gt;https://www.youtube.com/watch?v=WOAnlYw3wII&lt;/a&gt;&lt;/p&gt;</content:encoded>
+      <pubDate>Sun, 22 Nov 2026 18:16:33 +0000</pubDate>
+      <guid isPermaLink="false">yt:video:WOAnlYw3wII</guid>
+      <enclosure url="https://archive.org/download/nlo-sermon-WOAnlYw3wII/WOAnlYw3wII.mp3" length="54489794" type="audio/mpeg" />
+      <itunes:title>The Hidden Hero | Series: The Story Changer | Judges 6:11-34 | Steve Abraham</itunes:title>
+      <itunes:author>Steve Abraham</itunes:author>
+      <itunes:summary>What does God see when you feel like hiding? In week four of Story Changers, Pastor Steve walks through Judges 6, where God finds Gideon hiding in a winepress and calls him a "mighty warrior" before he has done anything brave. He shows how God affirms us, confronts our excuses, and transforms us, so we can stop waiting to feel ready and go in the strength we already have.  Share it with someone who's been hiding and needs to hear it.  #NewLifeOxnardChurch Copyright License® (CCLI): 1377750 CCLI Streaming License®: CSPL077395
+
+Watch this message on YouTube: https://www.youtube.com/watch?v=WOAnlYw3wII</itunes:summary>
+      <itunes:duration>0:55:43</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:image href="https://adrieljavier.github.io/Youtube-to-Spotify-Podcasts/cover.jpg" />
+    </item>
     <item>
       <title>Facing The Giant Within | Series: Story Changers | Exodus 3-4 | Steve Abraham</title>
       <link>https://www.youtube.com/watch?v=698Yi3CnaXU</link>

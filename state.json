@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T01:19:42+00:00",
+  "updated_at": "2026-11-24T02:21:46+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -1541,7 +1541,8 @@
       "encoded_kbps": 128,
       "first_seen": "2026-11-22T22:34:34+00:00",
       "published": "2026-11-22T18:16:33+00:00",
-      "status": "uploaded",
+      "published_at": "2026-11-24T02:21:46+00:00",
+      "status": "published",
       "title": "The Hidden Hero | Series: The Story Changer | Judges 6:11-34 | Steve Abraham",
       "uploaded_at": "2026-11-24T01:18:34+00:00"
     },
