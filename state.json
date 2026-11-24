@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23T14:57:30+00:00",
+  "updated_at": "2026-11-24T01:19:42+00:00",
   "version": 1,
   "videos": {
     "-EVi9p4Dp10": {
@@ -1531,12 +1531,19 @@
       "uploaded_at": "2026-08-31T20:12:58+00:00"
     },
     "WOAnlYw3wII": {
+      "archive_identifier": "nlo-sermon-WOAnlYw3wII",
       "attempts": 0,
+      "audio_bytes": 54489794,
+      "audio_url": "https://archive.org/download/nlo-sermon-WOAnlYw3wII/WOAnlYw3wII.mp3",
+      "description": "What does God see when you feel like hiding? In week four of Story Changers, Pastor Steve walks through Judges 6, where God finds Gideon hiding in a winepress and calls him a \"mighty warrior\" before he has done anything brave. He shows how God affirms us, confronts our excuses, and transforms us, so we can stop waiting to feel ready and go in the strength we already have.\n\nShare it with someone who's been hiding and needs to hear it.\n\n#NewLifeOxnardChurch Copyright License\u00ae (CCLI): 1377750\nCCLI Streaming License\u00ae: CSPL077395",
+      "duration_seconds": 3343,
+      "encoded_channels": 1,
+      "encoded_kbps": 128,
       "first_seen": "2026-11-22T22:34:34+00:00",
-      "published": "2026-11-22T19:50:11+00:00",
-      "skip_reason": "title does not match the sermon pattern '\\\\|'",
-      "status": "skipped",
-      "title": "New Life Worship Experience"
+      "published": "2026-11-22T18:16:33+00:00",
+      "status": "uploaded",
+      "title": "The Hidden Hero | Series: The Story Changer | Judges 6:11-34 | Steve Abraham",
+      "uploaded_at": "2026-11-24T01:18:34+00:00"
     },
     "WeQNMhyjfSg": {
       "attempts": 0,
